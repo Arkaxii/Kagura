@@ -1,0 +1,19 @@
+{
+  "name": "v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "discord-money": "^0.2.0",
+    "money": "^0.2.0",
+    "moment": "^2.22.2",
+    "sqlite3": "^4.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arkaxii",
+  "license": "ISC"
+}
