@@ -7,7 +7,7 @@ client.on("message", message => {
  
            const moment = require('moment');
 
-          var prefix = '?';
+          var prefix = '<<';
           if(message.content.startsWith(prefix + "compt")){
  
             money.fetchBal(message.author.id).then((i) => {  
@@ -15,7 +15,7 @@ client.on("message", message => {
             })
  
         }
-        var prefix = '?';      
+        var prefix = '<<';      
         if(message.content.startsWith(prefix + "payadm")){
  
             money.updateBal(message.author.id, 500 ).then((i) => {  
@@ -23,7 +23,7 @@ client.on("message", message => {
             })
         }
         /*
-       var prefix = '?';   
+       var prefix = '<<';   
         if(message.content.startsWith(prefix + "payfine1")){
             if( `{i.money} `< `499 `) {
             message.channel.send("not enough");
@@ -35,7 +35,7 @@ client.on("message", message => {
                 }
                 }
                 */
-        var prefix = '?';
+        var prefix = '<<';
         if(message.content.startsWith(prefix + "daily")){
                
         
@@ -65,12 +65,12 @@ client.on("message", message => {
 
 
 
-var prefix = '?';
+var prefix = '<<';
     if(message.content.startsWith(prefix + "ping")){
     message.channel.send("Chuut tu a rien dit");
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "help")){
 
@@ -111,37 +111,37 @@ if(message.content.startsWith(prefix + "help")){
 
 };   
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "wtf")){
     message.channel.send("https://i.pinimg.com/originals/87/1f/3a/871f3afd6d0b5fdc14ecae612dd57bd1.jpg")
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "autistic")){
     message.channel.send("https://i.imgur.com/3D0XEV5.png")
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "ty")){
     message.channel.send("https://memegenerator.net/img/instances/48502183/thanks-bro.jpg")
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "exactly")){
     message.channel.send("https://i.imgur.com/B4oPi2u.jpg")
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "pcmr")){
     message.channel.send("https://ctl.s6img.com/society6/img/oGIy9Ox-_WKYk_952j5pyZAyDcA/w_700/duvet-covers/swatch/~artwork,fw_6000,fh_6000,iw_6000,ih_6000/s6-0028/a/13776406_8169003/~~/glorious-pc-gaming-master-race-feels-good-man-duvet-covers.jpg?wait=0&attempt=0")
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 var randnum = 0; 
 
@@ -167,7 +167,7 @@ if(message.content.startsWith(prefix + "cat")){
     message.channel.send(cat_embed);
 };
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "secret")){
     message.channel.send("Ajout prochain: jeux de cart et collection / peut etre une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) au cas ou de raid ")
@@ -179,7 +179,7 @@ function random(min, max){
     randnum = Math.floor(Math.random() * (max - min +1) +min);
 }
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "face")){
     random();
@@ -200,7 +200,7 @@ function random(min, max){
     randnum = Math.floor(Math.random() * (max - min +1) +min);
 }
 
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "pile")){
     random();
@@ -221,7 +221,7 @@ if(message.content.startsWith(prefix + "pile")){
         randnum = Math.floor(Math.random() * (max - min +1) +min);
     }
     
-    var prefix = '?';
+    var prefix = '<<';
     
     if(message.content.startsWith(prefix + "lancer20")){
         random();
@@ -294,7 +294,7 @@ function random(min, max){
         randnum = Math.floor(Math.random() * (max - min +1) +min);
         }
         
-        var prefix = '?';
+        var prefix = '<<';
         
         if(message.content.startsWith(prefix + "lancer12")){
             random();
@@ -342,7 +342,7 @@ function random(min, max){
         randnum = Math.floor(Math.random() * (max - min +1) +min);
         }
                     
-    var prefix = '?';
+    var prefix = '<<';
                     
         if(message.content.startsWith(prefix + "lancer6")){
             random();
@@ -428,7 +428,7 @@ function random(min, max){
                     max = Math.floor(22);
                     randnum = Math.floor(Math.random() * (max - min +1) +min);
                     }      
- var prefix = '?';
+ var prefix = '<<';
 
 if(message.content.startsWith(prefix + "refjeux")){
     random();
@@ -586,7 +586,7 @@ if(message.content.startsWith(prefix + "refjeux")){
                     max = Math.floor(21);
                     randnum = Math.floor(Math.random() * (max - min +1) +min);
                     }      
- var prefix = '?';
+ var prefix = '<<';
 
 if(message.content.startsWith(prefix + "refanime")){
     random();
