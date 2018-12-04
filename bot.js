@@ -170,7 +170,7 @@ if(message.content.startsWith(prefix + "cat")){
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "secret")){
-    message.channel.send("Ajout prochain: jeux de cart et collection / peut etre une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) au cas ou de raid ")
+    message.channel.send("Ajout prochain: correction de bug / ajout de jeux pour gagner des $ / jeux de cart et collection / accessoirement une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) au cas ou de raid ")
 }
 {
 function random(min, max){
