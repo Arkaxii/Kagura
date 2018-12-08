@@ -682,7 +682,7 @@ if(message.content.startsWith(prefix + "refanime")){
                                     max = Math.floor(3);
                                     randnum = Math.floor(Math.random() * (max - min +1) +min);
                                     }      
-                 var prefix = '?';
+                 var prefix = '<<';
                 
                 if(message.content.startsWith(prefix + "papier")){
                     random();
@@ -702,7 +702,7 @@ if(message.content.startsWith(prefix + "refanime")){
                             max = Math.floor(3);
                             randnum = Math.floor(Math.random() * (max - min +1) +min);
                             }
-         var prefix = '?';
+         var prefix = '<<';
         
         if(message.content.startsWith(prefix + "Pierre")){
             random();
@@ -721,7 +721,7 @@ if(message.content.startsWith(prefix + "refanime")){
                 max = Math.floor(3);
                 randnum = Math.floor(Math.random() * (max - min +1) +min);
                 }
-var prefix = '?';
+var prefix = '<<';
 
 if(message.content.startsWith(prefix + "Ciseaux")){
 random();
