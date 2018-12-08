@@ -90,7 +90,7 @@ if(message.content.startsWith(prefix + "help")){
     var jeux_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('jeux:')
-    .setDescription('[`refjeux / refanime`] ')
+    .setDescription('[`refjeux / refanime / Pierre / Papier / Ciseaux`] ')
     .setFooter('jeux')
     message.channel.send(jeux_embed);
 
