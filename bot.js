@@ -90,7 +90,7 @@ if(message.content.startsWith(prefix + "help")){
     var jeux_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('jeux:')
-    .setDescription('[`refjeux / refanime / Pierre / Papier / Ciseaux`] ')
+    .setDescription('[`refjeux / refanime / pierre / papier / ciseaux`] ')
     .setFooter('jeux')
     message.channel.send(jeux_embed);
 
@@ -704,7 +704,7 @@ if(message.content.startsWith(prefix + "refanime")){
                             }
          var prefix = '<<';
         
-        if(message.content.startsWith(prefix + "Pierre")){
+        if(message.content.startsWith(prefix + "pierre")){
             random();
             if (randnum == 1){
                 message.reply("Pierre ! Ex aequo retente encore ! ")
@@ -723,7 +723,7 @@ if(message.content.startsWith(prefix + "refanime")){
                 }
 var prefix = '<<';
 
-if(message.content.startsWith(prefix + "Ciseaux")){
+if(message.content.startsWith(prefix + "ciseaux")){
 random();
 if (randnum == 1){
     message.reply("Ciseaux ! Ex aequo retente encore ! ")
