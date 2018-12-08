@@ -27,7 +27,6 @@ client.on("message", message => {
         if(message.content.startsWith(prefix + "payfine1")){
             if( `{i.money} `< `499 `) {
             message.channel.send("not enough");
-
             }else{
                     money.updateBal(message.author.id, -500).then((i) => { 
                         message.channel.send(`**You paid your fine of $500!**\n**New Balance:** ${i.money}`)
@@ -170,7 +169,7 @@ if(message.content.startsWith(prefix + "cat")){
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "secret")){
-    message.channel.send("Ajout prochain: correction de bug / ajout de jeux pour gagner des $ / jeux de cart et collection / accessoirement une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) au cas ou de raid ")
+    message.channel.send("Ajout prochain: jeux de cart et collection / peut etre une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) au cas ou de raid ")
 }
 {
 function random(min, max){
@@ -677,8 +676,65 @@ if(message.content.startsWith(prefix + "refanime")){
 
                                     }
                                 };
+                                {
+                                function random(min, max){
+                                    min = Math.ceil(1);
+                                    max = Math.floor(3);
+                                    randnum = Math.floor(Math.random() * (max - min +1) +min);
+                                    }      
+                 var prefix = '?';
+                
+                if(message.content.startsWith(prefix + "papier")){
+                    random();
+                    if (randnum == 1){
+                        message.reply("Papier ! Ex aequo retente encore ! ")
+                    }
+                    if (randnum == 2){
+                        message.reply("Pierre ! *Balance la pierre dans ta figure* Tu a gagnier ... ")
+                    }
+                    if (randnum == 3){
+                        message.reply("Ciseaux ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
+                    } }
+                };
+                {
+                        function random(min, max){
+                            min = Math.ceil(1);
+                            max = Math.floor(3);
+                            randnum = Math.floor(Math.random() * (max - min +1) +min);
+                            }
+         var prefix = '?';
+        
+        if(message.content.startsWith(prefix + "Pierre")){
+            random();
+            if (randnum == 1){
+                message.reply("Pierre ! Ex aequo retente encore ! ")
+            }
+            if (randnum == 2){
+                message.reply("Ciseaux ! Tu a gagnier ...*Prend les ciseaux et ...Déconexion* ")
+            }
+            if (randnum == 3){
+                message.reply("papier ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
+            } } };
+            {
+            function random(min, max){
+                min = Math.ceil(1);
+                max = Math.floor(3);
+                randnum = Math.floor(Math.random() * (max - min +1) +min);
+                }
+var prefix = '?';
 
-
+if(message.content.startsWith(prefix + "Ciseaux")){
+random();
+if (randnum == 1){
+    message.reply("Ciseaux ! Ex aequo retente encore ! ")
+}
+if (randnum == 2){
+    message.reply("Papier ! Tu a gagnier ...*Mange le papier* ")
+}
+if (randnum == 3){
+    message.reply("Pierre ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
+} }
+            };
 
 
         
