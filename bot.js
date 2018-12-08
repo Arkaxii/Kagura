@@ -422,9 +422,12 @@ function random(min, max){
             function Super_Mario_64(){
                 message.reply("Super Mario 64")
             }
+         function Destiny_2(){
+                message.reply("Et c'etai Destiny 2")
+            }
                  function random(min, max){
                     min = Math.ceil(1);
-                    max = Math.floor(22);
+                    max = Math.floor(23);
                     randnum = Math.floor(Math.random() * (max - min +1) +min);
                     }      
  var prefix = '<<';
@@ -518,6 +521,10 @@ if(message.content.startsWith(prefix + "refjeux")){
                         if (randnum == 22){
                             message.reply(" « Ceci n'est pas ton tombeau. Mais tu es le bienvenu » (vous avez 30s)")
                             setTimeout( Halo_2 , 30000);
+                                       }
+                        if (randnum == 23){
+                            message.reply(" « Tue un Déchu, j'en ferai un Infâme. Tue un Infâme, j'en dressera dix de plus » (vous avez 30s)")
+                            setTimeout( Destiny_2 , 30000);
                                        }
 
     };
