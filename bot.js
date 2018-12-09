@@ -758,11 +758,12 @@ if (randnum == 3){
  })
 } }
             };
-
+{
 var prefix = '<<';
                 
                 if(message.content.startsWith(prefix + "reset")){
         money.updateBal(message.author.id, 0 )
                 message.reply(`**Tu as reset ton compt**`);
-};
+                 }}
+}); 
 client.login(token);
