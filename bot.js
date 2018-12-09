@@ -709,7 +709,7 @@ if(message.content.startsWith(prefix + "refanime")){
                             max = Math.floor(3);
                             randnum = Math.floor(Math.random() * (max - min +1) +min);
                             }
-          var prefix = '<<';
+           var prefix = '<<';
         
         if(message.content.startsWith(prefix + "pierre")){
             random();
@@ -717,15 +717,16 @@ if(message.content.startsWith(prefix + "refanime")){
                 message.reply("Pierre ! Ex aequo retente encore ! ")
             }
             if (randnum == 2){
-                message.channel.send("Ciseaux ! Tu a gagnier ...*Prend les ciseaux et ...Déconexion* ");
+                message.reply("Ciseaux ! Tu a gagnier ...*Prend les ciseaux et ...Déconexion* ");
                 money.updateBal(message.author.id, 50 )
-                    message.channel.send(`**Tu as reçue $50!**\n**Tu as:** ${i.money}`);
+                message.reply(`**Tu as reçue $50!**\n**Tu as:** ${i.money}`);
                 }
                 {
             if (randnum == 3){
                 message.reply("papier ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
             } };
-        } } {
+        } } 
+ {
             function random(min, max){
                 min = Math.ceil(1);
                 max = Math.floor(3);
