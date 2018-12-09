@@ -698,6 +698,8 @@ if(message.content.startsWith(prefix + "refanime")){
                     }
                     if (randnum == 2){
                         message.reply("Pierre ! *Balance la pierre dans ta figure* Tu a gagnier ... ")
+                     money.updateBal(message.author.id, 50 )
+                message.reply(`**Tu as reçue $50!**`);
                     }
                     if (randnum == 3){
                         message.reply("Ciseaux ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
@@ -741,6 +743,8 @@ if (randnum == 1){
 }
 if (randnum == 2){
     message.reply("Papier ! Tu a gagnier ...*Mange le papier* ")
+ money.updateBal(message.author.id, 50 )
+                message.reply(`**Tu as reçue $50!**`);
 }
 if (randnum == 3){
     message.reply("Pierre ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
