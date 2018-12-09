@@ -728,8 +728,9 @@ if(message.content.startsWith(prefix + "refanime")){
                 {
             if (randnum == 3){
                 message.reply("papier ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
-             money.updateBal(message.author.id, -10 )
-                message.reply(`**Tu as perdu $10!**`);
+             money.updateBal(message.author.id, -10 ).then((i) => {  
+                message.reply(`**Tu as perdu $10!**\n**New Balance:** ${i.money}`);
+ })
             } };
         } } 
  {
@@ -752,8 +753,9 @@ if (randnum == 2){
 }
 if (randnum == 3){
     message.reply("Pierre ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
- money.updateBal(message.author.id, -10 )
-                message.reply(`**Tu as perdu $10!**`);
+ money.updateBal(message.author.id, -10 ).then((i) => {  
+                message.reply(`**Tu as perdu $10!**\n**New Balance:** ${i.money}`);
+ })
 } }
             };
 
