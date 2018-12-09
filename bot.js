@@ -719,7 +719,7 @@ if(message.content.startsWith(prefix + "refanime")){
             if (randnum == 2){
                 message.reply("Ciseaux ! Tu a gagnier ...*Prend les ciseaux et ...Déconexion* ");
                 money.updateBal(message.author.id, 50 )
-                message.reply(`**Tu as reçue $50!**\n**Tu as:** ${i.money}`);
+                message.reply(`**Tu as reçue $50!**`);
                 }
                 {
             if (randnum == 3){
