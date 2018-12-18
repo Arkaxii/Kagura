@@ -14,14 +14,14 @@ client.on("message", message => {
                 message.channel.send(`**Tu as:** ${i.money}`);
             })
  
-        }
+        } /*
         var prefix = '<<';      
         if(message.content.startsWith(prefix + "payadm")){
  
             money.updateBal(message.author.id, 500 ).then((i) => {  
                 message.channel.send(`**You got $500!**\n**New Balance:** ${i.money}`);
             })
-        }
+        }  */
         /*
        var prefix = '<<';   
         if(message.content.startsWith(prefix + "payfine1")){
