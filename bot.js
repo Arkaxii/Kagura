@@ -777,13 +777,14 @@ var prefix = '<<';
 
       message.channel.send(Avatar_embed)
     } */
+ let args = message.content.slice(prefix.length).trim().split('');
  let command = args.shift().toLowerCase();
  if ( command === '<<avatar') {
  let user = message.mention.users.first() || message.author;
  let embed = new Discord.RichEmbed()
   .setAuthor(`${user.username}`)
   .setImage(user.displayAvatarURL)
-  .setColor(`RANDOM`)
+  .setColor('RANDOM')
  message.channel.send(embed)
  }
 }); 
