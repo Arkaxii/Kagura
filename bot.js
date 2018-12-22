@@ -768,7 +768,7 @@ var prefix = '<<';
 
  var prefix = '<<';
     if(message.content.startsWith(prefix + "avatar")){   
-     let user = message.mention.users.first() || message.author;
+     let user = message.mention.member.first() || message.author;
 
      let embed = new Discord.RichEmbed()
      .setAuthor(`${user.username}`)
