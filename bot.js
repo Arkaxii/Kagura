@@ -777,8 +777,7 @@ var prefix = '<<';
 
       message.channel.send(Avatar_embed)
     } */
- let args = message.content.slice(prefix.length).trim().split('');
- if (args.shift() === prefix + 'avatar') {
+if (message.content === '<<avatar') {
  let user = message.mention.users.first() || message.author;
  let embed = new Discord.RichEmbed()
   .setAuthor(`${user.username}`)
