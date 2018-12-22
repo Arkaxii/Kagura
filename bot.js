@@ -766,7 +766,7 @@ var prefix = '<<';
                 message.reply(`**Tu as reset ton compt**`);
                  }}
 
- if (message.content === '<<avatar') {
+ /* if (message.content === '<<avatar') {
       // Remove the "var" line; it isn't necessary.
       let Avatar_embed = new Discord.RichEmbed()
       // Replace "message.member" with "message.author"
@@ -776,7 +776,14 @@ var prefix = '<<';
     .setFooter('Avatar')
 
       message.channel.send(Avatar_embed)
-    }
-
+    } */
+ if (message.content === '<<avatar') {
+ let user = message.mention.users.first()
+ let embedav = new Discord.RichEmbed()
+  .setAuthor(`${user.username}`)
+  .setImage(user.displayAvatarURL)
+  .setColor(`RANDOM`)
+ message.channel.send(embedav)
+ }
 }); 
 client.login(token);
