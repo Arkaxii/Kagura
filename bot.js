@@ -766,26 +766,25 @@ var prefix = '<<';
                 message.reply(`**Tu as reset ton compt**`);
                  }}
 
- /* if (message.content === '<<avatar') {
-      // Remove the "var" line; it isn't necessary.
+ if (message.content === '<<avatar') {
       let Avatar_embed = new Discord.RichEmbed()
-      // Replace "message.member" with "message.author"
     .setColor('#275BF0')
     .setTitle('Avatar')
     .setImage(message.author.avatarURL)
     .setFooter('Avatar')
 
       message.channel.send(Avatar_embed)
-    } */
+    } 
+ /*
 let args = message.content.slice(prefix.length).trim().split('');
 let command = args.shift().toLowerCase();
 if ( command === prefix + 'avatar') {
- let user = message.mention || message.author;
- let embed = new Discord.RichEmbed()
-  .setAuthor(`${user.username}`)
-  .setImage(user.displayAvatarURL)
-  .setColor('RANDOM')
- message.channel.send(embed)
- }
+let user = message.mention.users.first() || message.author;
+let embed = new Discord.RichEmbed()
+ .setAuthor(`${user.username}`)
+ .setImage(user.displayAvatarURL)
+ .setColor('RANDOM')
+message.channel.send(embed)
+} */
 }); 
 client.login(token);
