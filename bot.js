@@ -766,8 +766,9 @@ var prefix = '<<';
                 message.reply(`**Tu as reset ton compt**`);
                  }}
 
-if (command === '<<avatar'){ 
- let user = message.mention.user.first() || message.author;
+ var prefix = '<<';
+    if(message.content.startsWith(prefix + "avatar")){   
+     let user = message.mention.user.first() || message.author;
 
      let embed = new Discord.RichEmbed()
      .setAuthor(`${user.username}`)
