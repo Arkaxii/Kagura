@@ -766,16 +766,17 @@ var prefix = '<<';
                 message.reply(`**Tu as reset ton compt**`);
                  }}
 
- var prefix = '<<';
-    if(message.content.startsWith(prefix + "avatar")){   
-     let user = message.mention.first() || message.author;
+ if (message.content === '<<avatar') {
+      // Remove the "var" line; it isn't necessary.
+      let Avatar_embed = new Discord.RichEmbed()
+      // Replace "message.member" with "message.author"
+    .setColor('#275BF0')
+    .setTitle('Avatar')
+    .setImage(message.author.avatarURL)
+    .setFooter('Avatar')
 
-     let embed = new Discord.RichEmbed()
-     .setAuthor(`${user.username}`)
-     .setImage(user.displayAvatarURL)
-     message.channel.send(embed)
-    
-       }
+      message.channel.send(Avatar_embed)
+    }
 
 }); 
 client.login(token);
