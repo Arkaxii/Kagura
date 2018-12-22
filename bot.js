@@ -104,7 +104,7 @@ if(message.content.startsWith(prefix + "help")){
     var autre_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('autre:')
-    .setDescription('[`secret / help`] ')
+    .setDescription('[`secret / help / avatar`] ')
     .setFooter('autre')
     message.channel.send(autre_embed);
 
@@ -765,7 +765,16 @@ var prefix = '<<';
         money.updateBal(message.author.id, 0 )
                 message.reply(`**Tu as reset ton compt**`);
                  }}
- 
+ {
+var prefix = '<<';
+                
+if(message.content.startsWith(prefix +"avatar")) {
+    var member= message.mentions.members.first();
+    let embed = new Discord.RichEmbed()
+  .setImage(message.member.avatarURL)
+  .setColor('#275BF0')
+    message.channel.send(embed)
+  } }
 
 }); 
 client.login(token);
