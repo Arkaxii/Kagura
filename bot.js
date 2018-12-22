@@ -769,8 +769,8 @@ var prefix = '<<';
 var prefix = '<<';
                 
 if(message.content.startsWith(prefix +"avatar")) {
-    var member= message.mentions.members.first();
-    let embed = new Discord.RichEmbed()
+ var member = message.mentions.users.first ();
+ let embed = new Discord.RichEmbed()
   .setImage(message.member.avatarURL)
   .setColor('#275BF0')
     message.channel.send(embed)
