@@ -767,7 +767,7 @@ var prefix = '<<';
                  }}
  
 var prefix = '<<';
-if (message.isMentioned(bot.user)){
+if (message.isMentioned){
     message .reply("https://imgur.com/1h2YowB.gif")
 }
 }); 
