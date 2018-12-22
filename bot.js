@@ -765,16 +765,17 @@ var prefix = '<<';
         money.updateBal(message.author.id, 0 )
                 message.reply(`**Tu as reset ton compt**`);
                  }}
- {
-var prefix = '<<';
-                
-if(message.content.startsWith(prefix +"avatar")) {
- var member = message.mentions.users.first ();
- let embed = new Discord.RichEmbed()
-  .setImage(message.member.avatarURL)
-  .setColor('#275BF0')
-    message.channel.send(embed)
-  } }
+{
+    var prefix = '<<';
+    if(message.content.startsWith(prefix + "avatar")){   
+     let user = message.mention.users.first() || message.author;
+
+     let embed = new Discord.RichEmbed()
+     .setAuthor(`${user.username}`)
+     .setImage(user.displayAvatarURL)
+     message.channel.send(embed)
+    
+       }}
 
 }); 
 client.login(token);
