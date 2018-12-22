@@ -765,5 +765,10 @@ var prefix = '<<';
         money.updateBal(message.author.id, 0 )
                 message.reply(`**Tu as reset ton compt**`);
                  }}
+ 
+var prefix = '<<';
+if (message.isMentioned(bot.user)){
+    message .reply("https://imgur.com/1h2YowB.gif")
+}
 }); 
 client.login(token);
