@@ -766,9 +766,6 @@ var prefix = '<<';
                 message.reply(`**Tu as reset ton compt**`);
                  }}
  
-var prefix = '<<';
-if (message.isMentioned){
-    message .reply("https://imgur.com/1h2YowB.gif")
-}
+
 }); 
 client.login(token);
