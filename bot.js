@@ -765,7 +765,7 @@ var prefix = '<<';
         money.updateBal(message.author.id, 0 )
                 message.reply(`**Tu as reset ton compt**`);
                  }}
-{
+
 if (command === '<<avatar'){ 
  let user = message.mention.users.first() || message.author;
 
@@ -774,7 +774,7 @@ if (command === '<<avatar'){
      .setImage(user.displayAvatarURL)
      message.channel.send(embed)
     
-       }}
+       }
 
 }); 
 client.login(token);
