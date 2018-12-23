@@ -763,9 +763,9 @@ if (randnum == 3){
 if (message.content === '<<avatar') {
     let Avatar_embed = new Discord.RichEmbed()
   .setColor('#275BF0')
-  .setTitle( message.author + ` Avatar`)
+  message.reply.setTitle(` Avatar`)
   .setImage(message.author.avatarURL)
-  .setFooter( message.reply + ` Avatar`)
+  .setFooter( message.author + ` Avatar`)
 
     message.channel.send(Avatar_embed)
 }
