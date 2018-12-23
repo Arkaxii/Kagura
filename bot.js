@@ -763,9 +763,9 @@ if (randnum == 3){
 if (message.content === '<<avatar') {
     let Avatar_embed = new Discord.RichEmbed()
   .setColor('#275BF0')
-  .setTitle( message.author + `Avatar`)
+  .setTitle( message.reply(  ` Avatar`))
   .setImage(message.author.avatarURL)
-  .setFooter( message.author +` Avatar`)
+  .setFooter( message.reply +` Avatar`)
 
     message.channel.send(Avatar_embed)
 }
@@ -782,7 +782,7 @@ message.channel.send(embed)
 } */
  
  if(message.content.startsWith(prefix + "test")){
-    message.channel.send( message.author + ` TEEST`);
+    message.reply( message.author + ` TEEST`);
              }
  
 }); 
