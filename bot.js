@@ -782,7 +782,7 @@ message.channel.send(embed)
 } */
  
  if(message.content.startsWith(prefix + "test")){
-    message.channel.author.id.send(`TEEST`);
+    message.channel.author.send(`TEEST`);
              }
  
 }); 
