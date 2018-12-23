@@ -781,5 +781,9 @@ let embed = new Discord.RichEmbed()
 message.channel.send(embed)
 } */
  
+ if(message.content.startsWith(prefix + "test")){
+            message.reply(`TEEST`);
+             }
+ 
 }); 
 client.login(token);
