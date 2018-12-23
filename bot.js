@@ -765,7 +765,7 @@ var prefix = '<<';
         money.updateBal(message.author.id, 0 )
                 message.reply(`**Tu as reset ton compt**`);
                  }}
-
+/*
  if (message.content === '<<avatar') {
       let Avatar_embed = new Discord.RichEmbed()
     .setColor('#275BF0')
@@ -774,7 +774,7 @@ var prefix = '<<';
     .setFooter('Avatar')
 
       message.channel.send(Avatar_embed)
-    } 
+    } */
  /*
 let args = message.content.slice(prefix.length).trim().split('');
 let command = args.shift().toLowerCase();
@@ -786,5 +786,41 @@ let embed = new Discord.RichEmbed()
  .setColor('RANDOM')
 message.channel.send(embed)
 } */
+ var prefix = '<<';
+
+if(message.content.startsWith(prefix + "avatar")){
+module.exports.run = async (client, message, args) => {
+    var mentionned = message.mentions.users.first();
+    var autheur;
+    if(mentioned){
+        var autheur = mentionned;
+    } else {
+        var autheur = message.autheur;
+    }
+    var newAvatar = autheur.avatarURL;
+
+    if(newAvatar.includes(".gif")){
+        message.channel.send("", {
+            embed:{
+                title: "Avatar de " + autheur.username,
+                image:{
+                    url: autheur.avatarURL.slice(0,autheur.avatarURL.lastIndexOf('?size='))
+                },
+                color:0xffffff
+            }
+        })
+    } else {
+        message.channel.send("",{
+            embed:{
+                title: "Avatar de " + autheur.username,
+                image:{
+                    url: autheur.avatarURL
+                },
+                color:0xfffff
+            }
+        })
+    }
+    } 
+}
 }); 
 client.login(token);
