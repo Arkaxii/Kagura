@@ -788,7 +788,7 @@ var prefix = `<<`;
 if (message.author.bot) return;
 if (!message.content.startsWith(prefix)) return;
 if (message.content.startsWith(prefix + 'ping')) {
-    msg.channel.send({embed: {
+    message.channel.send({embed: {
         color: 0x2ed32e,
         fields: [{
             name: "Pong",
