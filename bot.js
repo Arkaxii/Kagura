@@ -104,7 +104,7 @@ if(message.content.startsWith(prefix + "help")){
     var autre_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('autre:')
-    .setDescription('[`secret / help / avatar`] ')
+    .setDescription('[`secret / help / avatar / ms`] ')
     .setFooter('autre')
     message.channel.send(autre_embed);
 
@@ -784,6 +784,10 @@ message.channel.send(embed)
  if(message.content.startsWith(prefix + "test")){
     message.reply( message.author + ` TEEST`);
              }
+ if(message.content.startsWith(prefix + "ms")){
+    const m = await message.channel.send("Ping?");
+    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+  }
  
 }); 
 client.login(token);
