@@ -796,7 +796,7 @@ if (message.content.startsWith(prefix + 'ping')) {
 })
 }
  var prefix = `<<`;
- if(message.content.startsWith("ms")) {
+ if(message.content.startsWith(prefix + "ms")) {
             message.reply(new Date().getTime() - message.createdTimestamp + ` ms`); 
  }
  
