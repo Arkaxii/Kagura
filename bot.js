@@ -798,7 +798,7 @@ if (message.content.startsWith(prefix + 'ping')) {
  var prefix = `<<`;
  if(message.content.startsWith("ms")) {
             message.channel.send(new Date().getTime() - message.createdTimestamp + " ms"); 
- 
+ }
  
 });
 client.login(token);
