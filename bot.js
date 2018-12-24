@@ -780,7 +780,7 @@ let embed = new Discord.RichEmbed()
  .setColor('RANDOM')
 message.channel.send(embed)
 } */
- 
+ /*
  if(message.content.startsWith(prefix + "test")){
     message.reply( message.author + ` TEEST`);
              }
@@ -788,6 +788,22 @@ message.channel.send(embed)
     const m = message.channel.send("Ping?");
     message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
   }
+ */
+ 
+ client.on('message', message => {
+if (message.author.bot) return;
+if (!message.content.startsWith(prefix)) return;
+if (message.content.startsWith(prefix + 'ping')) {
+    msg.channel.send({embed: {
+        color: 0x2ed32e,
+        fields: [{
+            name: "Pong",
+            value: "My Ping: " + Math.round(client.ping) + ' ms'
+      }
+     ],
+}
+})
+}})
  
 }); 
 client.login(token);
