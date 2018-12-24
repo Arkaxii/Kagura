@@ -782,7 +782,8 @@ message.channel.send(embed)
     message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
   }
  */
- var prefix = <<;
+var prefix = `<<`;
+
  client.on('message', message => {
 if (message.author.bot) return;
 if (!message.content.startsWith(prefix)) return;
@@ -797,6 +798,5 @@ if (message.content.startsWith(prefix + 'ping')) {
 }
 })
 }})
- 
 }); 
 client.login(token);
