@@ -781,12 +781,9 @@ message.channel.send(embed)
     const m = message.channel.send("Ping?");
     message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
   }
- */ /*
+ */ 
 var prefix = `<<`;
 
- client.on('message', message => {
-if (message.author.bot) return;
-if (!message.content.startsWith(prefix)) return;
 if (message.content.startsWith(prefix + 'ping')) {
     message.channel.send({embed: {
         color: 0x2ed32e,
@@ -797,6 +794,6 @@ if (message.content.startsWith(prefix + 'ping')) {
      ],
 }
 })
-}})
-}); */
+}
+});
 client.login(token);
