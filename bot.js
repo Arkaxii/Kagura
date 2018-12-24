@@ -162,7 +162,7 @@ if(message.content.startsWith(prefix + "cat")){
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "secret")){
-    message.channel.send("Ajout prochain: jeux de cart et collection / peut etre une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) au cas ou de raid ")
+    message.channel.send("Ajout prochain: Commande de base / jeux de cart et collection / peut etre une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) en cas de raid ")
 }
 {
 function random(min, max){
@@ -773,28 +773,11 @@ let embed = new Discord.RichEmbed()
  .setColor('RANDOM')
 message.channel.send(embed)
 } */
- /*
+ 
  if(message.content.startsWith(prefix + "test")){
     message.reply( message.author + ` TEEST`);
              }
- if(message.content.startsWith(prefix + "ms")){
-    const m = message.channel.send("Ping?");
-    message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
-  }
- */ 
-var prefix = `<<`;
 
-if (message.content.startsWith(prefix + 'ping')) {
-    message.channel.send({embed: {
-        color: 0x2ed32e,
-        fields: [{
-            name: "Pong",
-            value: "My Ping: " + Math.round(client.ping) + ' ms'
-      }
-     ],
-}
-})
-}
  var prefix = `<<`;
  if(message.content.startsWith(prefix + "ms")) {
             message.reply(new Date().getTime() - message.createdTimestamp + ` ms`); 
