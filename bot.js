@@ -786,7 +786,7 @@ message.channel.send(embed)
              }
  if(message.content.startsWith(prefix + "ms")){
     const m = message.content.startsWith(prefix + "ms");
-    message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
+    message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(author.ping)}ms`);
   }
  
 }); 
