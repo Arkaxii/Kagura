@@ -785,7 +785,7 @@ message.channel.send(embed)
     message.reply( message.author + ` TEEST`);
              }
  if(message.content.startsWith(prefix + "ms")){
-    const m =  if(message.content.startsWith(prefix + "ms"))
+    const m = message.channel.send("Ping?");
     message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
   }
  
