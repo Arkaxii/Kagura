@@ -62,13 +62,6 @@ client.on("message", message => {
                 }
             }
 
-
-
-var prefix = '<<';
-    if(message.content.startsWith(prefix + "ping")){
-    message.channel.send("Chuut tu a rien dit");
-};
-
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "help")){
@@ -789,7 +782,7 @@ message.channel.send(embed)
     message.reply(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
   }
  */
- 
+ var prefix = <<;
  client.on('message', message => {
 if (message.author.bot) return;
 if (!message.content.startsWith(prefix)) return;
