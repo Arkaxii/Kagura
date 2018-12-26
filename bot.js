@@ -6,7 +6,7 @@ const config = require("./config.json");
 const size    = config.colors;
 const rainbow = new Array(size);
 
-const prefix = '?'
+const prefix = '<<'
 //information about the bot
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
