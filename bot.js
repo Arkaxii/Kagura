@@ -833,32 +833,25 @@ if (randnum == 3){
  })
 } }
             };
-
- 
-if (message.content === '<<avatar') {
-    let Avatar_embed = new Discord.RichEmbed()
-  .setColor('#275BF0')
-  .setTitle( message.author + ` Avatar`)
-  .setImage(message.author.avatarURL)
-  .setFooter( message.author + ` Avatar`)
-
-    message.channel.send(Avatar_embed)
-}
- /*
-let args = message.content.slice(prefix.length).trim().split('');
-let command = args.shift().toLowerCase();
-if ( command === prefix + 'avatar') {
-let user = message.mention.users.first() || message.author;
-let embed = new Discord.RichEmbed()
- .setAuthor(`${user.username}`)
- .setImage(user.displayAvatarURL)
- .setColor('RANDOM')
-message.channel.send(embed)
-} */
  
  if(message.content.startsWith(prefix + "test")){
     message.reply( message.author + ` TEEST`);
              }
  
+               if(message.content.startsWith(prefix + "avatar")){
+
+             let msg = await message.channel.send("Generating avatar...");
+             let target = message.mentions.users.first() || message.author;
+           
+             await message.channel.send({files: [
+               {
+                 attachment: target.displayAvatarURL,
+                 name: "avatar.png"
+               }
+             ]});
+           
+             msg.delete();
+           }  
+  
 });
 client.login(token);
