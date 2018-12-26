@@ -86,11 +86,7 @@ client.on("message", async message => {
     const fetched = await message.channel.fetchMessages({limit: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Impossible de purger car: ${error}`));
-  }
- });
-
-client.on("message", message => {
- 
+  } 
            const moment = require('moment');
 
           var prefix = '<<';
