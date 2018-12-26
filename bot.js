@@ -178,8 +178,8 @@ if(message.content.startsWith(prefix + "help")){
 
     var autre_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
-    .setTitle('autre:')
-    .setDescription('[`secret / help / avatar / ms`] ')
+    .setTitle('utilitaire:')
+    .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge`] ')
     .setFooter('autre')
     message.channel.send(autre_embed);
 
