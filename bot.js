@@ -3,6 +3,102 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const money = require('discord-money'); 
 const config = require("./config.json");
+const size    = config.colors;
+const rainbow = new Array(size);
+
+const prefix = '?'
+//information about the bot
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[═════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations About Rainbow bot:')
+  console.log('')
+  console.log(`Servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`Channels! [ " ${client.channels.size} " ]`);
+  console.log(`Arch! [ " ${process.arch} " ]`);
+  console.log(`Platform! [ " ${process.platform} " ]`);
+  console.log(`Node Version! [ " ${process.version}" ]`);
+  console.log(`Prefix! [ " ${prefix}" ]`);
+  console.log(`Language! [ " NodeJS " ]`);
+  console.log(`Ram Usage! [ " ${(process.memoryUsage().rss / 1048576).toFixed()}MB " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(`${client.user.username} Is Online`)
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log('Created By: Revenge')
+  console.log('╚[════════════]╝')
+client.user.setActivity("r#help | By Revenge",{type: 'WATCHING'});
+console.log('Done The Watching Setup Completed')
+	
+});
+client.on('message', message => {
+if(!message.channel.guild) return;
+  if(message.content.startsWith(prefix + 'set')) {
+	  let role = message.guild.roles.find('name', 'Rainbow bot.')
+    if(role) return message.channel.send(`This Step Already Completed !`)
+  if(!role){
+    rainbow =  message.guild.createRole({
+   name: "Rainbow bot.",
+   color: "#000000",
+   permissions:[]
+})
+
+}
+message.channel.send('Done The Rainbow Role Setup Has Been Completed')
+}})
+
+client.on('ready', () => {
+  setInterval(function(){
+      client.guilds.forEach(g => {
+                  var role = g.roles.find('name', 'Rainbow bot.');
+                  if (role) {
+                      role.edit({color : "RANDOM"});
+                  };
+      });
+  }, 1000);
+})
+
+ client.on("message", message => {
+  if (message.content === "?help") {
+      message.react('🌈')
+        let rainembed = new Discord.RichEmbed()
+        .setDescription(`**
+=====================🌈 RainbowBot. 🌈=====================
+?set 
+- Crée le role qui servira pour le rainbow
+?inv 
+-envoie un mp pour inviter le bot dans d'autre serveur
+SI LE RAINBOW NE FONCTIONNE PAS:
+Assurez-vous que le role rainbow soit le plus haut possible
+=====================🌈 RainbowBot. 🌈=====================
+**`)
+message.channel.send(rainembed);
+    }}) 
+   client.on('message', message => {
+	   if(message.content.startsWith(prefix + `inv`)) {
+		   if(!message.channel.guild) return;
+                 message.react('🌈')
+		   var embed = new Discord.RichEmbed()
+		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
+		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")
+		   .setTimestamp()
+		   .setFooter(`Requested By | ${message.author.username}`)
+		   .setColor("RANDOM")
+		   message.author.send({embed})
+	   }
+   });
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -179,7 +275,7 @@ if(message.content.startsWith(prefix + "help")){
     var autre_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('utilitaire:')
-    .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge`] ')
+    .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge / set / inv`] ')
     .setFooter('created by Arkaxii')
     message.channel.send(autre_embed);
 
