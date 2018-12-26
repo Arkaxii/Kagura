@@ -73,7 +73,7 @@ client.on('ready', () => {
       message.react('🌈')
         let rainembed = new Discord.RichEmbed()
         .setDescription(`**
-=====================🌈 RainbowBot. 🌈=====================
+=====================🌈 RainbowMode. 🌈=====================
 ?set 
 - Crée le role qui servira pour le rainbow
 ?inv 
@@ -81,7 +81,7 @@ client.on('ready', () => {
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
 Assurez-vous de ne pas avoir changer le nom du role
-=====================🌈 RainbowBot. 🌈=====================
+=====================🌈 RainbowMode. 🌈=====================
 **`)
 message.channel.send(rainembed);
     }}) 
