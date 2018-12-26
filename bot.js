@@ -840,7 +840,7 @@ if (randnum == 3){
  
                if(message.content.startsWith(prefix + "avatar")){
 
-             let msg = await message.channel.send("Generating avatar...");
+             let msg = await message.channel.send("Génération de l'avatar...");
              let target = message.mentions.users.first() || message.author;
            
              await message.channel.send({files: [
