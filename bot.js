@@ -60,7 +60,7 @@ client.on("message", async message => {
   
   if(command === "ban") {
     if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ou **Moderator** ");
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ");
     
     let member = message.mentions.members.first();
     if(!member)
