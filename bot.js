@@ -54,7 +54,7 @@ if(!message.channel.guild) return;
 })
 
 }
-message.channel.send('Done The Rainbow Role Setup Has Been Completed')
+message.channel.send('Le role Rainbow a été crée avec succès! Penser a le metre tout en haut de la liste de roles ! ')
 }})
 
 client.on('ready', () => {
