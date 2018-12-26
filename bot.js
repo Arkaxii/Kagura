@@ -3,8 +3,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const money = require('discord-money'); 
 const config = require("./config.json");
-const size    = config.colors;
-const rainbow = new Array(size);
 
 const prefix = '<<'
 //information about the bot
