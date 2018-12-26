@@ -45,7 +45,7 @@ client.on('message', message => {
 if(!message.channel.guild) return;
   if(message.content.startsWith(prefix + 'set')) {
 	  let role = message.guild.roles.find('name', 'Rainbow bot.')
-    if(role) return message.channel.send(`This Step Already Completed !`)
+    if(role) return message.channel.send(`Cette étape a deja été accomplis !`)
   if(!role){
     rainbow =  message.guild.createRole({
    name: "Rainbow bot.",
