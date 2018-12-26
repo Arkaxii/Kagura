@@ -152,35 +152,35 @@ if(message.content.startsWith(prefix + "help")){
     .setColor('#0000cc')
     .setTitle('image:')
     .setDescription('[`wtf / autistic / ty / exactly / pcmr / cat`] ')
-    .setFooter('image')
+    .setFooter('created by Arkaxii')
     message.channel.send(image_embed);
 
     var random_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('random:')
     .setDescription('[`pile / face / lancer6 / lancer12 / lancer20`] ')
-    .setFooter('random')
+    .setFooter('created by Arkaxii')
     message.channel.send(random_embed);
 
     var jeux_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('jeux:')
     .setDescription('[`refjeux / refanime / pierre / papier / ciseaux`] ')
-    .setFooter('jeux')
+    .setFooter('created by Arkaxii')
     message.channel.send(jeux_embed);
 
     var argent_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('argent:')
     .setDescription('[`daily / compt`] ')
-    .setFooter('argent')
+    .setFooter('created by Arkaxii')
     message.channel.send(argent_embed);
 
     var autre_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('utilitaire:')
     .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge`] ')
-    .setFooter('autre')
+    .setFooter('created by Arkaxii')
     message.channel.send(autre_embed);
 
 };   
