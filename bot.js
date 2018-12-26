@@ -69,7 +69,7 @@ client.on('ready', () => {
 })
 
  client.on("message", message => {
-  if (message.content === "?help") {
+  if (message.content === "<<rainhelp") {
       message.react('🌈')
         let rainembed = new Discord.RichEmbed()
         .setDescription(`**
@@ -80,6 +80,7 @@ client.on('ready', () => {
 -envoie un mp pour inviter le bot dans d'autre serveur
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
+Assurez-vous de ne pas avoir changer le nom du role
 =====================🌈 RainbowBot. 🌈=====================
 **`)
 message.channel.send(rainembed);
@@ -273,7 +274,7 @@ if(message.content.startsWith(prefix + "help")){
     var autre_embed = new Discord.RichEmbed()
     .setColor('#0000cc')
     .setTitle('utilitaire:')
-    .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge / set / inv`] ')
+    .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge / set / inv / rainhelp`] ')
     .setFooter('created by Arkaxii')
     message.channel.send(autre_embed);
 
