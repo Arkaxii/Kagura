@@ -165,8 +165,8 @@ client.on("message", async message => {
   }
   
   if(command === "kick") {
-    if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ou **Moderator** ");
+    if(!message.member.roles.some(r=>["Admin", "Modo"].includes(r.name)) )
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Admin** ou **Modo** ");
     
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);
     if(!member)
@@ -184,8 +184,8 @@ client.on("message", async message => {
   }
   
   if(command === "ban") {
-    if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ");
+    if(!message.member.roles.some(r=>["Admin"].includes(r.name)) )
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Admin** ");
     
     let member = message.mentions.members.first();
     if(!member)
@@ -202,7 +202,7 @@ client.on("message", async message => {
   }
   
   if(command === "purge") {
-	  if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
+	  if(!message.member.roles.some(r=>["Admin", "Modo"].includes(r.name)) )
     return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ou **Moderator** ");
     
     const deleteCount = parseInt(args[0], 10);
