@@ -75,36 +75,35 @@ client.on('ready', () => {
         .setDescription(`**
 =====================🤖 KaguraHelp+ 🤖=====================
 **image:**
-`<<wtf`
-`<<autistic`  
-`<<ty` 
-`<<exactly` 
+<<wtf
+<<autistic  
+<<ty
+<<exactly 
 <<pcmr 
 <<cat
 **utilitaire:**
-<<secret: Les prochain ajout sur le bot
-<<avatar: Recupere l'avatar pour l'afficher plus grand 
-<<ping: Pour connaitre son ping
-<<kick: Reserver aux modo et admin 
-<<ban: Reserver aux admin
-<<say: Fait dir ce que tu veut au bot 
-<<purge: Peut suprimer de 2 a 100 message  
-<<set: Crée le role qui servira pour le rainbow
-<<inv: Envoie un mp pour inviter le bot dans d'autre serveur
-<<helpRainbow
+<<secret: **Les prochain ajout sur le bot**
+<<avatar: **Recupere l'avatar pour l'afficher plus grand **
+<<ping: **Pour connaitre son ping**
+<<kick: **Reserver aux modo et admin **
+<<ban: **Reserver aux admin**
+<<say: **Fait dir ce que tu veut au bot **
+<<purge: **Peut suprimer de 2 a 100 message  **
+<<set: **Crée le role qui servira pour le rainbow**
+<<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
 **Argent**
-<<compt: pour voir à combien s'élève ton compt
-<<daily: pour recevoir 500$ par jour
-<<pierre / <<papier / <<ciseaux : pour gagnier 50 $ ou perdre 10$
+<<compt: **pour voir à combien s'élève ton compt**
+<<daily: **pour recevoir 500$ par jour**
+<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 10$**
 **Jeux**
-<<refjeux: trouve à quelle jeux appartien la référence 
-<<refanime: trouve à quelle anime appartien la référence 
+<<refjeux: **trouve à quelle jeux appartien la référence **
+<<refanime: **trouve à quelle anime appartien la référence **
 **Random**
-<<pile: 1 chance sur 2
-<<face: 1 chance sur 2
-<<lancer6: imite un lancer de dé à 6 face 
-<<lancer12: imite un lancer de dé à 12 face 
-<<lancer20: imite un lancer de dé à 20 face
+<<pile: 1 **chance sur 2**
+<<face: 1 **chance sur 2**
+<<lancer6: **imite un lancer de dé à 6 face **
+<<lancer12: **imite un lancer de dé à 12 face **
+<<lancer20:** imite un lancer de dé à 20 face**
 
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
