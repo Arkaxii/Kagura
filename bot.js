@@ -100,8 +100,8 @@ client.on('ready', () => {
 <<refjeux: **trouve à quelle jeux appartien la référence **
 <<refanime: **trouve à quelle anime appartien la référence **
 **Random**
-<<pile: 1 **chance sur 2**
-<<face: 1 **chance sur 2**
+<<pile: **1 chance sur 2**
+<<face: **1 chance sur 2**
 <<lancer6: **imite un lancer de dé à 6 face **
 <<lancer12: **imite un lancer de dé à 12 face **
 <<lancer20:** imite un lancer de dé à 20 face**
