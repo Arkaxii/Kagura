@@ -75,10 +75,10 @@ client.on('ready', () => {
         .setDescription(`**
 =====================🤖 KaguraHelp+ 🤖=====================
 **image:**
-<<wtf  
-<<autistic  
-<<ty 
-<<exactly 
+`<<wtf`
+`<<autistic`  
+`<<ty` 
+`<<exactly` 
 <<pcmr 
 <<cat
 **utilitaire:**
