@@ -69,21 +69,50 @@ client.on('ready', () => {
 })
 
  client.on("message", message => {
-  if (message.content === "<<rainhelp") {
-      message.react('🌈')
-        let rainembed = new Discord.RichEmbed()
+  if (message.content === "<<help") {
+      message.react('🤖')
+        let helpem = new Discord.RichEmbed()
         .setDescription(`**
-=====================🌈 RainbowMode. 🌈=====================
-<<set 
-- Crée le role qui servira pour le rainbow
-<<inv 
--envoie un mp pour inviter le bot dans d'autre serveur
+=====================🤖 KaguraHelp+ 🤖=====================
+**image:**
+<<wtf  
+<<autistic  
+<<ty 
+<<exactly 
+<<pcmr 
+<<cat
+**utilitaire:**
+<<secret: Les prochain ajout sur le bot
+<<avatar: Recupere l'avatar pour l'afficher plus grand 
+<<ping: Pour connaitre son ping
+<<kick: Reserver aux modo et admin 
+<<ban: Reserver aux admin
+<<say: Fait dir ce que tu veut au bot 
+<<purge: Peut suprimer de 2 a 100 message  
+<<set: Crée le role qui servira pour le rainbow
+<<inv: Envoie un mp pour inviter le bot dans d'autre serveur
+<<helpRainbow
+**Argent**
+<<compt: pour voir à combien s'élève ton compt
+<<daily: pour recevoir 500$ par jour
+<<pierre / <<papier / <<ciseaux : pour gagnier 50 $ ou perdre 10$
+**Jeux**
+<<refjeux: trouve à quelle jeux appartien la référence 
+<<refanime: trouve à quelle anime appartien la référence 
+**Random**
+<<pile: 1 chance sur 2
+<<face: 1 chance sur 2
+<<lancer6: imite un lancer de dé à 6 face 
+<<lancer12: imite un lancer de dé à 12 face 
+<<lancer20: imite un lancer de dé à 20 face
+
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
 Assurez-vous de ne pas avoir changer le nom du role
-=====================🌈 RainbowMode. 🌈=====================
+=====================🤖 KaguraHelp+ 🤖=====================
 **`)
-message.channel.send(rainembed);
+	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+message.channel.send(helpem);
     }}) 
    client.on('message', message => {
 	   if(message.content.startsWith(prefix + `inv`)) {
@@ -239,46 +268,6 @@ client.on("message", async message => {
                 }
             }
 
-var prefix = '<<';
-
-if(message.content.startsWith(prefix + "help")){
-
-    var image_embed = new Discord.RichEmbed()
-    .setColor('#0000cc')
-    .setTitle('image:')
-    .setDescription('[`wtf / autistic / ty / exactly / pcmr / cat`] ')
-    .setFooter('created by Arkaxii')
-    message.channel.send(image_embed);
-
-    var random_embed = new Discord.RichEmbed()
-    .setColor('#0000cc')
-    .setTitle('random:')
-    .setDescription('[`pile / face / lancer6 / lancer12 / lancer20`] ')
-    .setFooter('created by Arkaxii')
-    message.channel.send(random_embed);
-
-    var jeux_embed = new Discord.RichEmbed()
-    .setColor('#0000cc')
-    .setTitle('jeux:')
-    .setDescription('[`refjeux / refanime / pierre / papier / ciseaux`] ')
-    .setFooter('created by Arkaxii')
-    message.channel.send(jeux_embed);
-
-    var argent_embed = new Discord.RichEmbed()
-    .setColor('#0000cc')
-    .setTitle('argent:')
-    .setDescription('[`daily / compt`] ')
-    .setFooter('created by Arkaxii')
-    message.channel.send(argent_embed);
-
-    var autre_embed = new Discord.RichEmbed()
-    .setColor('#0000cc')
-    .setTitle('utilitaire:')
-    .setDescription('[`secret / help / avatar / ping / kick / ban / say / purge / set / inv / rainhelp`] ')
-    .setFooter('created by Arkaxii')
-    message.channel.send(autre_embed);
-
-};   
 
 var prefix = '<<';
 
