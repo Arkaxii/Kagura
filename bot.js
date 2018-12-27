@@ -89,7 +89,7 @@ client.on('ready', () => {
 <<kick: **Reserver aux modo et admin **
 <<ban: **Reserver aux admin**
 <<say: **Fait dir ce que tu veut au bot **
-<<purge: **Peut suprimer de 2 a 100 message  **
+<<purge: **Peut suprimer de 2 a 100 message reserver aux admin et modo **
 <<set: **Crée le role qui servira pour le rainbow**
 <<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
 **Argent**
@@ -202,6 +202,8 @@ client.on("message", async message => {
   }
   
   if(command === "purge") {
+	  if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
+    return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ou **Moderator** ");
     
     const deleteCount = parseInt(args[0], 10);
     
