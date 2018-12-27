@@ -109,6 +109,7 @@ client.on('ready', () => {
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
 Assurez-vous de ne pas avoir changer le nom du role
+astuce: le role rainbow est plus simple à metre en place sur tel que sur ordinateur
 =====================🤖 KaguraHelp+ 🤖=====================
 **`)
 	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
