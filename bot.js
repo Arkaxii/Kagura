@@ -75,6 +75,7 @@ client.on('ready', () => {
 	.setTitle(`Requested By | ${message.author.username}`)
         .setDescription(`**
 =====================🤖 KaguraHelp+ 🤖=====================
+
 **image:**
 <<wtf
 <<autistic  
@@ -82,6 +83,7 @@ client.on('ready', () => {
 <<exactly 
 <<pcmr 
 <<cat
+
 **utilitaire:**
 <<secret: **Les prochain ajout sur le bot**
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
@@ -92,14 +94,17 @@ client.on('ready', () => {
 <<purge: **Peut suprimer de 2 a 100 message reserver aux admin et modo **
 <<set: **Crée le role qui servira pour le rainbow**
 <<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
-**Argent**
+
+**Argent:**
 <<compt: **pour voir à combien s'élève ton compt**
 <<daily: **pour recevoir 500$ par jour**
 <<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 10$**
-**Jeux**
+
+**Jeux:**
 <<refjeux: **trouve à quelle jeux appartien la référence **
 <<refanime: **trouve à quelle anime appartien la référence **
-**Random**
+
+**Random:**
 <<pile: **1 chance sur 2**
 <<face: **1 chance sur 2**
 <<lancer6: **imite un lancer de dé à 6 face **
@@ -110,6 +115,7 @@ SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
 Assurez-vous de ne pas avoir changer le nom du role
 astuce: le role rainbow est plus simple à metre en place sur tel que sur ordinateur
+
 =====================🤖 KaguraHelp+ 🤖=====================
 **`)
 	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
