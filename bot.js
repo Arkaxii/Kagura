@@ -88,10 +88,10 @@ client.on('ready', () => {
 <<secret: **Les prochain ajout sur le bot**
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
 <<ping: **Pour connaitre son ping**
-<<kick: **Reserver aux modo et admin **
+<<kick: **Reserver aux admin**
 <<ban: **Reserver aux admin**
 <<say: **Fait dir ce que tu veut au bot **
-<<purge: **Peut suprimer de 2 a 100 message reserver aux admin et modo **
+<<purge: **Peut suprimer de 2 a 100 message reserver aux admin **
 <<set: **Crée le role qui servira pour le rainbow**
 <<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
 
@@ -171,9 +171,8 @@ client.on("message", async message => {
   }
   
   if(command === "kick") {
-    if(!message.member.roles.some(r=>["Admin", "Modo"].includes(r.name)) )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Admin** ou **Modo** ");
-    
+    if(!message.member.permissions.has('ADMINISTRATOR') )
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! 
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);
     if(!member)
       return message.reply("Veuiller mentionner un utilisateur valide");
@@ -190,9 +189,8 @@ client.on("message", async message => {
   }
   
   if(command === "ban") {
-    if(!message.member.roles.some(r=>["Admin"].includes(r.name)) )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Admin** ");
-    
+    if(!message.member.permissions.has('ADMINISTRATOR') )
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! 
     let member = message.mentions.members.first();
     if(!member)
       return message.reply("Veuiller mentionner un utilisateur valide");
@@ -208,9 +206,8 @@ client.on("message", async message => {
   }
   
   if(command === "purge") {
-	  if(!message.member.roles.some(r=>["Admin", "Modo"].includes(r.name)) )
-    return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! Il te faudra un role nommée: **Administrator** ou **Moderator** ");
-    
+    if(!message.member.permissions.has('ADMINISTRATOR') )
+    return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!
     const deleteCount = parseInt(args[0], 10);
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
