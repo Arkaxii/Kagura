@@ -172,7 +172,7 @@ client.on("message", async message => {
   
   if(command === "kick") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! 
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! );
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);
     if(!member)
       return message.reply("Veuiller mentionner un utilisateur valide");
@@ -190,7 +190,7 @@ client.on("message", async message => {
   
   if(command === "ban") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
-      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! 
+      return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande! );
     let member = message.mentions.members.first();
     if(!member)
       return message.reply("Veuiller mentionner un utilisateur valide");
@@ -207,7 +207,7 @@ client.on("message", async message => {
   
   if(command === "purge") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
-    return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!
+    return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!);
     const deleteCount = parseInt(args[0], 10);
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
