@@ -74,9 +74,9 @@ client.on('ready', () => {
         let rainembed = new Discord.RichEmbed()
         .setDescription(`**
 =====================🌈 RainbowMode. 🌈=====================
-?set 
+<<set 
 - Crée le role qui servira pour le rainbow
-?inv 
+<<inv 
 -envoie un mp pour inviter le bot dans d'autre serveur
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
