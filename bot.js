@@ -72,6 +72,7 @@ client.on('ready', () => {
   if (message.content === "<<help") {
       message.react('🤖')
         let helpem = new Discord.RichEmbed()
+	.setTitle(`Requested By | ${message.author.username}`)
         .setDescription(`**
 =====================🤖 KaguraHelp+ 🤖=====================
 **image:**
