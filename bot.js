@@ -229,11 +229,11 @@ client.on("message", async message => {
         } 
         if(command === "payadm") {
             if(message.author.id !== config.ownerID)            
-            return message.reply("Cette commande est reserver au créateur du bot");
+            return message.reply("Tu t'attendais a quoi? Cette commande est reserver au créateur du bot");
             let member = message.mentions.members.first();
             if(!member)
               return message.reply("Veuiller mentionner un utilisateur valide");
- 
+ essay la commande
             money.updateBal(member.id, 500 ).then((i) => {  
                 message.channel.send(`**You got $500!**\n**New Balance:** ${i.money}`);
             })
