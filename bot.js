@@ -234,7 +234,8 @@ client.on("message", async message => {
             if(!member)
               return message.reply("Veuiller mentionner un utilisateur valide");
             money.updateBal(member.id, 500 ).then((i) => {  
-                message.channel.send(`**Tu as offer $500! à ${member.user.tag} **\n**Vous possédez actuellement:** ${i.money}`);
+                message.channel.send(`Tu as offer $500! à **${member.user.tag} **\n
+                                      Et à actuellement: **${i.money}***`);
             })
         }
         /*
