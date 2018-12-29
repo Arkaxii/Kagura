@@ -41,32 +41,7 @@ client.user.setActivity("r#help | By Revenge",{type: 'WATCHING'});
 console.log('Done The Watching Setup Completed')
 	
 });
-client.on('message', message => {
-if(!message.channel.guild) return;
-  if(message.content.startsWith(prefix + 'set')) {
-	  let role = message.guild.roles.find('name', 'Rainbow bot.')
-    if(role) return message.channel.send(`Cette étape a deja été accomplis !`)
-  if(!role){
-    rainbow =  message.guild.createRole({
-   name: "Rainbow bot.",
-   color: "#000000",
-   permissions:[]
-})
 
-}
-message.channel.send('Le role Rainbow a été crée avec succès! Penser a le metre tout en haut de la liste de roles ! ')
-}})
-
-client.on('ready', () => {
-  setInterval(function(){
-      client.guilds.forEach(g => {
-                  var role = g.roles.find('name', 'Rainbow bot.');
-                  if (role) {
-                      role.edit({color : "RANDOM"});
-                  };
-      });
-  }, 1000);
-})
 
  client.on("message", message => {
   if (message.content === "<<help") {
@@ -92,7 +67,7 @@ client.on('ready', () => {
 <<ban: **Reserver aux admin**
 <<say: **Fait dir ce que tu veut au bot **
 <<purge: **Peut suprimer de 2 a 100 message reserver aux admin **
-<<set: **Crée le role qui servira pour le rainbow**
+<<rainbow: **Change la couleur d'un role en random reserver aux admin**
 <<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
 
 **Argent:**
@@ -157,6 +132,19 @@ client.on("message", async message => {
   
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
+	
+	if(command === "rainbow") {
+    if(!message.member.permissions.has('ADMINISTRATOR') )
+    return message.reply("Cette commande est réserver aux Admin");
+    let rolerain = message.mentions.roles.first();
+if(!rolerain)
+  return message.reply("Veuiller mentionner un role valide");
+
+        setInterval(function(){
+       rolerain.setColor('RANDOM')
+ console.log('nice');
+ }, 1000);
+    }
     
     if(command === "ping") {
     const m = await message.channel.send("Ping?");
