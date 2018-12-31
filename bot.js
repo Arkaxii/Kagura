@@ -71,20 +71,21 @@ console.log('Done The Watching Setup Completed')
 <<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
 
 **Argent:**
-<<compt: **pour voir à combien s'élève ton compt**
-<<daily: **pour recevoir 500$ par jour**
-<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 10$**
+<<compt: **Pour voir à combien s'élève ton compt**
+<<daily: **Pour recevoir 500$ par jour**
+<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 10$**
 
 **Jeux:**
-<<refjeux: **trouve à quelle jeux appartien la référence **
-<<refanime: **trouve à quelle anime appartien la référence **
+<<refjeux: **Trouve à quelle jeux appartien la référence **
+<<refanime: **Trouve à quelle anime appartien la référence **
+<<quiz: **Test ton intelligence**
 
 **Random:**
 <<pile: **1 chance sur 2**
 <<face: **1 chance sur 2**
-<<lancer6: **imite un lancer de dé à 6 face **
-<<lancer12: **imite un lancer de dé à 12 face **
-<<lancer20:** imite un lancer de dé à 20 face**
+<<lancer6: **Imite un lancer de dé à 6 face **
+<<lancer12: **Imite un lancer de dé à 12 face **
+<<lancer20:** Imite un lancer de dé à 20 face**
 
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
@@ -124,14 +125,43 @@ client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
   client.user.setActivity(`Serving ${client.guilds.size} servers`);
 });
+client.on ("ready", () => {
+answered = true;
+cAnswer = "";
+userAnswer = "";
+	console.log('up');
+});
 
 client.on("message", async message => {
-  if(message.author.bot) return;
-  
-  if(message.content.indexOf(config.prefix) !== 0) return;
   
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
+	
+	msg = message.content.toLocaleLowerCase();
+
+           if (answered == false && message.author == quizUser) {
+               userAnswer = msg;
+               if (userAnswer == cAnswer) {
+                   message.reply ("Correct");
+               }
+               else{
+                   message.reply("Faux");
+               }
+               answered = true; cAnswer = ""; userAnswer = "";
+           }
+         
+           if (msg.startsWith(prefix + "quiz" )){
+               number = 3;
+               var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+               switch(random){
+                   case 1: message.channel.send ("Que ce qu'es le mot Tellurique: \n1 - Qualifie des planètes similaires a la Terre \n2 - Un minerai extrait de roche \n3 - Un mouvement spirituelle \n4 - Obi wan kenobi "); cAnswer = "1"; break;
+                   case 2: message.channel.send ("Quel est l'auteur de la citation « Je n’ai pas échoué. J’ai simplement trouvé 10 000 solutions qui ne fonctionnent pas. » ?  \n1 - Benjamin Franklin. \n2 - Albert Einstein. \n3 - Thomas Edison. \n4 - Emmanuel Macron."); cAnswer = "3"; break;
+                   case 3: message.channel.send ("Parmis ces anime quelle l'anime avec le plus d'épisodes ? \n1 - Detective Conan \n2 - One Piece \n3 - Doraemon \n4 - C'est l'anime le plus long"); cAnswer = "3"; break;
+         
+               }
+                answered = false;
+               quizUser = message.author;
+           }
 	
   if(command === "rainbow") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
