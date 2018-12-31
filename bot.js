@@ -129,7 +129,6 @@ client.on ("ready", () => {
 answered = true;
 cAnswer = "";
 userAnswer = "";
-	console.log('up');
 });
 
 client.on("message", async message => {
