@@ -138,7 +138,7 @@ client.on("message", async message => {
 	
 	
 	
-  if(command === "rainbow") {
+  if(command === "<<rainbow") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
     return message.reply("Cette commande est réserver aux Admin");
     let rolerain = message.mentions.roles.first();
@@ -149,19 +149,19 @@ if(!rolerain)
  }, 1000);
 	     message.channel.send(`le role ${rolerain} a été definit comme rainbow`)
     }
-    if(command === "ping") {
+    if(command === "<<ping") {
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
   }
   
-  if(command === "say") {
+  if(command === "<<say") {
 
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
   
-  if(command === "kick") {
+  if(command === "<<kick") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
       return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!" );
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);
@@ -179,7 +179,7 @@ if(!rolerain)
 
   }
   
-  if(command === "ban") {
+  if(command === "<<ban") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
       return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!" );
     let member = message.mentions.members.first();
@@ -196,7 +196,7 @@ if(!rolerain)
     message.reply(`${member.user.tag} a été ban par ${message.author.tag} car: ${reason}`);
   }
   
-  if(command === "purge") {
+  if(command === "<<purge") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
     return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!");
     const deleteCount = parseInt(args[0], 10);
@@ -218,7 +218,7 @@ if(!rolerain)
             })
  
         } 
-        if(command === "payadm") {
+        if(command === "<<payadm") {
             if(message.author.id !== config.ownerID)            
             return message.reply("Tu t'attendais a quoi? Cette commande est reserver au créateur du bot");
             let member = message.mentions.members.first();
