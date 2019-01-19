@@ -104,7 +104,7 @@ message.channel.send(helpem);
           let helpem = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`**
-  =====================🤖 KaguraHelp+ 🤖=====================
+  =====================🤖 help admin 🤖=====================
   
 <<rainbow: **Change la couleur d'un role toute les minutes**
 <<purge: **Peut suprimer de 2 a 100 message **
@@ -114,7 +114,7 @@ message.channel.send(helpem);
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
 
-  =====================🤖 KaguraHelp+ 🤖=====================
+  =====================🤖 help admin 🤖=====================
   **`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helpem);
