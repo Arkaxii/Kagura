@@ -297,7 +297,7 @@ Et à actuellement: **${i.money} $**`);
 
                 let member = message.mentions.members.first();
             if(!member)
-              return message.reply("Veuiller mentionner un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
+              return message.reply("Mentionne un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
 
                 var wiink = [
                     "https://i.imgur.com/5n9LYXg.gif",
@@ -366,7 +366,7 @@ Et à actuellement: **${i.money} $**`);
                 .setColor('RANDOM')
 		        .setTitle('Roleplay')
                 .setImage(gif)
-                .addField(`_**${message.author.username}** dort sur **${member.displayName}**._Attention aux filet de bave!`)
+                .addField(`_**${message.author.username}** dort sur **${member.displayName}.**_Attention aux filet de bave!`)
                 message.channel.send(sleep_embed);
             };
 
@@ -452,7 +452,7 @@ Et à actuellement: **${i.money} $**`);
 
                 let member = message.mentions.members.first();
             if(!member)
-              return message.reply("Veuiller mentionner un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
+              return message.reply("Mentionne un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
 
                 var pooke = [
                     "https://imgur.com/hFby4cs.gif",
@@ -478,7 +478,7 @@ Et à actuellement: **${i.money} $**`);
 
                 let member = message.mentions.members.first();
             if(!member)
-              return message.reply("Veuiller mentionner un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
+              return message.reply("Mentionne un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
 
                 var paat = [
                     "https://imgur.com/AvUkatg.gif",
@@ -503,7 +503,7 @@ Et à actuellement: **${i.money} $**`);
 
                 let member = message.mentions.members.first();
             if(!member)
-              return message.reply("Veuiller mentionner un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
+              return message.reply("Mentionne un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
 
                 var kiiss = [
                     "https://imgur.com/b5gws2K.gif",
@@ -553,7 +553,7 @@ Et à actuellement: **${i.money} $**`);
 
                 let member = message.mentions.members.first();
             if(!member)
-              return message.reply("Veuiller mentionner un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
+              return message.reply("Mentionne un utilisateur valide, sauf si tu n'as pas d'amis pour fair cette commande *touss touss*");
 
                 var huug = [
                     "https://imgur.com/YdjuHIr.gif",
@@ -572,7 +572,7 @@ Et à actuellement: **${i.money} $**`);
                 .setColor('RANDOM')
 		        .setTitle('Roleplay')
                 .setImage(gif)
-                .addField(`_**${message.author.username}** fait un clin d'oeil à **${member.displayName}**._`)
+                .addField(`_**${message.author.username}** fait un calin à **${member.displayName}**._`)
                 message.channel.send(hug_embed);
             };
 
