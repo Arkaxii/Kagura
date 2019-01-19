@@ -1007,14 +1007,14 @@ if (randnum == 3){
                 if(!target)
                   return message.reply("Veuiller mentionner un utilisateur valide");
 
-        var infoa = new Discord.RichEmbed()
-            .setAuthor(target.displayName)
-            .setThumbnail(target.user.avatarURL)
-            .setDescription(`**
-            This is the user's info!
-            Full Username:, ${target.user.username}#${target.user.discriminator}
-            ID:, ${target.id}
-            Created At:, ${target.user.createdAt}** `)
+           var infoa = new Discord.RichEmbed()
+        .setAuthor(target.displayName)
+        .setThumbnail(target.user.avatarURL)
+        .setDescription("Voici les infos!")
+        .setColor(0x00FF00)
+        .addField("Pseudo Discord complet:", `${target.user.username}#${target.user.discriminator}`)
+        .addField("ID:", target.id)
+        .addField("Crée le:", target.user.createdAt)
             message.channel.send(infoa)
             
     };
