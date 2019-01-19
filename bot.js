@@ -96,7 +96,32 @@ astuce: le role rainbow est plus simple à metre en place sur tel que sur ordina
 **`)
 	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
 message.channel.send(helpem);
-    }}) 
+    }
+
+    if (message.content === "<<help admin") {
+        if(!message.member.permissions.has('ADMINISTRATOR') )
+        return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!" );
+        message.react('🤖')
+          let helpem = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`**
+  =====================🤖 KaguraHelp+ 🤖=====================
+  
+<<rainbow: **Change la couleur d'un role toute les minutes**
+<<purge: **Peut suprimer de 2 a 100 message **
+<<kick
+<<ban
+
+SI LE RAINBOW NE FONCTIONNE PAS:
+Assurez-vous que le role rainbow soit le plus haut possible
+
+  =====================🤖 KaguraHelp+ 🤖=====================
+  **`)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helpem);
+      }})
+
+
    client.on('message', message => {
 	   if(message.content.startsWith(prefix + `inv`)) {
 		   if(!message.channel.guild) return;
@@ -962,6 +987,37 @@ if (randnum == 3){
                 answered = false;
                quizUser = message.author;
            }
+	
+	 if(message.content.startsWith(prefix + "mes infos")){
+
+        var infome = new Discord.RichEmbed()
+            .setAuthor(message.author.username)
+            .setThumbnail(message.author.avatarURL)
+            .setDescription("Voici les infos!")
+            .setColor(0x00FF00)
+            .addField("Pseudo Discord complet:", `${message.author.username}#${message.author.discriminator}`)
+            .addField("ID:", message.author.id)
+            .addField("Crée le:", message.author.createdAt)
+    
+            message.channel.send(infome);
+            }
+    
+            if(command === "info") {
+                let target = message.mentions.members.first();
+                if(!target)
+                  return message.reply("Veuiller mentionner un utilisateur valide");
+
+        var infoa = new Discord.RichEmbed()
+            .setAuthor(target.displayName)
+            .setThumbnail(target.user.avatarURL)
+            .setDescription(`**
+            This is the user's info!
+            Full Username:, ${target.user.username}#${target.user.discriminator}
+            ID:, ${target.id}
+            Created At:, ${target.user.createdAt}** `)
+            message.channel.send(infoa)
+            
+    };
   
 });
 client.login(token);
