@@ -418,7 +418,7 @@ Et à actuellement: **${i.money} $**`);
                 .setColor('RANDOM')
 	         	.setTitle('Roleplay')
                 .setImage(gif)
-                .addField(`_**${message.author.username}** écrase les moustiques qui sont sur **${member.displayName}**._`)
+                .addField(`_**${message.author.username}** fout des claques à **${member.displayName}**._`)
                 message.channel.send(slap_embed);
             };
 
