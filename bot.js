@@ -65,6 +65,8 @@ console.log('Done The Watching Setup Completed')
 <<hug
 
 **utilitaire:**
+<<info kagura: **Toute les infos a propo de Kagura**
+<<info discord: **Les info du serveur**
 <<secret: **Les prochain ajout sur le bot**
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
 <<ping: **Pour connaitre son ping**
@@ -1276,5 +1278,36 @@ if (randnum == 3){
             
     };
   
+   if(message.content.startsWith(prefix + "info discord")){
+
+        var infodisc = new Discord.RichEmbed()
+            .setAuthor(message.author.username)
+            .setThumbnail(message.guild.avatarURL)
+            .setDescription("Voici les infos!")
+            .setColor(0x00FF00)
+            .addField("Nom :", message.guild.name )
+            .addField("tu a rejoin le:", message.member.joinedAt)
+            .addField("nombre d'utilisateur", message.guild.memberCount)
+            .addField("Crée le:", message.guild.createdAt)
+    
+            message.channel.send(infodisc);
+            };
+    if(message.content.startsWith(prefix + "info kagura")){
+
+        var infobot = new Discord.RichEmbed()
+            .setAuthor(message.author.username)
+            .setDescription("Voici les infos!")
+            .setColor(0x00FF00)
+            .addField(`Servers `, client.guilds.size )
+            .addField(`Nombre totale d'utilisateur`,client.users.size )
+            .addField(`Channels` , client.channels.size )
+            .addField(`Node Version`,process.version)
+            .addField(`Prefix` , prefix)
+            .addField("Language: NodeJS ")
+            .addField(`Utilisation de la RAM en MB ` ,(process.memoryUsage().rss / 1048576).toFixed() )
+            .setFooter(`Crée par ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)            
+            message.channel.send(infobot);
+            };
+	
 });
 client.login(token);
