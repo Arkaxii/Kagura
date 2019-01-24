@@ -1313,20 +1313,23 @@ if (randnum == 3){
             };
 	
 if(message.content.startsWith(prefix + "sondage")){
-    let args = message.content.split(" ").slice(1);
-    let tTE = args.join(" ")
-var sond = new Discord.RichEmbed()
-.setDescription("Sondage")
-.addField(tTE, "Répondre avec :white_check_mark: ou :x:")
-.setColor(0x00FF00)
-.setTimestamp()
-message.channel.send(sond)
-.then(function(message){
-    message.react("✔")
-    message.react("✖")
-}).catch(function(){    
-});
-}
+                let args = message.content.split(" ").slice(1);
+                let tTE = args.join(" ")
+            var sond = new Discord.RichEmbed()
+            .setDescription("Sondage")
+            .setAuthor(message.author.username)
+            .addField(tTE, "Répondre avec :white_check_mark: ou :x:")
+            .setColor(0x00FF00)
+            .setTimestamp()
+            message.channel.send(sond)
+            .then(function(message){
+                message.react("✔")
+                message.react("✖")
+            }).catch(function(){    
+            });
+            message.delete()
+            
+            }
 	
 });
 client.login(token);
