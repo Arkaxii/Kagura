@@ -65,6 +65,7 @@ console.log('Done The Watching Setup Completed')
 <<hug
 
 **utilitaire:**
+<<sondage: **Fait un sondage pour avoir l'avie d'autre personnes**
 <<info kagura: **Toute les infos a propo de Kagura**
 <<info discord: **Les info du serveur**
 <<infos: **Donne les infos d'un utilisateur**
@@ -1310,6 +1311,22 @@ if (randnum == 3){
             .setFooter(`Crée par ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)            
             message.channel.send(infobot);
             };
+	
+if(message.content.startsWith(prefix + "sondage")){
+    let args = message.content.split(" ").slice(1);
+    let tTE = args.join(" ")
+var sond = new Discord.RichEmbed()
+.setDescription("Sondage")
+.addField(tTE, "Répondre avec :white_check_mark: ou :x:")
+.setColor(0x00FF00)
+.setTimestamp()
+message.channel.send(sond)
+.then(function(message){
+    message.react("✔")
+    message.react("✖")
+}).catch(function(){    
+});
+}
 	
 });
 client.login(token);
