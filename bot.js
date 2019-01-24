@@ -117,7 +117,7 @@ message.channel.send(helpem);
 <<ban
 
 SI LE RAINBOW NE FONCTIONNE PAS:
-Assurez-vous que le role rainbow soit le plus haut possible
+Assurez-vous que le role de kagura soit le plus haut possible
 
   =====================🤖 help admin 🤖=====================
   **`)
@@ -203,8 +203,8 @@ if(!rolerain)
     if(!reason) reason = "Pour aucune raison";
     
     await member.kick(reason)
-      .catch(error => message.reply(`Désoler ${message.author} je ne peut pas le ban car : ${error}`));
-    message.reply(`${member.user.tag} a été ban par ${message.author.tag} car: ${reason}`);
+      .catch(error => message.reply(`Désoler ${message.author} je ne peut pas le kick car : ${error}`));
+    message.reply(`${member.user.tag} a été kick par ${message.author.tag} car: ${reason}`);
 
   }
   
