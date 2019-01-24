@@ -67,6 +67,8 @@ console.log('Done The Watching Setup Completed')
 **utilitaire:**
 <<info kagura: **Toute les infos a propo de Kagura**
 <<info discord: **Les info du serveur**
+<<infos: **Donne les infos d'un utilisateur**
+<<mes infos: Donne tes information
 <<secret: **Les prochain ajout sur le bot**
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
 <<ping: **Pour connaitre son ping**
@@ -1261,7 +1263,7 @@ if (randnum == 3){
             message.channel.send(infome);
             }
     
-            if(command === "info") {
+            if(command === "infos") {
                 let target = message.mentions.members.first();
                 if(!target)
                   return message.reply("Veuiller mentionner un utilisateur valide");
