@@ -1277,24 +1277,27 @@ if (randnum == 3){
         .addField("Pseudo Discord complet:", `${target.user.username}#${target.user.discriminator}`)
         .addField("ID:", target.id)
         .addField("Crée le:", target.user.createdAt)
-            message.channel.send(infoa)
-            
+            message.channel.send(infoa)   
     };
   
-   if(message.content.startsWith(prefix + "info discord")){
+  if(message.content.startsWith(prefix + "info discord")){
+    var infodisc = new Discord.RichEmbed()
+        .setAuthor(message.author.username)
+        .setThumbnail(message.guild.iconURL)
+        .setDescription("Voici les infos!")
+        .setColor(0x00FF00)
+        .addField("Nom :", message.guild.name )
+        .addField("Créateur du serveur :", message.guild.owner.user.tag)
+        .addField("Roles", message.guild.roles.size )
+        .addField("nombre d'utilisateur :", message.guild.memberCount)
+        .addField("tu a rejoin le :", message.member.joinedAt)
+        .addField("Region :", message.guild.region )
+        .addField("Crée le :", message.guild.createdAt)
 
-        var infodisc = new Discord.RichEmbed()
-            .setAuthor(message.author.username)
-            .setThumbnail(message.guild.avatarURL)
-            .setDescription("Voici les infos!")
-            .setColor(0x00FF00)
-            .addField("Nom :", message.guild.name )
-            .addField("tu a rejoin le:", message.member.joinedAt)
-            .addField("nombre d'utilisateur", message.guild.memberCount)
-            .addField("Crée le:", message.guild.createdAt)
-    
-            message.channel.send(infodisc);
-            };
+
+        message.channel.send(infodisc);
+        };
+	
     if(message.content.startsWith(prefix + "info kagura")){
 
         var infobot = new Discord.RichEmbed()
