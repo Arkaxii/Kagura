@@ -1364,7 +1364,7 @@ if(message.content.startsWith(prefix + "8ball")){
                                "C'est un vrai mystère 🤔",
                                "Bip boup bip bip 🤖"]
 
-                               var result = Math.floor((Math.random() * sayings.length) + 0);
+                               var result = Math.floor((Math.random() * reponse.length) + 0);
                                message.channel.send(reponse[result]);
             }
 	
