@@ -1352,7 +1352,7 @@ if(message.content.startsWith(prefix + "8ball")){
                                "Selon internet non",
                                "J'ai été programmé pour dir non",
                                "J'en sais rien demande à quelqu'un d'autre",
-                               "¯\_(ツ)_/¯",
+                               "¯\\_(ツ)_/¯",
                                "Je dirai oui mais non donc oui et non",
                                "C'est fortement possible",
                                "On ma dit de dire oui",
