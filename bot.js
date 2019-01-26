@@ -77,6 +77,7 @@ console.log('Done The Watching Setup Completed')
 <<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
 
 **Argent:**
+<<pay: **pour donner de l'argent à d'autre utilisateur**
 <<compt: **Pour voir à combien s'élève ton compt**
 <<daily: **Pour recevoir 500$ par jour**
 <<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 10$**
@@ -238,66 +239,64 @@ if(!rolerain)
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Impossible de purger car: ${error}`));
   } 
-           const moment = require('moment');
+           if(command ==="compt"){
+     let user = message.mentions.users.first() || message.author;
+     let balance = await db.fetch(`userBalance_${user.id}`);
+     if (balance === null) balance = 0;
+     message.channel.send(`${user.username} - Balance: $${balance}`);
+     }
 
-          var prefix = '<<';
-          if(message.content.startsWith(prefix + "compt")){
- 
-            money.fetchBal(message.author.id).then((i) => {  
-                message.channel.send(`**Tu as:** ${i.money}`);
-            })
- 
-        } 
-        if(command === "payadm") {
-            if(message.author.id !== config.ownerID)            
-            return message.reply("Tu t'attendais a quoi? Cette commande est reserver au créateur du bot");
-            let member = message.mentions.members.first();
-            if(!member)
-              return message.reply("Veuiller mentionner un utilisateur valide");
-            money.updateBal(member.id, 500 ).then((i) => {  
-                message.channel.send(`Tu as offer $500! à **${member.user.tag} **\n
-Et à actuellement: **${i.money} $**`);
-            })
-        }
-        /*
-       var prefix = '<<';   
-        if(message.content.startsWith(prefix + "payfine1")){
-            if( `{i.money} `< `499 `) {
-            message.channel.send("not enough");
-            }else{
-                    money.updateBal(message.author.id, -500).then((i) => { 
-                        message.channel.send(`**You paid your fine of $500!**\n**New Balance:** ${i.money}`)
-                    }) 
-                }
-                }
-                */
-        var prefix = '<<';
-        if(message.content.startsWith(prefix + "daily")){
-               
-        
-         if (money[message.author.username + message.guild.name] != moment().format('L')) {
-                    money[message.author.username + message.guild.name] = moment().format('L')
-                    money.updateBal(message.author.id, 500).then((i) => {
-                        message.channel.send({embed: {
-                            color: 3447003,
-                            description: 'Tu as reçu **$500** \`<<daily`\. => \`<<compt\`.',
-                            author: {
-                                name: `${message.author.username}#${message.author.discriminator}`,
-                                icon_url: message.author.avatarURL 
-                            }
-                        }});
-                    })
-                } else {
-                    message.channel.send({embed: {
-                        color: 3447003,
-                        description: 'Tu as deja reçu ton\`?daily`\. Retente dans **' + moment().endOf('day').fromNow() + '**.', 
-                        author: {
-                            name: `${message.author.username}#${message.author.discriminator}`,
-                            icon_url: message.author.avatarURL 
-                        }
-                    }});
-                }
+     if(command ==="daily"){
+       let cooldown = 8.64e+7,
+          amount = 250;
+       let lastDaily = await db.fetch(`lastDaily_${message.author.id}`);
+       if (lastDaily !== null && cooldown - (Date.now() - lastDaily) > 0){
+         let timeObj = ms(cooldown - (Date.now() - lastDaily));
+         message.channel.send(`Patiente encore **${timeObj.hours}h ${timeObj.minutes}m**!`);
+
+       }else{message.channel.send(`Tu as ressu $${amount}`);
+      db.set(`lastDaily_${message.author.id}`, Date.now());
+    db.add(`userBalance_${message.author.id}`, 250);
+         
             }
+
+     }
+	
+     if(command ==="pay"){
+       if(!message.mentions.members.first())
+       return message.channel.send("Mentionne un utilisateur!");
+       let target = message.mentions.members.first(),
+       amount = parseInt(args.join('').replace(target, ''));
+       if(isNaN(amount)) 
+       return message.channel.send("**Fait pas ton radin et défini un montant!**");
+       let targetBalance = await db.fetch(`userBalance_${target.id}`),
+           selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+           if (targetBalance === null) targetBalance = 0;
+           if (selfBalance === null) selfBalance = 0;
+           if (amount > selfBalance) 
+           return message.channel.send("**Ne donne pas plus que ce que tu as!**");
+           db.add(`userBalance_${target.id}`,amount);
+           db.subtract(`userBalance_${message.author.id}`, amount);
+           message.channel.send(`**Tu as donner $${amount} a ${target.user.tag}!**`)
+
+     }
+	
+	if(command === "arkapay"){
+      if(message.author.id !== config.ownerID)            
+      return message.reply("Tu t'attendais a quoi? Cette commande est reserver à mon créateur");
+      let target = message.mentions.members.first();
+      if(!target)
+        return message.reply("Faut mentionner quelqu'un!");
+      let amount = parseInt(args.join('').replace(target, ''));
+       if(isNaN(amount)) 
+       return message.channel.send("Tu n'as pas mis de montant!");
+       let targetBalance = await db.fetch(`userBalance_${target.id}`);
+       if (targetBalance === null) targetBalance = 0;
+       db.add(`userBalance_${target.id}`,amount);
+       message.channel.send(`**Tu as donner $${amount} a ${target.user.tag}!**`)
+
+
+     }
 	
  if(command === "wink") {
 
@@ -1134,7 +1133,8 @@ if(message.content.startsWith(prefix + "refanime")){
                  var prefix = '<<';
                 
                 if(message.content.startsWith(prefix + "papier")){
-                    random();
+			message.reply(" cette commande est desativer pour le moment")
+                 /*   random();
                     if (randnum == 1){
                         message.reply("Papier ! Ex aequo retente encore ! ")
                     }
@@ -1154,11 +1154,13 @@ if(message.content.startsWith(prefix + "refanime")){
                             min = Math.ceil(1);
                             max = Math.floor(3);
                             randnum = Math.floor(Math.random() * (max - min +1) +min);
-                            }
+                            }*/
            var prefix = '<<';
         
         if(message.content.startsWith(prefix + "pierre")){
-            random();
+	message.reply(" cette commande est desativer pour le moment")
+
+         /*   random();
             if (randnum == 1){
                 message.reply("Pierre ! Ex aequo retente encore ! ")
             }
@@ -1180,11 +1182,13 @@ if(message.content.startsWith(prefix + "refanime")){
                 min = Math.ceil(1);
                 max = Math.floor(3);
                 randnum = Math.floor(Math.random() * (max - min +1) +min);
-                }
+                }*/
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "ciseaux")){
-random();
+message.reply(" cette commande est desativer pour le moment")
+
+/*random();
 if (randnum == 1){
     message.reply("Ciseaux ! Ex aequo retente encore ! ")
 }
@@ -1199,7 +1203,7 @@ if (randnum == 3){
                 message.reply(`**Tu as perdu $10!**\n**New Balance:** ${i.money}`);
  })
 } }
-            };
+            };*/
  
  if(message.content.startsWith(prefix + "test")){
     message.reply( message.author + ` TEEST`);
