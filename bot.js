@@ -1124,16 +1124,16 @@ if(message.content.startsWith(prefix + "refanime")){
 
                                     }
                                 };
-                                {
+                               /* {
                                 function random(min, max){
                                     min = Math.ceil(1);
                                     max = Math.floor(3);
                                     randnum = Math.floor(Math.random() * (max - min +1) +min);
-                                    }      
+                                    }  */    
                  var prefix = '<<';
                 
                 if(message.content.startsWith(prefix + "papier")){
-			message.reply(" cette commande est desativer pour le moment")
+			message.reply(" cette commande est desativer pour le moment") }
                  /*   random();
                     if (randnum == 1){
                         message.reply("Papier ! Ex aequo retente encore ! ")
@@ -1158,7 +1158,7 @@ if(message.content.startsWith(prefix + "refanime")){
            var prefix = '<<';
         
         if(message.content.startsWith(prefix + "pierre")){
-	message.reply(" cette commande est desativer pour le moment")
+	message.reply(" cette commande est desativer pour le moment") }
 
          /*   random();
             if (randnum == 1){
@@ -1186,7 +1186,7 @@ if(message.content.startsWith(prefix + "refanime")){
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "ciseaux")){
-message.reply(" cette commande est desativer pour le moment")
+message.reply(" cette commande est desativer pour le moment") }
 
 /*random();
 if (randnum == 1){
