@@ -1380,31 +1380,31 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle("Shop")
                 .setDescription(`
                 **Badge en terre** - 250$ 
-                id = 0001
+                ID: 0001
 
                 **Badge en carton** - 500$
-                id = 0002
+                ID: 0002
 
                 **Badge en fer** - 1000$
-                id = 0003
+                ID: 0003
 
                 **Badge en bronze** - 2000$
-                id = 0004
+                ID: 0004
 
                 **Badge en argent** - 4000$
-                id = 0005
+                ID: 0005
 
                 **Badge en or** - 10 000$
-                id = 0006
+                ID: 0006
 
                 **Badge en Platine** - 20 000$
-                id = 0007
+                ID: 0007
 
                 **Badge en diamant** - 50 000$
-                id = 0008
+                ID: 0008
 
                 **Badge légende** - 200 000$
-                id = 0009
+                ID: 0009
                 
                 **Pour plus d'information** ?buy id `)
                 .setFooter(`Shop`)
@@ -1417,7 +1417,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en terre')
-                .setDescription("prix = 250$")
+                .setDescription(`prix = 250$
+		 fonctionnalité d'achat bientôt `)
                  message.channel.send(un);
              };
             
@@ -1426,7 +1427,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en carton")
-                .setDescription("prix = 500$")
+                .setDescription(`prix = 500$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(deux);
             };
             
@@ -1435,7 +1437,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en fer")
-                .setDescription("prix = 1000$")
+                .setDescription(`prix = 1000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(troi);
             };
             
@@ -1444,7 +1447,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en bronze")
-                .setDescription("prix = 2000$")
+                .setDescription(`prix = 2000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(quatre);
             };
             
@@ -1453,7 +1457,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en argent")
-                .setDescription("prix = 4000$")
+                .setDescription(`prix = 4000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(cinque);
             };
             
@@ -1462,7 +1467,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en or")
-                .setDescription("prix = 10 000$")
+                .setDescription(`prix = 10 000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(six);
             };
             
@@ -1471,7 +1477,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en Platine")
-                .setDescription("prix = 20 000$")
+                .setDescription(`prix = 20 000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(sept);
             };
             
@@ -1480,7 +1487,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en diamant")
-                .setDescription("prix = 50 000$")
+                .setDescription(`prix = 50 000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(huit);
             };
             
@@ -1489,7 +1497,8 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge légende")
-                .setDescription("prix = 200 000$")
+                .setDescription(`prix = 200 000$
+                 fonctionnalité d'achat bientôt `)
                 message.channel.send(neuf);
             };
 	
