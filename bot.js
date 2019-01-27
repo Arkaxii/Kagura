@@ -256,7 +256,7 @@ if(!rolerain)
          let timeObj = ms(cooldown - (Date.now() - lastDaily));
          message.channel.send(`Patiente encore **${timeObj.hours}h ${timeObj.minutes}m**!`);
 
-       }else{message.channel.send(`Tu as ressu $${amount}`);
+       }else{message.channel.send(`Tu as reçu $${amount}`);
       db.set(`lastDaily_${message.author.id}`, Date.now());
     db.add(`userBalance_${message.author.id}`, 250);
          
