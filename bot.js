@@ -1374,5 +1374,124 @@ if(message.content.startsWith(prefix + "8ball")){
                                message.channel.send(reponse[result]);
             }
 	
+	 if(command === "shop"){
+                var shoop = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setTitle("Shop")
+                .setDescription(`
+                **Badge en terre** - 250$ 
+                id = 0001
+
+                **Badge en carton** - 500$
+                id = 0002
+
+                **Badge en fer** - 1000$
+                id = 0003
+
+                **Badge en bronze** - 2000$
+                id = 0004
+
+                **Badge en argent** - 4000$
+                id = 0005
+
+                **Badge en or** - 10 000$
+                id = 0006
+
+                **Badge en Platine** - 20 000$
+                id = 0007
+
+                **Badge en diamant** - 50 000$
+                id = 0008
+
+                **Badge légende** - 200 000$
+                id = 0009
+                
+                **Pour plus d'information** ?buy id `)
+                .setFooter(`Shop`)
+
+                message.channel.send(shoop);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0001")){
+                var un = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle('Badge en terre')
+                .setDescription("prix = 250$")
+                 message.channel.send(un);
+             };
+            
+             if(message.content.startsWith(prefix + "buy 0002")){
+                var deux = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en carton")
+                .setDescription("prix = 500$")
+                message.channel.send(deux);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0003")){
+                var troi = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en fer")
+                .setDescription("prix = 1000$")
+                message.channel.send(troi);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0004")){
+                var quatre = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en bronze")
+                .setDescription("prix = 2000$")
+                message.channel.send(quatre);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0005")){
+                var cinque = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en argent")
+                .setDescription("prix = 4000$")
+                message.channel.send(cinque);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0006")){
+                var six = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en or")
+                .setDescription("prix = 10 000$")
+                message.channel.send(six);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0007")){
+                var sept = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en Platine")
+                .setDescription("prix = 20 000$")
+                message.channel.send(sept);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0008")){
+                var huit = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge en diamant")
+                .setDescription("prix = 50 000$")
+                message.channel.send(huit);
+            };
+            
+            if(message.content.startsWith(prefix + "buy 0009")){
+                var neuf = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge légende")
+                .setDescription("prix = 200 000$")
+                message.channel.send(neuf);
+            };
+	
 });
 client.login(token);
