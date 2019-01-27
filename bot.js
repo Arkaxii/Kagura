@@ -98,7 +98,7 @@ console.log('Done The Watching Setup Completed')
 <<lancer20:** Imite un lancer de dé à 20 face**
 
 **Admin**
-?help admin
+<<help admin
 
 =====================🤖 KaguraHelp+ 🤖=====================
 **`)
@@ -1408,7 +1408,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 **Badge légende** - 200 000$
                 ID: 0009
                 
-                **Pour plus d'information** ?buy id `)
+                **Pour plus d'information** <<buy id `)
                 .setFooter(`Shop`)
 
                 message.channel.send(shoop);
@@ -1420,7 +1420,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en terre')
                 .setDescription(`prix = 250$
-		        ?confirm 0001 pour acheter `)
+		<<confirm 0001 pour acheter `)
                  message.channel.send(un);
              };
             
@@ -1430,7 +1430,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en carton")
                 .setDescription(`prix = 500$
-                ?confirm 0002 pour acheter `)
+                <<confirm 0002 pour acheter `)
                 message.channel.send(deux);
             };
             
@@ -1440,7 +1440,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en fer")
                 .setDescription(`prix = 1000$
-                ?confirm 0003 pour acheter `)
+                <<confirm 0003 pour acheter `)
                 message.channel.send(troi);
             };
             
@@ -1450,7 +1450,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en bronze")
                 .setDescription(`prix = 2000$
-                ?confirm 0004 pour acheter`)
+                <<confirm 0004 pour acheter`)
                 message.channel.send(quatre);
             };
             
@@ -1460,7 +1460,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en argent")
                 .setDescription(`prix = 4000$
-                ?confirm 0005 pour acheter `)
+                <<confirm 0005 pour acheter `)
                 message.channel.send(cinque);
             };
             
@@ -1470,7 +1470,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en or")
                 .setDescription(`prix = 10 000$
-                ?confirm 0006 pour acheter `)
+                <<confirm 0006 pour acheter `)
                 message.channel.send(six);
             };
             
@@ -1480,7 +1480,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en Platine")
                 .setDescription(`prix = 20 000$
-                ?confirm 0007 pour acheter`)
+                <<confirm 0007 pour acheter`)
                 message.channel.send(sept);
             };
             
@@ -1490,7 +1490,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en diamant")
                 .setDescription(`prix = 50 000$
-                ?confirm 0008 pour acheter`)
+                <<confirm 0008 pour acheter`)
                 message.channel.send(huit);
             };
             
@@ -1500,7 +1500,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge légende")
                 .setDescription(`prix = 200 000$
-                ?confirm 0009 pour acheter `)
+                <<confirm 0009 pour acheter `)
                 message.channel.send(neuf);
             };
 
