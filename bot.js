@@ -1688,16 +1688,15 @@ if(message.content.startsWith(prefix + "8ball")){
                  message.channel.send(b09);
             }
 	
-	 if(command === "inventaire"){
+	if(command === "inventaire"){
                 let balance = await db.fetch(`userBalance_${message.author.id}`);
                  if (balance === null) balance = 0;
                 var inve = new Discord.RichEmbed()
-                .setAuthor(message.author.id  )
+                .setAuthor(message.author.username , message.author.avatarURL )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setDescription(`tu as $${balance} 
                 A venire `)
                 message.channel.send(inve);
             }
-	
 });
 client.login(token);
