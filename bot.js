@@ -76,9 +76,11 @@ console.log('Done The Watching Setup Completed')
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
 <<ping: **Pour connaitre son ping**
 <<say: **Fait dir ce que tu veut au bot **
-<<inv: **Envoie un mp pour inviter le bot dans d'autre serveur**
+<<invite: **Envoie un mp pour inviter le bot dans d'autre serveur**
 
 **Argent:**
+<<inventaire: **Pour voir son inventaire**
+<<shop: **Pour fair des achat avec la THUN que tu as acqui**
 <<pay: **pour donner de l'argent à d'autre utilisateur**
 <<compt: **Pour voir à combien s'élève ton compt**
 <<daily: **Pour recevoir 500$ par jour**
@@ -131,7 +133,7 @@ Assurez-vous que le role de kagura soit le plus haut possible
 
 
    client.on('message', message => {
-	   if(message.content.startsWith(prefix + `inv`)) {
+	   if(message.content.startsWith(prefix + `invite`)) {
 		   if(!message.channel.guild) return;
                  message.react('🌈')
 		   var embed = new Discord.RichEmbed()
@@ -1684,6 +1686,17 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setDescription(`
                 **Tu as acheter le badge en légend! GG** `)
                  message.channel.send(b09);
+            }
+	
+	 if(command === "inventaire"){
+                let balance = await db.fetch(`userBalance_${message.author.id}`);
+                 if (balance === null) balance = 0;
+                var inve = new Discord.RichEmbed()
+                .setAuthor(message.author.id  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setDescription(`tu as $${balance} 
+                A venire `)
+                message.channel.send(inve);
             }
 	
 });
