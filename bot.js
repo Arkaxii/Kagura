@@ -1886,7 +1886,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var  testBalance = await db.fetch(`testBalance_${message.author.id}`);
 
                 if((testBalance<999)){ 
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                     var inv = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1897,7 +1897,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                      }
 
                  if((testBalance>999 && testBalance<1001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invt = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1908,7 +1908,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                  }
 
                  if((testBalance>1001 && testBalance<11001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                     var invc = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1919,7 +1919,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 }
 
                 if((testBalance>11001 && testBalance<111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invf = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1930,7 +1930,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 }
 
                 if((testBalance>111001 && testBalance<1111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invb = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1941,7 +1941,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 }
 
                 if((testBalance>1111001 && testBalance<11111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                var inva = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1952,7 +1952,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 }
                 
             if((testBalance>11111001 && testBalance<111111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invo = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1963,7 +1963,7 @@ if(message.content.startsWith(prefix + "buy legende")){
             }
                 
                 if((testBalance>111111001 && testBalance<1111111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invp = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1974,7 +1974,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 }
                 
                 if((testBalance>1111111001 && testBalance<11111111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invd = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
@@ -1985,7 +1985,7 @@ if(message.content.startsWith(prefix + "buy legende")){
                 }
               
                 if((testBalance>11111111001)){  
-                    if (testBalance === null) testBalance = 0;
+                    if (selfBalance === null) selfBalance = 0;
 
                 var invl = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
