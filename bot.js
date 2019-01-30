@@ -1400,7 +1400,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 **Badge légende** - 200 000$
                 
-                **Pour plus d'information** ?badge [nom du badge (terre/carton/...)] `)
+                **Pour plus d'information** <<badge [nom du badge (terre/carton/...)] `)
                 .setFooter(`Badge`)
 
                 message.channel.send(shoop);
@@ -1412,7 +1412,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en terre')
                 .setDescription(`prix = 250$
-                ** [?buy terre] pour l'achat**
+                ** [<<buy terre] pour l'achat**
 		        `)
                  message.channel.send(un);
              };
@@ -1423,7 +1423,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en carton")
                 .setDescription(`prix = 500$
-                **[?buy carton] pour l'achat**
+                **[<<buy carton] pour l'achat**
                 `)
                 message.channel.send(deux);
             };
@@ -1434,7 +1434,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en fer")
                 .setDescription(`prix = 1000$
-                **[?buy fer] pour l'achat**
+                **[<<buy fer] pour l'achat**
                 `)
                 message.channel.send(troi);
             };
@@ -1445,7 +1445,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en bronze")
                 .setDescription(`prix = 2000$
-                **[?buy bronze] pour l'achat**
+                **[<<buy bronze] pour l'achat**
                 `)
                 message.channel.send(quatre);
             };
@@ -1456,7 +1456,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en argent")
                 .setDescription(`prix = 4000$
-                **[?buy argent] pour l'achat**
+                **[<<buy argent] pour l'achat**
                 `)
                 message.channel.send(cinque);
             };
@@ -1467,7 +1467,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en or")
                 .setDescription(`prix = 10 000$
-                **[?buy or] pour l'achat**
+                **[<<buy or] pour l'achat**
                 `)
                 message.channel.send(six);
             };
@@ -1478,7 +1478,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en Platine")
                 .setDescription(`prix = 20 000$
-                **[?buy platine] pour l'achat**
+                **[<<buy platine] pour l'achat**
                 `)
                 message.channel.send(sept);
             };
@@ -1489,7 +1489,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en diamant")
                 .setDescription(`prix = 50 000$
-                **[?buy diamant] pour l'achat**
+                **[<<buy diamant] pour l'achat**
                 `)
                 message.channel.send(huit);
             };
@@ -1500,7 +1500,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge légende")
                 .setDescription(`prix = 200 000$
-                **[?buy légende] pour l'achat**
+                **[<<buy légende] pour l'achat**
                 `)
                 message.channel.send(neuf);
             };
@@ -1510,7 +1510,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge légende")
                 .setDescription(`prix = 200 000$
-                **[?buy légende] pour l'achat**
+                **[<<buy légende] pour l'achat**
                 `)
                 message.channel.send(neuf);
             };
@@ -1542,7 +1542,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setDescription(`
                 **Tu as acheter le badge en terre!**
                  Fais gaffe à ne pas ne mettre partout! (Sans aucune arrière penser bien entendu :p )
-                 Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                 Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                  message.channel.send(b01);
 
 
@@ -1579,7 +1579,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en carton')
                 .setDescription(`
                 **Tu as acheter le badge en carton!**
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b02);
 
 
@@ -1616,7 +1616,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en fer')
                 .setDescription(`
                 **Tu as acheter le badge en fer!**
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b03);
                 
             }
@@ -1652,7 +1652,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en bronze')
                 .setDescription(`
                 **Tu as acheter le badge en bronze!** 
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b04);
 
 
@@ -1690,7 +1690,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en argent')
                 .setDescription(`
                 **Tu as acheter le badge en argent!**
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b05);
 
 
@@ -1728,7 +1728,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en or')
                 .setDescription(`
                 **Tu as acheter le badge en or!** 
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b06);
 
 
@@ -1766,7 +1766,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en platine')
                 .setDescription(`
                 **Tu as acheter le badge en platine!** 
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b07);
 
 
@@ -1804,7 +1804,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en diamant')
                 .setDescription(`
                 **Tu as acheter le badge en diamant!** 
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b08);
 
 
@@ -1842,7 +1842,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge légende')
                 .setDescription(`
                 **Tu as acheter le badge en légend! GG** 
-                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b09); 
 }
 if(message.content.startsWith(prefix + "buy legende")){
@@ -1875,7 +1875,7 @@ if(message.content.startsWith(prefix + "buy legende")){
       .setTitle('Badge légende')
       .setDescription(`
       **Tu as acheter le badge en légend! GG** 
-      regarde dans ton inventaire pour contempler ton nouveau badge !`)
+      Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
        message.channel.send(b09); 
 }
 
