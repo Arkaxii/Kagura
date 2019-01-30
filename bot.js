@@ -1841,7 +1841,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge légende')
                 .setDescription(`
-                **Tu as acheter le badge en légend! GG** 
+                **Tu as acheter le badge légend! GG** 
                 Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
                 message.channel.send(b09); 
 }
@@ -1874,7 +1874,7 @@ if(message.content.startsWith(prefix + "buy legende")){
       .setThumbnail("https://i.imgur.com/w3w1YRs.png")
       .setTitle('Badge légende')
       .setDescription(`
-      **Tu as acheter le badge en légend! GG** 
+      **Tu as acheter le badge légend! GG** 
       Regarde dans ton [<<inventaire] pour contempler ton nouveau badge ! `)
        message.channel.send(b09); 
 }
