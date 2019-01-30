@@ -1379,140 +1379,161 @@ if(message.content.startsWith(prefix + "8ball")){
 	 if(command === "shop"){
                 var shoop = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setTitle("Shop")
+                .setTitle("Badge")
                 .setDescription(`
-                **achat possible mais il ne sera pas sauvgarder**
 
                 **Badge en terre** - 250$ 
-                ID: 0001
 
-                **Badge en carton** - 500$
-                ID: 0002
+                **Badge en carton** - 800$
 
                 **Badge en fer** - 1000$
-                ID: 0003
 
                 **Badge en bronze** - 2000$
-                ID: 0004
 
                 **Badge en argent** - 4000$
-                ID: 0005
 
                 **Badge en or** - 10 000$
-                ID: 0006
 
-                **Badge en Platine** - 20 000$
-                ID: 0007
+                **Badge en platine** - 20 000$
 
                 **Badge en diamant** - 50 000$
-                ID: 0008
 
                 **Badge légende** - 200 000$
-                ID: 0009
                 
-                **Pour plus d'information** <<buy id `)
-                .setFooter(`Shop`)
+                **Pour plus d'information** ?badge [nom du badge (terre/carton/...)] `)
+                .setFooter(`Badge`)
 
                 message.channel.send(shoop);
             };
             
-            if(message.content.startsWith(prefix + "buy 0001")){
+            if(message.content.startsWith(prefix + "badge terre")){
                 var un = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en terre')
                 .setDescription(`prix = 250$
-		<<confirm 0001 pour acheter `)
+                ** [?buy terre] pour l'achat**
+		        `)
                  message.channel.send(un);
              };
             
-             if(message.content.startsWith(prefix + "buy 0002")){
+             if(message.content.startsWith(prefix + "badge carton")){
                 var deux = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en carton")
                 .setDescription(`prix = 500$
-                <<confirm 0002 pour acheter `)
+                **[?buy carton] pour l'achat**
+                `)
                 message.channel.send(deux);
             };
             
-            if(message.content.startsWith(prefix + "buy 0003")){
+            if(message.content.startsWith(prefix + "badge fer")){
                 var troi = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en fer")
                 .setDescription(`prix = 1000$
-                <<confirm 0003 pour acheter `)
+                **[?buy fer] pour l'achat**
+                `)
                 message.channel.send(troi);
             };
             
-            if(message.content.startsWith(prefix + "buy 0004")){
+            if(message.content.startsWith(prefix + "badge bronze")){
                 var quatre = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en bronze")
                 .setDescription(`prix = 2000$
-                <<confirm 0004 pour acheter`)
+                **[?buy bronze] pour l'achat**
+                `)
                 message.channel.send(quatre);
             };
             
-            if(message.content.startsWith(prefix + "buy 0005")){
+            if(message.content.startsWith(prefix + "badge argent")){
                 var cinque = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en argent")
                 .setDescription(`prix = 4000$
-                <<confirm 0005 pour acheter `)
+                **[?buy argent] pour l'achat**
+                `)
                 message.channel.send(cinque);
             };
             
-            if(message.content.startsWith(prefix + "buy 0006")){
+            if(message.content.startsWith(prefix + "badge or")){
                 var six = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en or")
                 .setDescription(`prix = 10 000$
-                <<confirm 0006 pour acheter `)
+                **[?buy or] pour l'achat**
+                `)
                 message.channel.send(six);
             };
             
-            if(message.content.startsWith(prefix + "buy 0007")){
+            if(message.content.startsWith(prefix + "badge platine")){
                 var sept = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en Platine")
                 .setDescription(`prix = 20 000$
-                <<confirm 0007 pour acheter`)
+                **[?buy platine] pour l'achat**
+                `)
                 message.channel.send(sept);
             };
             
-            if(message.content.startsWith(prefix + "buy 0008")){
+            if(message.content.startsWith(prefix + "badge diamant")){
                 var huit = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge en diamant")
                 .setDescription(`prix = 50 000$
-                <<confirm 0008 pour acheter`)
+                **[?buy diamant] pour l'achat**
+                `)
                 message.channel.send(huit);
             };
             
-            if(message.content.startsWith(prefix + "buy 0009")){
+            if(message.content.startsWith(prefix + "badge légende")){
                 var neuf = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle("Badge légende")
                 .setDescription(`prix = 200 000$
-                <<confirm 0009 pour acheter `)
+                **[?buy légende] pour l'achat**
+                `)
+                message.channel.send(neuf);
+            };
+            if(message.content.startsWith(prefix + "badge legende")){
+                var neuf = new Discord.RichEmbed()
+                .setColor(0x00FF00)
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setTitle("Badge légende")
+                .setDescription(`prix = 200 000$
+                **[?buy légende] pour l'achat**
+                `)
                 message.channel.send(neuf);
             };
 
-            if(message.content.startsWith(prefix + "confirm 0001")){
+           if(message.content.startsWith(prefix + "buy terre")){
                let amount1 = '250';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+               let amountb = '999';
+
+               let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+               let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+
                 if (selfBalance === null) selfBalance = 0;
+                if (testBalance === null) testBalance = 0;
+                if( testBalance > amountb)
+                return message.channel.send("Tu l'as deja eu !");
+                
                 if (amount1 > selfBalance)
-                return message.channel.send("Ah ba non tu n'as pas asser ")
+                return message.channel.send("Ah ba non tu n'as pas asser ");
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 1000);
+                db.add(`terreBalance_${message.author.id}`, 1);
+
+
 
                 var b01 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
@@ -1520,183 +1541,459 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en terre')
                 .setDescription(`
                 **Tu as acheter le badge en terre!**
-                 Fait gaf de ne pas en metre partout! `)
+                 Fait gaf de ne pas en metre partout! (Sans aucune arière penser bien entendu :p )
+                 Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
                  message.channel.send(b01);
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0002")){
+            if(message.content.startsWith(prefix + "buy carton")){
                let amount1 = '500';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+               let amountb = '10999';
+               let amountlim = '1';
+               
+
+               let terreBalance = await db.fetch(`terreBalance_${message.author.id}`);
+               let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+               let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
                 if (selfBalance === null) selfBalance = 0;
+                if (testBalance === null) testBalance = 0;
+                if(testBalance > amountb )
+                return message.channel.send("Tu l'as deja eu !");
+                
+                if(terreBalance < amountlim )
+                return message.channel.send("tu dois acheter le badge terre avant");
+                
                 if (amount1 > selfBalance)
-                return message.channel.send("Ah ba non tu n'as pas asser ")
+                return message.channel.send("Ah ba non tu n'as pas asser ");
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 10000);
+                db.add(`cartonBalance_${message.author.id}`, 1);
+
 
                 var b02 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en carton')
                 .setDescription(`
-                **Tu as acheter le badge en carton!** `)
-                 message.channel.send(b02);
+                **Tu as acheter le badge en carton!**
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b02);
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0003")){
+            if(message.content.startsWith(prefix + "buy fer")){
                let amount1 = '1000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+               let amountb = '110999';
+               let amountlim = '1';
+
+               let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+               let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+               let cartonBalance = await db.fetch(`cartonBalance_${message.author.id}`);
+
                 if (selfBalance === null) selfBalance = 0;
+                if (testBalance === null) testBalance = 0;
+                if(testBalance > amountb )
+                return message.channel.send("Tu l'as deja eu !");
+
+                if(cartonBalance < amountlim ){
+                return message.channel.send("tu dois acheter le badge carton avant");
+                }
                 if (amount1 > selfBalance)
                 return message.channel.send("Ah ba non tu n'as pas asser ")
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 100000);
+                db.add(`ferBalance_${message.author.id}`, 1);
+
 
                 var b03 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en fer')
                 .setDescription(`
-                **Tu as acheter le badge en fer!** `)
-                 message.channel.send(b03);
+                **Tu as acheter le badge en fer!**
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b03);
                 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0004")){
-                amount1 = '2000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
-                if (selfBalance === null) selfBalance = 0;
+            if(message.content.startsWith(prefix + "buy bronze")){
+                let   amount1 = '2000';
+                let amountb = '1110999';
+                let amountlim = '1';
+
+                let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                let ferBalance = await db.fetch(`ferBalance_${message.author.id}`);
+
+                 if (selfBalance === null) selfBalance = 0;
+                 if (testBalance === null) testBalance = 0;
+                 if(testBalance  > amountb )
+                 return message.channel.send("Tu l'as deja eu !");
+                 
+                 if( ferBalance < amountlim ){
+                 return message.channel.send("tu dois acheter le badge fer avant");
+                 }
                 if (amount1 > selfBalance)
                 return message.channel.send("Ah ba non tu n'as pas asser ")
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 1000000);
+                db.add(`bronzeBalance_${message.author.id}`, 1);
+
 
                 var b04 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                .setTitle('Badge en carton')
+                .setTitle('Badge en bronze')
                 .setDescription(`
-                **Tu as acheter le badge en bronze!** `)
-                 message.channel.send(b04);
+                **Tu as acheter le badge en bronze!** 
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b04);
 
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0005")){
-                amount1 = '4000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
-                if (selfBalance === null) selfBalance = 0;
+            if(message.content.startsWith(prefix + "buy argent")){
+                let amount1 = '4000';
+                let amountb = '11110999';
+                let amountlim = '1';
+
+                let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                let bronzeBalance = await db.fetch(`bronzeBalance_${message.author.id}`);
+
+                 if (selfBalance === null) selfBalance = 0;
+                 if (testBalance === null) testBalance = 0;
+                 if(testBalance > amountb )
+                 return message.channel.send("Tu l'as deja eu !");
+
+                 if( bronzeBalance > amountlim ){
+                 return message.channel.send("tu dois acheter le badge bronze avant");
+                 }
                 if (amount1 > selfBalance)
                 return message.channel.send("Ah ba non tu n'as pas asser ")
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 10000000);
+                db.add(`argentBalance_${message.author.id}`, 1);
+
 
                 var b05 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en argent')
                 .setDescription(`
-                **Tu as acheter le badge en argent!** `)
-                 message.channel.send(b05);
+                **Tu as acheter le badge en argent!**
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b05);
 
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0006")){
-                amount1 = '10000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
-                if (selfBalance === null) selfBalance = 0;
+            if(message.content.startsWith(prefix + "buy or")){
+                let  amount1 = '10000';
+                let amountb = '111110999';
+                let amountlim = '1';
+
+                let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                let argentBalance = await db.fetch(`argentBalance_${message.author.id}`);
+
+                 if (selfBalance === null) selfBalance = 0;
+                 if (testBalance === null) testBalance = 0;
+                 if(testBalance > amountb )
+                 return message.channel.send("Tu l'as deja eu !");
+
+                 if(argentBalance > amountlim){
+                 return message.channel.send("tu dois acheter le badge argent avant");
+                 }
                 if (amount1 > selfBalance)
                 return message.channel.send("Ah ba non tu n'as pas asser ")
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 100000000);
+                db.add(`orBalance_${message.author.id}`, 1);
+
 
                 var b06 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en or')
                 .setDescription(`
-                **Tu as acheter le badge en or!** `)
-                 message.channel.send(b06);
+                **Tu as acheter le badge en or!** 
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b06);
 
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0007")){
-                amount1 = '20000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+            if(message.content.startsWith(prefix + "buy platine")){
+                let   amount1 = '20000';
+                let amountb = '1111110999';
+                let amountlim = '1';
+
+                let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                let orBalance = await db.fetch(`orBalance_${message.author.id}`);
+
                 if (selfBalance === null) selfBalance = 0;
+                if (testBalance === null) testBalance = 0;
+                if(testBalance > amountb )
+                return message.channel.send("Tu l'as deja eu !");
+
+                if(orBalance > amountlim){
+                return message.channel.send("tu dois acheter le badge or avant");
+            }
                 if (amount1 > selfBalance)
                 return message.channel.send("Ah ba non tu n'as pas asser ")
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 1000000000);
+                db.add(`platineBalance_${message.author.id}`, 1);
+
 
                 var b07 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en platine')
                 .setDescription(`
-                **Tu as acheter le badge en platine!** `)
-                 message.channel.send(b07);
+                **Tu as acheter le badge en platine!** 
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b07);
 
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0008")){
-                amount1 = '50000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+            if(message.content.startsWith(prefix + "buy diamant")){
+                let  amount1 = '50000';
+                let amountb = '11111110999';
+                let amountlim = '1';
+
+                let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                let platineBalance = await db.fetch(`platineBalance_${message.author.id}`);
+
                 if (selfBalance === null) selfBalance = 0;
+                if (testBalance === null) testBalance = 0;
+                if(testBalance > amountb )
+                return message.channel.send("Tu l'as deja eu !");
+
+                if(platineBalance > amountlim){
+                return message.channel.send("tu dois acheter le badge platine avant");
+                }
                 if (amount1 > selfBalance)
                 return message.channel.send("Ah ba non tu n'as pas asser ")
                 db.subtract(`userBalance_${message.author.id}`, amount1);
+                db.add(`testBalance_${message.author.id}`, 10000000000);
+                db.add(`diamantBalance_${message.author.id}`, 1);
+
 
                 var b08 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge en diamant')
                 .setDescription(`
-                **Tu as acheter le badge en diamant!** `)
-                 message.channel.send(b08);
+                **Tu as acheter le badge en diamant!** 
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b08);
 
 
 
             }
 
 
-            if(message.content.startsWith(prefix + "confirm 0009")){
-                amount1 = '200000';
-                selfBalance = await db.fetch(`userBalance_${message.author.id}`);
-                if (selfBalance === null) selfBalance = 0;
-                if (amount1 > selfBalance)
-                return message.channel.send("Ah ba non tu n'as pas asser ")
-                db.subtract(`userBalance_${message.author.id}`, amount1);
+            if(message.content.startsWith(prefix + "buy légende")){
+                let  amount1 = '200000';
+                let amountb = '111111110999';
+                let amountlim = '1';
 
+                let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                let diamantBalance = await db.fetch(`diamantBalance_${message.author.id}`);
+
+                 if (selfBalance === null) selfBalance = 0;
+                 if (testBalance === null) testBalance = 0;
+                 if(testBalance > amountb )
+                 return message.channel.send("Tu l'as deja eu !");
+                 
+                 if(diamantBalance > amountlim){
+                 return message.channel.send("tu dois acheter le badge diamant avant");
+            }
+                  if (amount1 > selfBalance)
+                  return message.channel.send("Ah ba non tu n'as pas asser ")
+                  db.subtract(`userBalance_${message.author.id}`, amount1);
+                  db.add(`testBalance_${message.author.id}`, 100000000000);
+                  db.add(`legendeBalance_${message.author.id}`, 1);
+
+                
                 var b09 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
                 .setTitle('Badge légende')
                 .setDescription(`
-                **Tu as acheter le badge en légend! GG** `)
-                 message.channel.send(b09);
-            }
-	
-	if(command === "inventaire"){
-                let balance = await db.fetch(`userBalance_${message.author.id}`);
-                 if (balance === null) balance = 0;
-                var inve = new Discord.RichEmbed()
-                .setAuthor(message.author.username , message.author.avatarURL )
+                **Tu as acheter le badge en légend! GG** 
+                Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
+                message.channel.send(b09); 
+}
+if(message.content.startsWith(prefix + "buy legende")){
+    let  amount1 = '200000';
+    let amountb = '111111110999';
+    let amountlim = '1';
+
+    let testBalance = await db.fetch(`testBalance_${message.author.id}`);
+    let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+    let diamantBalance = await db.fetch(`diamantBalance_${message.author.id}`);
+
+     if (selfBalance === null) selfBalance = 0;
+     if (testBalance === null) testBalance = 0;
+     if(testBalance > amountb )
+     return message.channel.send("Tu l'as deja eu !");
+     
+     if(diamantBalance > amountlim){
+     return message.channel.send("tu dois acheter le badge diamant avant");
+}
+      if (amount1 > selfBalance)
+      return message.channel.send("Ah ba non tu n'as pas asser ")
+      db.subtract(`userBalance_${message.author.id}`, amount1);
+      db.add(`testBalance_${message.author.id}`, 100000000000);
+      db.add(`legendeBalance_${message.author.id}`, 1);
+
+      
+      var b09 = new Discord.RichEmbed()
+      .setColor(0x00FF00)
+      .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+      .setTitle('Badge légende')
+      .setDescription(`
+      **Tu as acheter le badge en légend! GG** 
+      regarde dans ton inventaire pour contempler ton nouveau badge !`)
+       message.channel.send(b09); 
+}
+
+
+
+            if(command === "inventaire"){
+                var selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                var  testBalance = await db.fetch(`testBalance_${message.author.id}`);
+                if (testBalance === null) testBalance = 0;
+
+                if((testBalance<999)){ 
+
+                    var inv = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL  )
+                    .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                    .setDescription("Aucune description ")
+                    message.channel.send(inv);
+                     }
+
+                 if((testBalance>999 && testBalance<1001)){  
+
+                var invt = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                .setDescription(`tu as $${balance} 
-                A venire `)
-                message.channel.send(inve);
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invt);
+                 }
+
+                 if((testBalance>1001 && testBalance<11001)){  
+
+                    var invc = new Discord.RichEmbed()
+                    .setAuthor(message.author.username , message.author.avatarURL  )
+                    .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                    .setDescription("Aucune description" )
+                    message.channel.send(invc);
+                }
+
+                if((testBalance>11001 && testBalance<111001)){  
+
+                var invf = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invf);
+                }
+
+                if((testBalance>111001 && testBalance<1111001)){  
+
+                var invb = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invb);
+                }
+
+                if((testBalance>1111001 && testBalance<11111001)){  
+
+               var inva = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(inva);
+                }
+                
+            if((testBalance>11111001 && testBalance<111111001)){  
+
+                var invo = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invo);
             }
+                
+                if((testBalance>111111001 && testBalance<1111111001)){  
+
+                var invp = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invp);
+                }
+                
+                if((testBalance>1111111001 && testBalance<11111111001)){  
+
+                var invd = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invd);
+                }
+              
+                if((testBalance>11111111001)){  
+
+                var invl = new Discord.RichEmbed()
+                .setAuthor(message.author.username , message.author.avatarURL  )
+                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                    .setDescription(`tu as ${selfBalance}$ `)
+                .setDescription("Aucune description" )
+                message.channel.send(invl);
+                }
+              
+               
+                };
+           
+                   if(command ==="compt2"){
+                    let user = message.mentions.users.first() || message.author;
+                    let balance = await db.fetch(`testBalance_${user.id}`);
+                    if (balance === null) balance = 0;
+                    message.channel.send(`${user.username} - Balance: $${balance}`);
+                    }
 });
 client.login(token);
