@@ -1541,7 +1541,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 .setTitle('Badge en terre')
                 .setDescription(`
                 **Tu as acheter le badge en terre!**
-                 Fait gaf de ne pas en metre partout! (Sans aucune arière penser bien entendu :p )
+                 Fais gaffe à ne pas ne mettre partout! (Sans aucune arrière penser bien entendu :p )
                  Regarde dans ton [?inventaire] pour contempler ton nouveau badge ! `)
                  message.channel.send(b01);
 
