@@ -1384,7 +1384,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 **Badge en terre** - 250$ 
 
-                **Badge en carton** - 800$
+                **Badge en carton** - 500$
 
                 **Badge en fer** - 1000$
 
