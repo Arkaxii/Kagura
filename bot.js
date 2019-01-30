@@ -1881,7 +1881,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
 
 
-            if(command === "inventaire"){
+          if(command === "inventaire"){
                 var selfBalance = await db.fetch(`userBalance_${message.author.id}`);
                 var  testBalance = await db.fetch(`testBalance_${message.author.id}`);
                 if (testBalance === null) testBalance = 0;
@@ -1891,8 +1891,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                     var inv = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL  )
                     .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                    .setDescription("Aucune description ")
+                    .setDescription(`tu as ${selfBalance}$ 
+                    Aucune description`)
                     message.channel.send(inv);
                      }
 
@@ -1901,8 +1901,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invt = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invt);
                  }
 
@@ -1911,8 +1911,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                     var invc = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL  )
                     .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                    .setDescription("Aucune description" )
+                    .setDescription(`tu as ${selfBalance}$ 
+                    Aucune description`)
                     message.channel.send(invc);
                 }
 
@@ -1921,8 +1921,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invf = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invf);
                 }
 
@@ -1931,8 +1931,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invb = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invb);
                 }
 
@@ -1941,8 +1941,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                var inva = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(inva);
                 }
                 
@@ -1951,8 +1951,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invo = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invo);
             }
                 
@@ -1961,8 +1961,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invp = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invp);
                 }
                 
@@ -1971,8 +1971,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invd = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invd);
                 }
               
@@ -1981,8 +1981,8 @@ if(message.content.startsWith(prefix + "buy legende")){
                 var invl = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
                 .setThumbnail("https://i.imgur.com/w3w1YRs.png")
-                    .setDescription(`tu as ${selfBalance}$ `)
-                .setDescription("Aucune description" )
+                .setDescription(`tu as ${selfBalance}$ 
+                Aucune description`)
                 message.channel.send(invl);
                 }
               
