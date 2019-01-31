@@ -77,6 +77,7 @@ console.log('Done The Watching Setup Completed')
 <<ping: **Pour connaitre son ping**
 <<say: **Fait dir ce que tu veut au bot **
 <<invite: **Envoie un mp pour inviter le bot dans d'autre serveur**
+<<message: **pour savoir combien de messages on été envoyer par toi ou une autre personne si ping**
 
 **Argent:**
 <<inventaire: **Pour voir son inventaire**
@@ -167,6 +168,10 @@ userAnswer = "";
 });
 
 client.on("message", async message => {
+	
+	  db.add(`globalMessages_${message.author.id}`, 1);
+     db.add(`guildMessages_${message.guild.id}_${message.author.id}`, 1);
+	
 const config = require("./config.json");
 
 	    if (message.content.indexOf(config.prefix) !== 0) return;
@@ -2009,5 +2014,13 @@ if(message.content.startsWith(prefix + "buy legende")){
                     if (balance === null) balance = 0;
                     message.channel.send(`${user.username} - Balance: $${balance}`);
                     }
+	
+		   if(message.content.startsWith(prefix + "message")){
+     let member = message.mentions.members.first() || message.member; 
+     let global = await db.fetch(`globalMessages_${member.id}`);
+     let guild = await db.fetch(`guildMessages_${member.guild.id}_${member.id}`);
+     message.channel.send(`**Message global: \`${global}\`\nMessage dans la guild: \`${guild}\`**` )
+     }
+	
 });
 client.login(token);
