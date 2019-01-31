@@ -70,8 +70,7 @@ console.log('Done The Watching Setup Completed')
 <<sondage: **Fait un sondage pour avoir l'avie d'autre personnes**
 <<info kagura: **Toute les infos a propo de Kagura**
 <<info discord: **Les info du serveur**
-<<infos: **Donne les infos d'un utilisateur**
-<<mes infos: **Donne tes information**
+<<infos: **Donne les infos d'un utilisateur ou de toi meme**
 <<secret: **Les prochain ajout sur le bot**
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
 <<ping: **Pour connaitre son ping**
