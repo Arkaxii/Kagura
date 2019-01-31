@@ -1131,29 +1131,30 @@ if(message.content.startsWith(prefix + "refanime")){
 
                                     }
                                 };
-                               /* {
+                                {
                                 function random(min, max){
                                     min = Math.ceil(1);
                                     max = Math.floor(3);
                                     randnum = Math.floor(Math.random() * (max - min +1) +min);
-                                    }  */    
-                 var prefix = '<<';
-                
+                                    }      
                 if(message.content.startsWith(prefix + "papier")){
-			message.reply(" cette commande est desativer pour le moment") }
-                 /*   random();
+                    let amount = 25;
+                    let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+                     if(amount > selfBalance )
+                    return message.channel.send("il te faut un minimum de 25$");
+                    random();
                     if (randnum == 1){
                         message.reply("Papier ! Ex aequo retente encore ! ")
                     }
                     if (randnum == 2){
                         message.reply("Pierre ! *Balance la pierre dans ta figure* Tu a gagnier ... ")
-                     money.updateBal(message.author.id, 50 )
-                message.reply(`**Tu as reçue $50!**`);
+                        db.add(`userBalance_${message.author.id}`, 50);
+                        message.channel.send(`**Tu as reçue $50!**`);
                     }
                     if (randnum == 3){
                         message.reply("Ciseaux ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
-                     money.updateBal(message.author.id, -10 )
-                message.reply(`**Tu as perdu $10!**`);
+                        db.subtract(`userBalance_${message.author.id}`, 25);
+                        message.channel.send(`**Aller 25$ pour moi!**`);
                     } }
                 };
                 {
@@ -1161,56 +1162,57 @@ if(message.content.startsWith(prefix + "refanime")){
                             min = Math.ceil(1);
                             max = Math.floor(3);
                             randnum = Math.floor(Math.random() * (max - min +1) +min);
-                            }*/
-           var prefix = '<<';
-        
+                            }
         if(message.content.startsWith(prefix + "pierre")){
-	message.reply(" cette commande est desativer pour le moment") }
-
-         /*   random();
+            let amount = 25;
+    let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+if(amount > selfBalance )
+return message.channel.send("il te faut un minimum de 25$");
+            random();
             if (randnum == 1){
                 message.reply("Pierre ! Ex aequo retente encore ! ")
             }
             if (randnum == 2){
                 message.reply("Ciseaux ! Tu a gagnier ...*Prend les ciseaux et ...Déconexion* ");
-                money.updateBal(message.author.id, 50 )
-                message.reply(`**Tu as reçue $50!**`);
+                db.add(`userBalance_${message.author.id}`, 50);
+                message.channel.send(`**Tu as reçue $50!**`);
                 }
                 {
             if (randnum == 3){
                 message.reply("papier ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
-             money.updateBal(message.author.id, -10 ).then((i) => {  
-                message.reply(`**Tu as perdu $10!**\n**New Balance:** ${i.money}`);
- })
+                db.subtract(`userBalance_${message.author.id}`, 25);
+                message.channel.send("**Aller 25$ pour moi**")
+ }
             } };
-        } } 
+        } 
  {
             function random(min, max){
                 min = Math.ceil(1);
                 max = Math.floor(3);
                 randnum = Math.floor(Math.random() * (max - min +1) +min);
-                }*/
-var prefix = '<<';
-
+                }
 if(message.content.startsWith(prefix + "ciseaux")){
-message.reply(" cette commande est desativer pour le moment") }
-
-/*random();
+    let amount = 25;
+    let  selfBalance = await db.fetch(`userBalance_${message.author.id}`);
+if(amount > selfBalance )
+return message.channel.send("il te faut un minimum de 25$");
+random();
 if (randnum == 1){
     message.reply("Ciseaux ! Ex aequo retente encore ! ")
 }
 if (randnum == 2){
     message.reply("Papier ! Tu a gagnier ...*Mange le papier* ")
- money.updateBal(message.author.id, 50 )
-                message.reply(`**Tu as reçue $50!**`);
+    db.add(`userBalance_${message.author.id}`, 50);
+    message.channel.send(`**Tu as reçue $50!**`);
 }
 if (randnum == 3){
     message.reply("Pierre ! ( ͡° ل͜ ͡°) Tu as perdu ! ")
- money.updateBal(message.author.id, -10 ).then((i) => {  
-                message.reply(`**Tu as perdu $10!**\n**New Balance:** ${i.money}`);
- })
-} }
-            };*/
+    db.subtract(`userBalance_${message.author.id}`, 25);
+    message.channel.send("**Aller 25$ pour moi**")
+
+ }
+} 
+            };
  
  if(message.content.startsWith(prefix + "test")){
     message.reply( message.author + ` TEEST`);
