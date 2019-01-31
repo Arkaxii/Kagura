@@ -71,7 +71,7 @@ console.log('Done The Watching Setup Completed')
 <<info kagura: **Toute les infos a propo de Kagura**
 <<info discord: **Les info du serveur**
 <<infos: **Donne les infos d'un utilisateur**
-<<mes infos: Donne tes information
+<<mes infos: **Donne tes information**
 <<secret: **Les prochain ajout sur le bot**
 <<avatar: **Recupere l'avatar pour l'afficher plus grand **
 <<ping: **Pour connaitre son ping**
@@ -83,8 +83,8 @@ console.log('Done The Watching Setup Completed')
 <<shop: **Pour fair des achat avec la THUN que tu as acqui**
 <<pay: **pour donner de l'argent à d'autre utilisateur**
 <<compt: **Pour voir à combien s'élève ton compt**
-<<daily: **Pour recevoir 500$ par jour**
-<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 10$**
+<<daily: **Pour recevoir 250 par jour**
+<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$**
 
 **Jeux:**
 <<8ball: **Pose n'importe quelle question**
