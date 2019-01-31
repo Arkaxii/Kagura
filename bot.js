@@ -296,16 +296,14 @@ if(!rolerain)
 	if(command === "arkapay"){
       if(message.author.id !== config.ownerID)            
       return message.reply("Tu t'attendais a quoi? Cette commande est reserver à mon créateur");
-      let target = message.mentions.members.first();
-      if(!target)
-        return message.reply("Faut mentionner quelqu'un!");
+      let target = message.mentions.members.first() || message.member; 
       let amount = parseInt(args.join('').replace(target, ''));
        if(isNaN(amount)) 
        return message.channel.send("Tu n'as pas mis de montant!");
        let targetBalance = await db.fetch(`userBalance_${target.id}`);
        if (targetBalance === null) targetBalance = 0;
        db.add(`userBalance_${target.id}`,amount);
-       message.channel.send(`**Tu as donner $${amount} a ${target.user.tag}!**`)
+       message.channel.send(`**Tu as donner $${amount} à ${target.user.tag}!**`)
 
 
      }
