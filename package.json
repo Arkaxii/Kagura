@@ -14,6 +14,7 @@
     "lodash.unset": "^4.5.2",
     "moment": "^2.22.2",
     "moment-duration-format": "^2.2.2",
+    "ms": "^2.1.1",
     "parse-ms": "^2.0.0",
     "quick.db": "^7.0.0-b21",
     "randomcolor": "^0.5.3",
