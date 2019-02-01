@@ -5,6 +5,8 @@ const money = require('discord-money');
 const db = require('quick.db');
 const ms = require('parse-ms');
 const config = require("./config.json");
+const ms2 = require('ms');
+
 
 const prefix = '<<'
 //information about the bot
@@ -68,6 +70,7 @@ console.log('Done The Watching Setup Completed')
 
 **utilitaire:**
 <<sondage: **Fait un sondage pour avoir l'avie d'autre personnes**
+<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour** 
 <<info kagura: **Toute les infos a propo de Kagura**
 <<info discord: **Les info du serveur**
 <<infos: **Donne les infos d'un utilisateur ou de toi meme**
@@ -179,7 +182,24 @@ const config = require("./config.json");
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 	
-	
+if(command == "timer"){
+     let Timer = args[0];
+
+     if(!args[0]){
+       return message.channel.send(":x: " + "| Entré une valeur suivi de \"s ou m ou h ou d\"");
+     }
+   
+     if(args[0] <= 0){
+       return message.channel.send(":x: " + "| Entré une valeur suivi de \"s ou m ou h\"");
+     }
+   
+     message.channel.send(":white_check_mark: " + "| Timer lancer pour: " + `${ms2(ms2(Timer), {long: true})}`)
+   
+     setTimeout(function(){
+       message.channel.send(message.author.toString() + ` le temp est fini!,ça a duré: ${ms2(ms2(Timer), {long: true})}`)
+   
+     }, ms2(Timer));
+   }
 	
   if(command === "rainbow") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
