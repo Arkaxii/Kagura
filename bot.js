@@ -217,7 +217,7 @@ if(command == "timer"){
      message.channel.send(":white_check_mark: " + "| Timer lancer pour: " + `${ms2(ms2(Timer), {long: true})}`)
    
      setTimeout(function(){
-       message.channel.send(message.author.toString() + ` le temp est fini!,ça a duré: ${ms2(ms2(Timer), {long: true})}`)
+       message.channel.send(message.author.toString() + ` le temp est fini!, ça a duré: ${ms2(ms2(Timer), {long: true})}`)
    
      }, ms2(Timer));
    }
