@@ -53,7 +53,7 @@ console.log('Done The Watching Setup Completed')
         let helpem = new Discord.RichEmbed()
 	.setTitle(`Requested By | ${message.author.username}`)
         .setDescription(`**
-===========🤖 KaguraHelp+ 🤖===========
+===🤖 KaguraHelp+ 🤖===
 
 **Rolplay:**
 <<wink
@@ -119,7 +119,7 @@ message.channel.send(helpem);
           let helpem = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`**
-  =====================🤖 help admin 🤖=====================
+===🤖 help admin 🤖===
   
 <<rainbow: **Change la couleur d'un role toute les minutes**
 <<purge: **Peut suprimer de 2 a 100 message **
