@@ -106,7 +106,7 @@ console.log('Done The Watching Setup Completed')
 **Admin**
 <<help admin
 
-===========🤖 KaguraHelp+ 🤖===========
+===🤖 KaguraHelp+ 🤖===
 **`)
 	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
 message.channel.send(helpem);
@@ -129,7 +129,7 @@ message.channel.send(helpem);
 SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role de kagura soit le plus haut possible
 
-  =====================🤖 help admin 🤖=====================
+===🤖 help admin 🤖===
   **`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helpem);
