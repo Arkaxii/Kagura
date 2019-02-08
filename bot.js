@@ -53,7 +53,7 @@ console.log('Done The Watching Setup Completed')
         let helpem = new Discord.RichEmbed()
 	.setTitle(`Requested By | ${message.author.username}`)
         .setDescription(`**
-=====================🤖 KaguraHelp+ 🤖=====================
+===========🤖 KaguraHelp+ 🤖===========
 
 **Rolplay:**
 <<wink
@@ -106,7 +106,7 @@ console.log('Done The Watching Setup Completed')
 **Admin**
 <<help admin
 
-=====================🤖 KaguraHelp+ 🤖=====================
+===========🤖 KaguraHelp+ 🤖===========
 **`)
 	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
 message.channel.send(helpem);
