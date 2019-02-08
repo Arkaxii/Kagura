@@ -150,6 +150,27 @@ Assurez-vous que le role de kagura soit le plus haut possible
 	   }
    });
 
+client.on('guildMemberAdd', member => {
+
+    let serverTag = member.guild.name
+    const welcomechannel = member.guild.channels.find("name", "bienvenue")
+    var embed = new Discord.RichEmbed()
+    .setColor('#76D880')
+    .setDescription(`<@${member.user.id}> à rejoint **${serverTag}**! Bienvenue à toi !`)
+    return welcomechannel.send({embed});
+
+});
+
+
+client.on('guildMemberRemove', member => { 
+    let serverTag = member.guild.name
+    const leavechannel = member.guild.channels.find('name', 'bienvenue')
+    var embed = new Discord.RichEmbed()
+    .setColor('#76D880')
+    .setDescription(`<@${member.user.id}> à quitter **${serverTag}**.Tu nous manquera... ou pas ! `)
+    return leavechannel.send({embed})
+}); 
+
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   client.user.setActivity(`Serving ${client.guilds.size} servers`);
