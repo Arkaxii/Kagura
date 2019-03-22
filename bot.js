@@ -1,4 +1,4 @@
-econst token = process.env.token;
+const token = process.env.token;
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const money = require('discord-money'); 
