@@ -1,4 +1,4 @@
-const token = process.env.token;
+econst token = process.env.token;
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const money = require('discord-money'); 
@@ -245,7 +245,7 @@ if(command == "timer"){
      let Timer = args[0];
 
      if(!args[0]){
-       return message.channel.send(":x: " + "| Entré une valeur suivi de \"s ou m ou h ou d\"");
+       return message.channel.send(":x: " + "| Entré une valeur suivi de \"s ou m ou h ou d\"(attacher à la valeur");
      }
    
      if(args[0] <= 0){
