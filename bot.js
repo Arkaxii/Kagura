@@ -1500,7 +1500,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge terre")){
                 var un = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/I6vtoiB.gif")
                 .setTitle('Badge en terre')
                 .setDescription(`prix = 250$
                 ** [<<buy terre] pour l'achat**
@@ -1628,7 +1628,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b01 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/I6vtoiB.gif")
                 .setTitle('Badge en terre')
                 .setDescription(`
                 **Tu as acheter le badge en terre!**
@@ -1992,7 +1992,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invt = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/I6vtoiB.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invt);
