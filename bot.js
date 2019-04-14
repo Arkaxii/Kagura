@@ -1500,7 +1500,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge terre")){
                 var un = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/I6vtoiB.gif")
+                .setThumbnail("https://i.imgur.com/clW7wbM.gif")
                 .setTitle('Badge en terre')
                 .setDescription(`prix = 250$
                 ** [<<buy terre] pour l'achat**
@@ -1511,7 +1511,7 @@ if(message.content.startsWith(prefix + "8ball")){
              if(message.content.startsWith(prefix + "badge carton")){
                 var deux = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/O8mFeoE.gif")
+                .setThumbnail("https://i.imgur.com/LsGimia.gif")
                 .setTitle("Badge en carton")
                 .setDescription(`prix = 500$
                 **[<<buy carton] pour l'achat**
@@ -1522,7 +1522,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge fer")){
                 var troi = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/eshLa7f.gif")
+                .setThumbnail("https://i.imgur.com/op65AOo.gif")
                 .setTitle("Badge en fer")
                 .setDescription(`prix = 1000$
                 **[<<buy fer] pour l'achat**
@@ -1533,7 +1533,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge bronze")){
                 var quatre = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/tHMesDx.gif")
+                .setThumbnail("https://i.imgur.com/9dTJIGs.gif")
                 .setTitle("Badge en bronze")
                 .setDescription(`prix = 2000$
                 **[<<buy bronze] pour l'achat**
@@ -1544,7 +1544,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge argent")){
                 var cinque = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/5eRRa8X.gif")
+                .setThumbnail("https://i.imgur.com/SKBFvqr.gif")
                 .setTitle("Badge en argent")
                 .setDescription(`prix = 4000$
                 **[<<buy argent] pour l'achat**
@@ -1555,7 +1555,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge or")){
                 var six = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/eKOeCu3.gif")
                 .setTitle("Badge en or")
                 .setDescription(`prix = 10 000$
                 **[<<buy or] pour l'achat**
@@ -1566,7 +1566,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge platine")){
                 var sept = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/Dl1a5CV.gif")
                 .setTitle("Badge en Platine")
                 .setDescription(`prix = 20 000$
                 **[<<buy platine] pour l'achat**
@@ -1577,7 +1577,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge diamant")){
                 var huit = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/rMG9MeB.gif")
                 .setTitle("Badge en diamant")
                 .setDescription(`prix = 50 000$
                 **[<<buy diamant] pour l'achat**
@@ -1588,7 +1588,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge légende")){
                 var neuf = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/AJ4MOWo.gif")
                 .setTitle("Badge légende")
                 .setDescription(`prix = 200 000$
                 **[<<buy légende] pour l'achat**
@@ -1598,7 +1598,7 @@ if(message.content.startsWith(prefix + "8ball")){
             if(message.content.startsWith(prefix + "badge legende")){
                 var neuf = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/AJ4MOWo.gif")
                 .setTitle("Badge légende")
                 .setDescription(`prix = 200 000$
                 **[<<buy légende] pour l'achat**
@@ -1628,7 +1628,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b01 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/I6vtoiB.gif")
+                .setThumbnail("https://i.imgur.com/clW7wbM.gif")
                 .setTitle('Badge en terre')
                 .setDescription(`
                 **Tu as acheter le badge en terre!**
@@ -1666,7 +1666,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b02 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/O8mFeoE.gif")
+                .setThumbnail("https://i.imgur.com/LsGimia.gif")
                 .setTitle('Badge en carton')
                 .setDescription(`
                 **Tu as acheter le badge en carton!**
@@ -1703,7 +1703,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b03 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/eshLa7f.gif")
+                .setThumbnail("https://i.imgur.com/op65AOo.gif")
                 .setTitle('Badge en fer')
                 .setDescription(`
                 **Tu as acheter le badge en fer!**
@@ -1739,7 +1739,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b04 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/tHMesDx.gif")
+                .setThumbnail("https://i.imgur.com/9dTJIGs.gif")
                 .setTitle('Badge en bronze')
                 .setDescription(`
                 **Tu as acheter le badge en bronze!** 
@@ -1777,7 +1777,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b05 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/5eRRa8X.gif")
+                .setThumbnail("https://i.imgur.com/SKBFvqr.gif")
                 .setTitle('Badge en argent')
                 .setDescription(`
                 **Tu as acheter le badge en argent!**
@@ -1815,7 +1815,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b06 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/eKOeCu3.gif")
                 .setTitle('Badge en or')
                 .setDescription(`
                 **Tu as acheter le badge en or!** 
@@ -1853,7 +1853,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b07 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/Dl1a5CV.gif")
                 .setTitle('Badge en platine')
                 .setDescription(`
                 **Tu as acheter le badge en platine!** 
@@ -1891,7 +1891,7 @@ if(message.content.startsWith(prefix + "8ball")){
 
                 var b08 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/rMG9MeB.gif")
                 .setTitle('Badge en diamant')
                 .setDescription(`
                 **Tu as acheter le badge en diamant!** 
@@ -1929,7 +1929,7 @@ if(message.content.startsWith(prefix + "8ball")){
                 
                 var b09 = new Discord.RichEmbed()
                 .setColor(0x00FF00)
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/AJ4MOWo.gif")
                 .setTitle('Badge légende')
                 .setDescription(`
                 **Tu as acheter le badge légend! GG** 
@@ -1962,7 +1962,7 @@ if(message.content.startsWith(prefix + "buy legende")){
       
       var b09 = new Discord.RichEmbed()
       .setColor(0x00FF00)
-      .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+      .setThumbnail("https://i.imgur.com/AJ4MOWo.gif")
       .setTitle('Badge légende')
       .setDescription(`
       **Tu as acheter le badge légend! GG** 
@@ -1992,7 +1992,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invt = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/I6vtoiB.gif")
+                .setThumbnail("https://i.imgur.com/clW7wbM.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invt);
@@ -2003,7 +2003,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                     var invc = new Discord.RichEmbed()
                     .setAuthor(message.author.username , message.author.avatarURL  )
-                    .setThumbnail("https://i.imgur.com/O8mFeoE.gif")
+                    .setThumbnail("https://i.imgur.com/LsGimia.gif")
                     .setDescription(`tu as ${selfBalance}$ 
                     Aucune description`)
                     message.channel.send(invc);
@@ -2014,7 +2014,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invf = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/eshLa7f.gif")
+                .setThumbnail("https://i.imgur.com/op65AOo.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invf);
@@ -2025,7 +2025,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invb = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/tHMesDx.gif")
+                .setThumbnail("https://i.imgur.com/9dTJIGs.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invb);
@@ -2036,7 +2036,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                var inva = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/5eRRa8X.gif")
+                .setThumbnail("https://i.imgur.com/SKBFvqr.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(inva);
@@ -2047,7 +2047,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invo = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/eKOeCu3.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invo);
@@ -2058,7 +2058,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invp = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/Dl1a5CV.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invp);
@@ -2069,7 +2069,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invd = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/rMG9MeB.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invd);
@@ -2080,7 +2080,7 @@ if(message.content.startsWith(prefix + "buy legende")){
 
                 var invl = new Discord.RichEmbed()
                 .setAuthor(message.author.username , message.author.avatarURL  )
-                .setThumbnail("https://i.imgur.com/w3w1YRs.png")
+                .setThumbnail("https://i.imgur.com/AJ4MOWo.gif")
                 .setDescription(`tu as ${selfBalance}$ 
                 Aucune description`)
                 message.channel.send(invl);
