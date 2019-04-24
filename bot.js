@@ -732,7 +732,8 @@ if(message.content.startsWith(prefix + "cat")){
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "secret")){
-    message.channel.send("Ajout prochain: Commande de base / jeux de cart et collection / peut etre une commande permettant de sauvgarder un serv (pour avoir un rollback du serv) en cas de raid ")
+        message.channel.send("Ajout prochain: \n **Commande de base**\n temps: Tout au long du développement \n **Jeux de cart et collection**\n tepms: indéterminée \n **Commande vocale**\n Temps: juillet/Août\n **RoleBack de serveur à triple sécuritée**\n Temps: indéterminé \n **base de donée**\n Temps: Juillet/Août ")
+
 }
 {
 function random(min, max){
