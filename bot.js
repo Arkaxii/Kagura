@@ -732,7 +732,7 @@ if(message.content.startsWith(prefix + "cat")){
 var prefix = '<<';
 
 if(message.content.startsWith(prefix + "secret")){
-        message.channel.send("Ajout prochain: \n **Commande de base**\n temps: Tout au long du développement \n **Jeux de cart et collection**\n tepms: indéterminée \n **Commande vocale**\n Temps: juillet/Août\n **RoleBack de serveur à triple sécuritée**\n Temps: indéterminé \n **base de donée**\n Temps: Juillet/Août ")
+    message.channel.send("Ajout prochain: \n **Commande de base** \n **Temps:** Tout au long du développement \n \n **Jeux de cart et collection**\n **Tepms:** indéterminée \n \n **Commande vocale** \n **Temps:** juillet/Août \n \n **RoleBack de serveur à triple sécuritée** \n **Temps:** indéterminé \n \n **base de donée** \n **Temps:** Juillet/Août ")
 
 }
 {
