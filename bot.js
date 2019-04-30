@@ -48,14 +48,16 @@ console.log('Done The Watching Setup Completed')
 
 
  client.on("message", message => {
-  if (message.content === "<<help") {
+  if (message.content === "<<help+") {
       message.react('🤖')
         let helpem = new Discord.RichEmbed()
 	.setTitle(`Requested By | ${message.author.username}`)
-        .setDescription(`**
-===🤖 KaguraHelp+ 🤖===
+        .setDescription(`
+=====================🤖 KaguraHelp+ 🤖=====================
 
-**Rolplay:**
+
+Rolplay:
+**
 <<wink
 <<wave  
 <<sleep
@@ -67,73 +69,276 @@ console.log('Done The Watching Setup Completed')
 <<kiss
 <<kill
 <<hug
+**
+Utilitaire:
 
-**utilitaire:**
-<<sondage: **Fait un sondage pour avoir l'avie d'autre personnes**
-<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour** 
-<<info kagura: **Toute les infos a propo de Kagura**
-<<info discord: **Les info du serveur**
-<<infos: **Donne les infos d'un utilisateur ou de toi meme**
-<<secret: **Les prochain ajout sur le bot**
-<<avatar: **Recupere l'avatar pour l'afficher plus grand **
-<<ping: **Pour connaitre son ping**
-<<say: **Fait dir ce que tu veut au bot **
-<<invite: **Envoie un mp pour inviter le bot dans d'autre serveur**
-<<message: **pour savoir combien de messages on été envoyer par toi ou une autre personne si ping**
+**<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
+**<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
+**<<info kagura: **Toute les infos a propo de Kagura
+**<<info discord: **Les info du serveur
+**<<infos: **Donne les infos d'un utilisateur ou de toi meme
+**<<secret: **Les prochain ajout sur le bot
+**<<avatar: **Recupere l'avatar pour l'afficher plus grand 
+**<<ping: **Pour connaitre son ping
+**<<say: **Fait dir ce que tu veut au bot 
+**<<invite: **Envoie un mp pour inviter le bot dans d'autre serveur
+**<<message:** Donne le nombre de message envoyer 
 
-**Argent:**
-<<inventaire: **Pour voir son inventaire**
-<<shop: **Pour fair des achat avec la THUN que tu as acqui**
-<<pay: **pour donner de l'argent à d'autre utilisateur**
-<<compt: **Pour voir à combien s'élève ton compt**
-<<daily: **Pour recevoir 250 par jour**
-<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$**
-<<roulette [montant]: **Test ta chance pour gagnier des $!**
+Argent:
 
-**Jeux:**
-<<8ball: **Pose n'importe quelle question**
-<<refjeux: **Trouve à quelle jeux appartien la référence **
-<<refanime: **Trouve à quelle anime appartien la référence **
-<<quiz: **Test ton intelligence**
+**<<inventaire: **Pour voir son inventaire
+**<<shop: **Pour fair des achat avec la THUNE que tu as acquis
+**<<pay: **pour donner de l'argent à d'autre utilisateur
+**<<compt: **pour voir à combien s'élève ton compt
+**<<daily: **pour recevoir 250$ par jour
+**<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
+**<<roulette[montant de $]:**Test ta chance pour gagnier des $!
 
-**Random:**
-<<pile: **1 chance sur 2**
-<<face: **1 chance sur 2**
-<<lancer6: **Imite un lancer de dé à 6 face **
-<<lancer12: **Imite un lancer de dé à 12 face **
-<<lancer20:** Imite un lancer de dé à 20 face**
+Jeux:
 
-**Admin**
+**<<8ball: **Pose n'importe quelle question
+**<<refjeux: **trouve à quelle jeux appartien la référence 
+**<<refanime: **trouve à quelle anime appartien la référence 
+**<<quiz: **Test ton intelligence
+
+Random:
+
+**<<pile: **1 chance sur 2
+**<<face: **1 chance sur 2
+**<<lancer6: **imite un lancer de dé à 6 face 
+**<<lancer12: **imite un lancer de dé à 12 face 
+**<<lancer20:** imite un lancer de dé à 20 face
+
+Admin:
+
 <<help admin
 
-===🤖 KaguraHelp+ 🤖===
-**`)
-	.setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
-message.channel.send(helpem);
-    }
 
-    if (message.content === "<<help admin") {
+=====================🤖 KaguraHelp+ 🤖=====================
+`)
+	.setFooter(`created by  ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+message.channel.send(helpem);
+  }
+
+    if (message.content === "<<help rp") {
+        message.react('🤖')
+          let helprp = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`**
+=====================🤖** Rolplay **🤖=====================
+  
+**Pas besoin d'expliquer les commandes...fin je suis pose...j'éspère...Vraiment...bon ok j'arrète**
+
+<<wink
+
+<<wave  
+
+<<sleep
+
+<<wake-up 
+
+<<slap 
+
+<<punch
+
+<<poke
+
+<<pat
+
+<<kiss
+
+<<kill
+
+<<hug
+
+
+=====================🤖** Rolplay **🤖=====================
+  **`)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helprp);
+      }
+    
+
+      if (message.content === "<<help utile") {
+        message.react('🤖')
+          let helputi = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`
+=====================🤖** utilitaire **🤖=====================
+  
+
+**<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
+
+**<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
+
+**<<info kagura: **Toute les infos a propo de Kagura
+
+**<<info discord: **Les info du serveur
+
+**<<infos: **Donne les infos d'un utilisateur ou de toi meme
+  
+**<<secret: **Les prochain ajout sur le bot
+
+**<<avatar: **Recupere l'avatar pour l'afficher plus grand 
+
+**<<ping: **Pour connaitre son ping
+
+**<<say: **Fait dir ce que tu veut au bot 
+
+**<<invite: **Envoie un mp pour inviter le bot dans d'autre serveur
+
+**<<message:** Donne le nombre de message envoyer 
+  
+
+=====================🤖** utilitaire **🤖=====================
+  `)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helputi);
+      }
+
+      if (message.content === "<<help $") {
+        message.react('🤖')
+          let help$ = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`
+=====================🤖** [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅] **🤖=====================
+
+
+**<<inventaire: **Pour voir son inventair
+
+**<<shop: **Pour fair des achat avec la THUN que tu as acquis
+
+**<<pay: **pour donner de l'argent à d'autre utilisateur
+
+**<<compt: **pour voir à combien s'élève ton compt
+
+**<<daily: **pour recevoir 250$ par jour
+
+**<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
+
+**<<roulette [montant]:**Parie pour essayer de gagnier des $!
+
+
+=====================🤖**[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]**🤖=====================
+  `)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(help$);
+      }
+    
+      
+
+      if (message.content === "<<help jeux") {
+        message.react('🤖')
+          let helpje = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`
+=====================🤖** Jeux **🤖=====================
+  
+
+**<<8ball: **Pose n'importe quelle question
+
+**<<refjeux: **trouve à quelle jeux appartien la référence 
+
+**<<refanime: **trouve à quelle anime appartien la référence 
+
+**<<quiz: **Test ton intelligence
+
+
+=====================🤖** Jeux **🤖=====================
+  `)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helpje);
+      }
+
+
+      if (message.content === "<<help rand") {
+        message.react('🤖')
+          let helprd = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`
+=====================🤖** Random **🤖=====================
+
+
+**<<pile: **1 chance sur 2
+
+**<<face: **1 chance sur 2
+
+**<<lancer6: **imite un lancer de dé à **6 face ** 
+
+**<<lancer12: **imite un lancer de dé à **12 face ** 
+
+**<<lancer20:** imite un lancer de dé à **20 face **
+
+
+=====================🤖** Random **🤖=====================
+  `)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helprd);
+      }
+
+
+
+    
+      if (message.content === "<<help admin") {
         if(!message.member.permissions.has('ADMINISTRATOR') )
         return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!" );
         message.react('🤖')
-          let helpem = new Discord.RichEmbed()
+          let helpad = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
-          .setDescription(`**
-===🤖 help admin 🤖===
+          .setDescription(`
+=====================🤖 **Admin** 🤖=====================
   
-<<rainbow: **Change la couleur d'un role toute les minutes**
-<<purge: **Peut suprimer de 2 a 100 message **
-<<kick
-<<ban
+**<<rainbow: **Change la couleur d'un role en random
+
+**<<purge: **Peut suprimer de 2 a 100 message 
+
+**<<kick:** Peut être accompagner d'une raison
+
+**<<ban:** Peut etre accompagner d'une raison
 
 SI LE RAINBOW NE FONCTIONNE PAS:
-Assurez-vous que le role de kagura soit le plus haut possible
 
-===🤖 help admin 🤖===
-  **`)
+Assurez-vous que le role rainbow soit le plus haut possible
+il change de couleur toute les minutes
+
+=====================🤖 **Admin** 🤖=====================
+  `)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
-  message.channel.send(helpem);
-      }})
+  message.channel.send(helpad);
+      }
+    
+
+      if (message.content === "<<help") {
+        message.react('🤖')
+          let helpa = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`
+=====================🤖** Help **🤖=====================
+ 
+
+**<<help+:** Montre toute les commandes disponible
+
+**<<help rp:** Montre uniquement les commandes RP (punch/kiss/hug/...)
+
+**<<help utile:** Montre uniquement les commande utilitaire (timer/say/avatar/...)
+
+**<<help $:** Montre uniquement les commandes lié a la THUNE [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅] (daily/shop/roulette/...)
+
+**<<help jeux:** Montre uniquement les commande de jeux (8ball/refanime/quiz/...)
+
+**<<help rand:** Montre uniquement les commande random (pile/face/lancer6/...)
+
+**<<help admin:** Que pour les admines
+
+
+=====================🤖** Help **🤖=====================
+  `)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helpa);
+      }
+    
+    
+    })
 
 
    client.on('message', message => {
