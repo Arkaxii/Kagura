@@ -341,7 +341,7 @@ il change de couleur toute les minutes
     })
 
 
-   client.on('message', message => {
+   client.on('message', async message => {
 	   if(message.content.startsWith(prefix + `invite`)) {
 		   if(!message.channel.guild) return;
                  message.react('🌈')
@@ -352,7 +352,28 @@ il change de couleur toute les minutes
 		   .setFooter(`Requested By | ${message.author.username}`)
 		   .setColor("RANDOM")
 		   message.author.send({embed})
-	   }
+	}
+   
+        if(message.content.startsWith("n'est ce pas Kagura")){
+        if(message.author.id !== config.ownerID);
+var reponse = [
+"Entièrement d'accord",
+"Ah ba sa oui",
+"Tu pens comme moi ou c'est moi qui pense comme toi 🤔",
+"Sa c'est sûr :p",
+"Je peut pas le nier",
+"Ce n'etai pas déja une évidence ?"
+
+
+]
+
+        var result = Math.floor((Math.random() * reponse.length) + 0);
+
+        message.channel.send(reponse[result]);
+  
+  
+       }
+   
    });
 
 client.on('guildMemberAdd', member => {
