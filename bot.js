@@ -527,6 +527,27 @@ if(!rolerain)
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
+	
+	  if (command === "dico"){
+    const chepasécriree = args.join(" ");
+    if(!chepasécriree)  
+    return message.reply("Je ne peut pas t'aider si tu ne met rien");
+    message.channel.send(`https://www.larousse.fr/dictionnaires/francais/${chepasécriree}`);
+}
+
+if (command === "a-f"){
+    const chepasdir = args.join(" ");
+    if(!chepasdir)  
+    return message.reply("Je ne peut pas t'aider si tu ne met rien");
+    message.channel.send(`https://www.larousse.fr/dictionnaires/anglais-francais/${chepasdir}`);
+}
+
+if (command === "f-a"){
+    const chepasdire = args.join(" ");
+    if(!chepasdire)  
+    return message.reply("Je ne peut pas t'aider si tu ne met rien");
+    message.channel.send(`https://www.larousse.fr/dictionnaires/francais-anglais/${chepasdire}`);
+}
   
   if(command === "kick") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
