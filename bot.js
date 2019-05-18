@@ -398,7 +398,24 @@ var reponse = [
 
                       message.channel.send(respecta);
     }
+
+    if(message.content.startsWith("Mais où est le respect ?")){
+        let respecta = new Discord.RichEmbed()
+        .setTitle(`Il est bon`)
+        .setImage("https://i.imgur.com/J2qrXHK.gif")
+
+                      message.channel.send(respecta);
+    }
    
+    if(message.content.startsWith("mais où est le respect ?")){
+        let respecta = new Discord.RichEmbed()
+        .setTitle(`Il est bon`)
+        .setImage("https://i.imgur.com/J2qrXHK.gif")
+
+                      message.channel.send(respecta);
+    }
+
+
    });
 
 client.on('guildMemberAdd', member => {
