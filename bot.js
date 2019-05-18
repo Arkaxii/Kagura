@@ -549,11 +549,17 @@ if(!rolerain)
  }, 60000);
 	     message.channel.send(`le role ${rolerain} a été definit comme rainbow`)
     }
+
+
     if(command === "ping") {
-    const m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latence de ${m.createdTimestamp - message.createdTimestamp}ms. API Latence de ${Math.round(client.ping)}ms`);
-  }
+        const m = await message.channel.send("▇═══ 25%");
+            m.edit(`▇▇══ 50%`);
+            m.edit(`▇▇▇═ 75%`);
+            m.edit(`▇▇▇▇ 100%`);
+          m.edit(`Ping de: \` ${new Date().getTime() - message.createdTimestamp} \` ms \n API Latence de: \` ${Math.round(client.ping)} \` ms`);    
+        }
   
+        
   if(command === "say") {
 
     const sayMessage = args.join(" ");
