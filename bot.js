@@ -382,6 +382,22 @@ var reponse = [
   
   
        }
+
+       if(message.content.startsWith("mais ou est le respect ?")){
+        let respect = new Discord.RichEmbed()
+        .setTitle(`Il est bon`)
+        .setImage("https://i.imgur.com/J2qrXHK.gif")
+
+                      message.channel.send(respect);
+    }
+
+    if(message.content.startsWith("Mais ou est le respect ?")){
+        let respecta = new Discord.RichEmbed()
+        .setTitle(`Il est bon`)
+        .setImage("https://i.imgur.com/J2qrXHK.gif")
+
+                      message.channel.send(respecta);
+    }
    
    });
 
