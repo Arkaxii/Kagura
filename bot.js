@@ -1036,10 +1036,40 @@ if(message.content.startsWith(prefix + "cat")){
 
 var prefix = '<<';
 
-if(message.content.startsWith(prefix + "secret")){
-    message.channel.send("Ajout prochain: \n **Commande de base** \n **Temps:** Tout au long du développement \n \n **Jeux de cart et collection**\n **Temps:** indéterminée \n \n **Commande vocale** \n **Temps:** juillet/Août \n \n **RollBack de serveur à triple sécuritée** \n **Temps:** indéterminé \n \n **Base de donnée** \n **Temps:** Juillet/Août ")
 
-}
+if(message.content.startsWith(prefix + "secret")){
+    let secret = new Discord.RichEmbed()
+    .setTitle(`Requested By | ${message.author.username}`)
+    .setDescription(`
+===================**Ajout prochain**===================
+    
+__**V1**__
+    
+**-commandes en pagaille**
+    
+    
+__**V2**__
+    
+**-Commande vocale**
+    
+**-Changement d'hébergeur**
+Base de donnée 
+sauvegarde de donnée comme l'argent / carte / ...
+    
+    
+__**V3**__
+   
+**-RollBack de serveur à triple sécuritée** 
+(requieres 2 modo et le propriétaire du serveur )
+             
+===================**Ajout prochain**===================
+`)
+    .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+    message.channel.send(secret);
+    }
+
+
+
 {
 function random(min, max){
     min = Math.ceil(1);
