@@ -86,6 +86,8 @@ Utilitaire:
 **<<a-f:**traduit d'Anglais à Français
 **<<f-a:**Traduit du Français à l'Anglais
 **<<dico:** Cherche le mot dans le dictionnaire 
+**<<syntaxe-b:** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+**<<syntaxe-c:** Pour savoir comment écrire en couleur 
 
 Argent:
 
@@ -130,7 +132,7 @@ message.channel.send(helpem);
           .setDescription(`**
 =====================🤖** Rolplay **🤖=====================
   
-**Pas besoin d'expliquer les commandes...fin je suis pose...j'éspère...Vraiment...bon ok j'arrète**
+**Pas besoin d'expliquer les commandes...fin je suppose...j'éspère...Vraiment...bon ok j'arrète**
 
 <<wink
 
@@ -153,7 +155,6 @@ message.channel.send(helpem);
 <<kill
 
 <<hug
-
 
 =====================🤖** Rolplay **🤖=====================
   **`)
@@ -197,6 +198,10 @@ message.channel.send(helpem);
 **<<f-a:**Traduit du Français à l'Anglais
 
 **<<dico:** Cherche le mot dans le dictionnaire
+
+**<<syntaxe-b:** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+
+**<<syntaxe-c:** Pour savoir comment écrire en couleur 
 
 
 =====================🤖** utilitaire **🤖=====================
@@ -518,7 +523,298 @@ const config = require("./config.json");
 
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-	
+    
+  
+  if(command ==="syntaxe-b"){
+    let syntb = new Discord.RichEmbed()
+    .setTitle(`Requested By | ${message.author.username}`)
+        .setDescription(`
+
+Syntaxe Basique:
+
+0) **Salut, ce message est en gras!**
+
+1) *je me sens penché*
+
+2) __Je suis souligné... Meh__
+
+3) ~~Nan mais ok je me barre~~
+
+4) Blocs ==> 4⃣  pour plus d'info
+
+5) || Pourquoi as-tu cliquer ? ||
+
+`)
+    .setFooter(` on peut mixer plusieur syntaxe `)
+message.channel.send(syntb)
+.then(async function (message ) {
+
+   await message.react("0⃣")
+   await message.react("1⃣")
+   await message.react("2⃣")
+   await message.react("3⃣")
+   await message.react("4⃣")
+   await message.react("5⃣")
+
+
+   client.on('messageReactionAdd',async (reaction, user) =>{
+       if (reaction.emoji.name === "0⃣" && user.id !== client.user.id) {
+           reaction.remove(user)
+           reaction.remove()
+           await message.delete(syntb)
+           
+           var gr = new Discord.RichEmbed()
+           .setAuthor("Gras")
+           .setImage("https://i.imgur.com/bFbRwsL.png")
+           message.channel.send(gr);
+
+        }
+    })
+
+    client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "1⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntb)
+            
+            var ita = new Discord.RichEmbed()
+            .setAuthor("Italique")
+            .setImage("https://i.imgur.com/Lt7TM69.png")
+            message.channel.send(ita);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "2⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntb)
+            
+            var souli = new Discord.RichEmbed()
+            .setAuthor("Souligné")
+            .setImage("https://i.imgur.com/WHB7BzJ.png")
+            message.channel.send(souli);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "3⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntb)
+            
+            var barre = new Discord.RichEmbed()
+            .setAuthor("Barré")
+            .setImage("https://i.imgur.com/s1YxfdD.png")
+            message.channel.send(barre);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "4⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntb)
+            
+            var bl = new Discord.RichEmbed()
+            .setAuthor("Blocs")
+            .setDescription(" ``C'est un blocs``  ")
+            .setImage("https://i.imgur.com/0OlUjKp.png")
+            message.channel.send(bl);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "5⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntb)
+            
+            var ats = new Discord.RichEmbed()
+            .setAuthor("anti-spoil")
+            .setDescription(" || tu aime te faire spoil ? ||  ")
+            .setImage("https://i.imgur.com/hI3nOOb.png")
+            message.channel.send(ats);
+ 
+         }
+     })
+
+})
+}
+    
+
+
+if(command ==="syntaxe-c"){
+
+    const syntc =  "Syntaxe coloré\n```\nUn message\n```\n```css\nUn message\n```\n```fix\nUn message\n```\n```md\n# Un message\n```\n```py\n# Un message\n```\n```cs\n# Un message\n```\n```diff\n- Un message\n```\n```xl\n'Un message'\n```\n```tex\n$ Un message\n```\n```md\n[Un](message)\n``` "
+
+ message.channel.send(syntc)
+
+.then(async function (message ) {
+
+     await message.react("0⃣")
+     await message.react("1⃣")
+     await message.react("2⃣")
+     await message.react("3⃣")
+     await message.react("4⃣")
+     await message.react("5⃣")
+     await message.react("6⃣")
+     await message.react("7⃣")
+     await message.react("8⃣")
+     await message.react("9⃣")
+
+
+   client.on('messageReactionAdd',async (reaction, user) =>{
+       if (reaction.emoji.name === "0⃣" && user.id !== client.user.id) {
+           reaction.remove(user)
+           reaction.remove()
+           await message.delete(syntc)
+           
+           var bg = new Discord.RichEmbed()
+           .setAuthor("Change la couleur suivant la version du discord")
+           .setImage("https://miro.medium.com/max/189/0*Ge9j3pIqe0yLp24w")
+           message.channel.send(bg);
+
+        }
+    })
+
+    client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "1⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var VB = new Discord.RichEmbed()
+            .setAuthor("Change la couleur suivant la version du discord")
+            .setImage("https://miro.medium.com/max/174/0*9aDweOZLf9UA6J4J")
+            message.channel.send(VB);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "2⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var J = new Discord.RichEmbed()
+            .setAuthor("Jaune")
+            .setImage("https://miro.medium.com/max/191/0*UUjVqgsQGDAsIK2c")
+            message.channel.send(J);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "3⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var BC = new Discord.RichEmbed()
+            .setAuthor("Bleu clair")
+            .setImage("https://miro.medium.com/max/196/0*w1erI-mlSsLS-UAo")
+            message.channel.send(BC);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "4⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var G = new Discord.RichEmbed()
+            .setAuthor("Gris")
+            .setImage("https://miro.medium.com/max/209/0*ByksHgPVmf_R4WSt")
+            message.channel.send(G);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "5⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var O = new Discord.RichEmbed()
+            .setAuthor("Orange")
+            .setImage("https://miro.medium.com/max/201/0*IePOTWeVqNh8Xi6v")
+            message.channel.send(O);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "6⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var r = new Discord.RichEmbed()
+            .setAuthor("Rouge")
+            .setImage("https://miro.medium.com/max/203/0*oyJvdUGzNoXIHNFf")
+            message.channel.send(r);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "7⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var bs = new Discord.RichEmbed()
+            .setAuthor("Bleu sarcelle")
+            .setImage("https://miro.medium.com/max/183/0*Wjl5GfS3bnfmduUd")
+            message.channel.send(bs);
+ 
+         }
+     })
+
+     client.on('messageReactionAdd',async (reaction, user) =>{
+        if (reaction.emoji.name === "8⃣" && user.id !== client.user.id) {
+            reaction.remove(user)
+            reaction.remove()
+            await message.delete(syntc)
+            
+            var sur = new Discord.RichEmbed()
+            .setAuthor("Surligner")
+            .setImage("https://miro.medium.com/max/193/0*X_zV6R7wBAlLSs5u")
+            message.channel.send(sur);
+ 
+         }
+     })
+
+
+client.on('messageReactionAdd',async (reaction, user) =>{
+    if (reaction.emoji.name === "9⃣" && user.id !== client.user.id) {
+        reaction.remove(user)
+        reaction.remove()
+        await message.delete(syntc)
+        
+        var bi = new Discord.RichEmbed()
+        .setAuthor("bicolore")
+        .setImage("https://miro.medium.com/max/202/0*e77nVHYRVK8khWcv")
+        message.channel.send(bi);
+
+     }
+ })
+})
+
+
+
+}
+
+
 if(command == "timer"){
      let Timer = args[0];
 
