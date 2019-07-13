@@ -87,7 +87,7 @@ Utilitaire:
 **<<f-a:**Traduit du Français à l'Anglais
 **<<dico:** Cherche le mot dans le dictionnaire 
 **<<syntaxe-b:** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-**<<syntaxe-c:** Pour savoir comment écrire en couleur 
+**<<syntaxe-c:** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
 
 Argent:
 
