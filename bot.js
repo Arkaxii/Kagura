@@ -378,37 +378,19 @@ il change de couleur toute les minutes
         }
     }
 
-       if(message.content.startsWith("mais ou est le respect ?")){
-        let respect = new Discord.RichEmbed()
-        .setTitle(`Il est bon`)
-        .setImage("https://i.imgur.com/J2qrXHK.gif")
-
-                      message.channel.send(respect);
-    }
-
-    if(message.content.startsWith("Mais ou est le respect ?")){
-        let respecta = new Discord.RichEmbed()
-        .setTitle(`Il est bon`)
-        .setImage("https://i.imgur.com/J2qrXHK.gif")
-
-                      message.channel.send(respecta);
-    }
-
-    if(message.content.startsWith("Mais où est le respect ?")){
-        let respecta = new Discord.RichEmbed()
-        .setTitle(`Il est bon`)
-        .setImage("https://i.imgur.com/J2qrXHK.gif")
-
-                      message.channel.send(respecta);
-    }
-   
-    if(message.content.startsWith("mais où est le respect ?")){
-        let respecta = new Discord.RichEmbed()
-        .setTitle(`Il est bon`)
-        .setImage("https://i.imgur.com/J2qrXHK.gif")
-
-                      message.channel.send(respecta);
-    }
+    let eventr = ['respect ?'];
+    let fondintextr = false;
+    for (var i in eventr){
+        if (message.content.toLocaleLowerCase().includes(eventr[i].toLocaleLowerCase()))
+        fondintextr = true;
+        if(fondintextr){
+            let respect = new Discord.RichEmbed()
+            .setTitle(`Il est bon`)
+            .setImage("https://i.imgur.com/J2qrXHK.gif")
+    
+                          message.channel.send(respect);
+        }
+        }
 
 
    });
