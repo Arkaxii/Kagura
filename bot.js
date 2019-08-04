@@ -53,7 +53,7 @@ console.log('Done The Watching Setup Completed')
         let helpem = new Discord.RichEmbed()
 	.setTitle(`Requested By | ${message.author.username}`)
         .setDescription(`
-=====================🤖 KaguraHelp+ 🤖=====================
+==========🤖KaguraHelp+🤖==========
 
 
 Rolplay:
@@ -119,7 +119,7 @@ Admin:
 <<help admin
 
 
-=====================🤖 KaguraHelp+ 🤖=====================
+==========🤖KaguraHelp+🤖==========
 `)
 	.setFooter(`created by  ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
 message.channel.send(helpem);
@@ -130,7 +130,7 @@ message.channel.send(helpem);
           let helprp = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`**
-=====================🤖** Rolplay **🤖=====================
+==========🤖**Rolplay**🤖==========
   
 **Pas besoin d'expliquer les commandes...fin je suppose...j'éspère...Vraiment...bon ok j'arrète**
 
@@ -156,8 +156,8 @@ message.channel.send(helpem);
 
 <<hug
 
-=====================🤖** Rolplay **🤖=====================
-  **`)
+==========🤖**Rolplay**🤖==========
+**`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helprp);
       }
@@ -168,7 +168,7 @@ message.channel.send(helpem);
           let helputi = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
-=====================🤖** utilitaire **🤖=====================
+==========🤖**utilitaire**🤖==========
   
 
 **<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
@@ -204,8 +204,8 @@ message.channel.send(helpem);
 **<<syntaxe-c:** Pour savoir comment écrire en couleur 
 
 
-=====================🤖** utilitaire **🤖=====================
-  `)
+==========🤖**utilitaire**🤖==========
+`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helputi);
       }
@@ -215,7 +215,7 @@ message.channel.send(helpem);
           let help$ = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
-=====================🤖** [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅] **🤖=====================
+==========🤖**[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]**🤖==========
 
 
 **<<inventaire: **Pour voir son inventair
@@ -233,8 +233,8 @@ message.channel.send(helpem);
 **<<roulette [montant]:**Parie pour essayer de gagnier des $!
 
 
-=====================🤖**[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]**🤖=====================
-  `)
+==========🤖**[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]**🤖==========
+`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(help$);
       }
@@ -246,7 +246,7 @@ message.channel.send(helpem);
           let helpje = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
-=====================🤖** Jeux **🤖=====================
+==========🤖**Jeux**🤖==========
   
 
 **<<8ball: **Pose n'importe quelle question
@@ -258,8 +258,8 @@ message.channel.send(helpem);
 **<<quiz: **Test ton intelligence
 
 
-=====================🤖** Jeux **🤖=====================
-  `)
+==========🤖**Jeux**🤖==========
+`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helpje);
       }
@@ -270,7 +270,7 @@ message.channel.send(helpem);
           let helprd = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
-=====================🤖** Random **🤖=====================
+==========🤖** Random **🤖==========
 
 
 **<<pile: **1 chance sur 2
@@ -284,8 +284,8 @@ message.channel.send(helpem);
 **<<lancer20:** imite un lancer de dé à **20 face **
 
 
-=====================🤖** Random **🤖=====================
-  `)
+==========🤖** Random **🤖==========
+`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helprd);
       }
@@ -300,7 +300,7 @@ message.channel.send(helpem);
           let helpad = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
-=====================🤖 **Admin** 🤖=====================
+==========🤖**Admin**🤖==========
   
 **<<rainbow: **Change la couleur d'un role en random
 
@@ -315,8 +315,8 @@ SI LE RAINBOW NE FONCTIONNE PAS:
 Assurez-vous que le role rainbow soit le plus haut possible
 il change de couleur toute les minutes
 
-=====================🤖 **Admin** 🤖=====================
-  `)
+==========🤖**Admin**🤖==========
+`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helpad);
       }
@@ -327,7 +327,7 @@ il change de couleur toute les minutes
           let helpa = new Discord.RichEmbed()
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
-=====================🤖** Help **🤖=====================
+==========🤖**Help**🤖==========
  
 
 **<<help+:** Montre toute les commandes disponible
@@ -345,8 +345,8 @@ il change de couleur toute les minutes
 **<<help admin:** Que pour les admines
 
 
-=====================🤖** Help **🤖=====================
-  `)
+==========🤖**Help**🤖==========
+`)
       .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
   message.channel.send(helpa);
       }
