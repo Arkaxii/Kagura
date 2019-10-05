@@ -947,7 +947,7 @@ if (command === "f-a"){
 	
 	if(command === "arkapay"){
       if(message.author.id !== config.ownerID)            
-      return message.reply("Tu t'attendais a quoi? Cette commande est reserver à mon créateur");
+      return message.reply("Cheateur arrète de cheater!!");
       let target = message.mentions.members.first() || message.member; 
       let amount = parseInt(args.join('').replace(target, ''));
        if(isNaN(amount)) 
