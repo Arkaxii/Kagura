@@ -9,7 +9,6 @@ const ms2 = require('ms');
 
 
 const prefix = '<<'
-//information about the bot
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
@@ -21,7 +20,6 @@ client.on('ready', () => {
   console.log('╔[═════════════════════════════════════]╗');
   console.log(`Logged in as * [ " ${client.user.username} " ]`);
   console.log('')
-  console.log('Informations About Rainbow bot:')
   console.log('')
   console.log(`Servers! [ " ${client.guilds.size} " ]`);
   console.log(`Users! [ " ${client.users.size} " ]`);
@@ -38,10 +36,6 @@ client.on('ready', () => {
   console.log(`${client.user.username} Is Online`)
   console.log('╚[════════════]╝')
   console.log('')
-  console.log('╔[════════════]╗')
-  console.log('Created By: Revenge')
-  console.log('╚[════════════]╝')
-client.user.setActivity("r#help | By Revenge",{type: 'WATCHING'});
 console.log('Done The Watching Setup Completed')
 	
 });
