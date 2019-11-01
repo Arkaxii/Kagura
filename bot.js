@@ -329,8 +329,8 @@ message.channel.send(helpem);
       .setTitle(`Requested By | ${message.author.username}`)
           .setDescription(`
 ==========🤖**Admin**🤖==========
-  
-**<<rainbow: **Change la couleur d'un role en random
+
+**<<addrole: **Crée un embed avec le role pingé et réaction emote pour avoir le role
 
 **<<purge: **Peut suprimer de 2 a 100 message 
 
@@ -338,10 +338,7 @@ message.channel.send(helpem);
 
 **<<ban:** Peut etre accompagner d'une raison
 
-SI LE RAINBOW NE FONCTIONNE PAS:
 
-Assurez-vous que le role rainbow soit le plus haut possible
-il change de couleur toute les minutes
 
 ==========🤖**Admin**🤖==========
 `)
@@ -933,6 +930,38 @@ if (command === "f-a"){
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Impossible de purger car: ${error}`));
   } 
+
+  if(message.content.startsWith(prefix + "addrole")){
+ 
+    if(!message.member.permissions.has('ADMINISTRATOR') )
+    return message.reply("Cette commande est réserver aux Admin");
+    let rolegive = message.mentions.roles.first();
+if(!rolegive)
+  return message.reply("Veuiller mentionner un role valide");
+
+
+    const p1 = new Discord.RichEmbed()
+    .setAuthor("Donner vous vos roles")
+    .setDescription(`✅ pour avoir ${rolegive}`)
+    .setFooter("Role")
+        message.channel.send(p1)
+        .then(message => {
+            message.react("✅")
+        
+            client.on('messageReactionAdd',  (reaction, user) =>{
+            
+                if (reaction.emoji.name === "✅" && user.id !== client.user.id) {
+                    
+                    reaction.message.guild.member(user).addRole(rolegive)                              
+
+                    reaction.remove(user);
+                    
+                }
+            })
+        })
+        
+     }
+
            if(command ==="compt"){
      let user = message.mentions.users.first() || message.author;
      let balance = await db.fetch(`userBalance_${user.id}`);
