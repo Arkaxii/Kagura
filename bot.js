@@ -330,14 +330,13 @@ message.channel.send(helpem);
           .setDescription(`
 ==========🤖**Admin**🤖==========
 
-**<<addrole: **Crée un embed avec le role pingé et réaction emote pour avoir le role
+**<<addrole: **Crée un embed avec le role pingé et réaction emote pour avoir le role /!/ doit être réutiliser apres chaque down du bot
 
 **<<purge: **Peut suprimer de 2 a 100 message 
 
 **<<kick:** Peut être accompagner d'une raison
 
 **<<ban:** Peut etre accompagner d'une raison
-
 
 
 ==========🤖**Admin**🤖==========
