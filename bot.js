@@ -931,8 +931,9 @@ if (command === "f-a"){
       .catch(error => message.reply(`Impossible de purger car: ${error}`));
   } 
 
-  if(message.content.startsWith(prefix + "addrole")){
- 
+
+
+if(command ==="addrole") {
     if(!message.member.permissions.has('ADMINISTRATOR') )
     return message.reply("Cette commande est réserver aux Admin");
     let rolegive = message.mentions.roles.first();
