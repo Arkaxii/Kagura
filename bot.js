@@ -1069,7 +1069,8 @@ if (command === "f-a"){
     };
 
     if(command === "del") {            
-        
+        let delt = message.mentions.members.first();
+
         var dellet = [
 "https://i.imgur.com/vSO0Pha.jpg",
 "https://i.imgur.com/GfH98IF.jpg",
@@ -1103,7 +1104,7 @@ if (command === "f-a"){
         var del = dellet[Math.floor(Math.random() * dellet.length)] ;
         var delt_embed = new Discord.RichEmbed()
         .setColor('RANDOM')
-        .setTitle('DELETE SAAAA')
+        .setTitle(`DELETE SAAAA ${delt.displayName}!! `)
         .setImage(del)
         .setFooter("")
         message.channel.send(delt_embed);
