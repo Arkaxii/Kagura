@@ -64,6 +64,14 @@ Rolplay:
 <<kill
 <<hug
 **
+
+Autre:
+
+**<<waifu: **Montre ta nouvelle waifu
+**<<monstre: **Dévoile le monstre en toi
+**<<del: **Delet this (meme)
+**<<hack **Pour hacké une personne choisit
+
 Utilitaire:
 
 **<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
@@ -156,6 +164,32 @@ message.channel.send(helpem);
   message.channel.send(helprp);
       }
     
+
+      if (message.content === "<<help au") {
+        message.react('🤖')
+          let helprp = new Discord.RichEmbed()
+      .setTitle(`Requested By | ${message.author.username}`)
+          .setDescription(`**
+==========🤖**Autre**🤖==========
+  
+**<<waifu: **Montre ta nouvelle waifu
+
+**<<monstre: **Dévoile le monstre en toi
+
+**<<del: **Delet this meme
+
+**<<hack **Pour hacké une personne choisit
+
+==========🤖**Autre**🤖==========
+**`)
+      .setFooter(`created by ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)
+  message.channel.send(helprp);
+      }
+
+
+
+
+
 
       if (message.content === "<<help utile") {
         message.react('🤖')
@@ -337,6 +371,8 @@ il change de couleur toute les minutes
 **<<help rand:** Montre uniquement les commande random (pile/face/lancer6/...)
 
 **<<help admin:** Que pour les admines
+
+**<<help au:** (autre) commande en pagaille (hack/waifu/del/...) 
 
 
 ==========🤖**Help**🤖==========
@@ -986,7 +1022,152 @@ if (command === "f-a"){
 
         }
      }}
-	
+    
+     
+
+     if(command === "monstre") {
+        if(message.author.id == config.ownerID)     
+
+        
+
+        var monstO_embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle('Le monstre en toi est:')
+        .setImage("https://i.imgur.com/vwRsUBW.jpg")
+        .setFooter("")
+        message.channel.send(monstO_embed);
+
+
+
+        if(message.author.id !== config.ownerID)     
+
+        var monstu = [
+            "https://i.imgur.com/pXfJGC9.png",
+            "https://i.imgur.com/vgoPbC9.jpg",
+            "https://i.imgur.com/CvsIaOX.jpg",
+            "https://i.imgur.com/86ovEZu.jpg",
+            "https://i.imgur.com/IzJTScd.png",
+            "https://i.imgur.com/LAZgBCw.jpg",
+            "https://i.imgur.com/ydZbrqF.jpg",
+            "https://i.imgur.com/tymTI95.jpg",
+            "https://i.imgur.com/nCoZH8x.jpg"
+
+        ];
+
+        var mt = monstu[Math.floor(Math.random() * monstu.length)] ;
+        var monst_embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle('Le monstre en toi est:')
+        .setImage(mt)
+        .setFooter("")
+        message.channel.send(monst_embed);
+
+
+
+
+
+    };
+
+    if(command === "del") {            
+        
+        var dellet = [
+"https://i.imgur.com/vSO0Pha.jpg",
+"https://i.imgur.com/GfH98IF.jpg",
+"https://i.imgur.com/qwDCQYZ.jpg",
+"https://i.imgur.com/uEDzLaJ.jpg",
+"https://i.imgur.com/72SU3St.jpg",
+"https://i.imgur.com/ZkjzyM4.jpg",
+"https://i.imgur.com/T5t9ktB.jpg",
+"https://i.imgur.com/87lQKGz.png",
+"https://i.imgur.com/jLsfggt.png",
+"https://i.imgur.com/AAJ27hj.png",
+"https://i.imgur.com/BwJNUHX.jpg",
+"https://i.imgur.com/XJlzkbw.jpg",
+"https://i.imgur.com/XvWi3YG.png",
+"https://i.imgur.com/x92xI1U.png",
+"https://i.imgur.com/9peb6vE.png",
+"https://i.imgur.com/xIE4Dlw.png",
+"https://i.imgur.com/YumxR4S.png",
+"https://i.imgur.com/sNiUYEQ.png",
+"https://i.imgur.com/o2MFwv1.png",
+"https://i.imgur.com/adXzvr2.gif",
+"https://i.imgur.com/QUMShn2.png",
+"https://i.imgur.com/WLu4MBw.png",
+"https://i.imgur.com/2C1DGMQ.png",
+"https://i.imgur.com/PgpRywN.jpg",
+"https://i.imgur.com/e2II9gv.jpg",
+"https://i.imgur.com/uwC9F4h.png",
+"https://i.imgur.com/h8MmOgR.jpg"
+];
+
+        var del = dellet[Math.floor(Math.random() * dellet.length)] ;
+        var delt_embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle('DELETE SAAAA')
+        .setImage(del)
+        .setFooter("")
+        message.channel.send(delt_embed);
+
+
+    };
+
+
+
+    if(command === "waifu") {            
+        
+        var wa_embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle('Ta nouvelle waifu')
+        .setImage("https://i.imgur.com/6uWVkVn.jpg")
+        .setFooter("je te laisse fair connaissance")
+        message.channel.send(wa_embed);
+
+
+    };
+
+
+    if (command === "yt"){
+        const chepasdire = args.join(" ");
+        if(!chepasdire)  
+        return message.reply("met ce que tu veux rechercher");
+        message.channel.send(`https://www.youtube.com/results?search_query=${chepasdire}`);
+    }
+
+
+if (command === "hack"){
+let victime = message.mentions.members.first();
+
+if(!victime)
+message.reply("Tu as oublier de metre le nom de la victime");
+
+var ha = [
+
+"👀 Tous les fichiers compromettant! ah... oups c'est les tiens" + ` ${message.author.username}`  ,
+"Mais dit moi c'est quoi tous ces fichiers ? 🤔",
+"FBI OPEN UP!",
+"POURQUOI TU AS DES IMAGES DE BOCU NO PICO !? 😱 ",
+`${victime.displayName} il essaie de te hacké ! Wouaa ça m'aurais pas plu`,
+"aaah, c'est sa ton mot de passe ?",
+"bip boup bip bip hack interompu pour cause de flemme ",
+"Tien du café. Oups trompé de fonctionnalité ",
+`Hack fini. ${victime.displayName} utilise bien un compte Discord!`
+]
+var hac = ha[Math.floor(Math.random() * ha.length)] ;
+
+const m = await message.channel.send("Récupération des données ● ");
+m.edit(`Récupération des données ● ● `);
+m.edit(`Récupération des données ● ● ● `);
+m.edit(`Tape au pif sur le clavier ● `);
+m.edit(`Tape au pif sur le clavier ● ●`);
+
+m.edit(hac);
+
+
+}
+
+
+
+
  if(command === "wink") {
 
                 let member = message.mentions.members.first();
