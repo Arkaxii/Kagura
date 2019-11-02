@@ -2915,3 +2915,4 @@ if(message.content.startsWith(prefix + "buy legende")){
 
 });
 client.login(token);
+
