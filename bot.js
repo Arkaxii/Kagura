@@ -1195,7 +1195,7 @@ m.edit(hac);
 }
 
 
-if(message.content.startsWith(prefix + "sondage")){
+if(command == "sondage"){
     var sond0 = new Discord.RichEmbed()
     .setTitle("aide Sondage")
     .setAuthor(message.author.username)
