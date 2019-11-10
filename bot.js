@@ -1192,8 +1192,116 @@ m.edit(`Tape au pif sur le clavier ● ●`);
 
 m.edit(hac);
 
+}
+
+
+if(message.content.startsWith(prefix + "sondage")){
+    var sond0 = new Discord.RichEmbed()
+    .setTitle("aide Sondage")
+    .setAuthor(message.author.username)
+    .setDescription(` 
+    **<<ouinon**
+-Sondage pouvant être répondu par oui ou non ex(<<ouinon tu aimes les pommes? )
+
+    **<<choix**
+-Sondage avec avec 2 choix ex(<<choix sniffer_du_tabasco sniffer_de_la_farine)
+    `)
+    .setColor(0x00FF00)
+    .setTimestamp()
+    message.channel.send(sond0)
+
+    }
+
+if (command == "ouinon" ){
+
+let tTE = args
+var sond1 = new Discord.RichEmbed()
+.setDescription("Sondage")
+.setAuthor(message.author.username)
+.setDescription(tTE)
+.setColor(0x00FF00)
+.setFooter("✅ pour oui || ❌ pour non ")
+.setTimestamp()
+message.channel.send(sond1)
+.then(function(message){
+message.react("✅")
+message.react("❌")
+}).catch(function(){    
+});
+message.delete()
 
 }
+
+if (command == "choix" ){
+
+let tTE = args[0]
+let Tte = args[1]
+var sond2 = new Discord.RichEmbed()
+.setDescription("Sondage")
+.setAuthor(message.author.username)
+.setDescription("🅰"+tTE+ "\n🅱"+Tte)
+.setColor(0x00FF00)
+.setTimestamp()
+message.channel.send(sond2)
+.then(function(message){
+message.react("🅰")
+message.react("🅱")
+}).catch(function(){    
+});
+message.delete()
+
+}
+
+
+if(command == "either" ){
+
+var RA = [
+"Etre intélligent mais pué en permanance (meme avec parfum) ",
+"Etre miliardaire mais solitaire",
+"Etre invisible mais le rester pour toujours",
+"Sauver le monde de la famine mais tu mourras de faim",
+"Participer aux Hunger Games",
+"Un corps de rêve mais un visage affreux",
+"Voir tout nu toutes les personnes que tu regardes",
+"Savoir comment tu **VAS** mourir",
+"Embrasser Marin Le Pen",
+"",
+"",
+""
+]
+
+var RB = [
+"Etre jeté dans \"Le Labyrinthe\" ",
+"Avoir un visage sublime et un corps difforme",
+"Lire dans les pensées de tous ceux qui te regardent",
+"Etre pauvre en argent mais jamais solitaire",
+"Chaque personne que tu regarde meurt instantanément",
+"Savoir quand tu vas mourir",
+"Roter *burp* entre *burp* chaque *burp* mot",
+"Sniffer du tabasco tout les jours",
+"Te fair caresser la cuisse (*touss* voir plus *touss*) par Hitler",
+"",
+"",
+""
+]
+var RAR = RA[Math.floor(Math.random() * RA.length)] ;
+var RBR = RB[Math.floor(Math.random() * RB.length)] ;
+
+var eith = new Discord.RichEmbed()
+.setDescription("Either")
+.setAuthor(message.author.username)
+.setDescription("Tu préfères \n🅰"+RAR+"\nou\n🅱"+RBR)
+.setColor(0x00FF00)
+.setTimestamp()
+message.channel.send(eith)
+.then(function(message){
+message.react("🅰")
+message.react("🅱")
+})
+
+}
+
+
 
 
 
@@ -2223,25 +2331,6 @@ if (randnum == 3){
             .setFooter(`Crée par ๖̶̶̶ۣۣۜۜζ͜͡Arkaxii#5194 `)            
             message.channel.send(infobot);
             };
-	
-if(message.content.startsWith(prefix + "sondage")){
-                let args = message.content.split(" ").slice(1);
-                let tTE = args.join(" ")
-            var sond = new Discord.RichEmbed()
-            .setDescription("Sondage")
-            .setAuthor(message.author.username)
-            .addField(tTE, "Répondre avec :white_check_mark: ou :x:")
-            .setColor(0x00FF00)
-            .setTimestamp()
-            message.channel.send(sond)
-            .then(function(message){
-                message.react("✔")
-                message.react("✖")
-            }).catch(function(){    
-            });
-            message.delete()
-            
-            }
 	
 if(message.content.startsWith(prefix + "8ball")){
                 let args = message.content.split(" ").slice(1);
