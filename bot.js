@@ -1264,7 +1264,8 @@ var RA = [
 "Un corps de rêve mais un visage affreux",
 "Voir tout nu toutes les personnes que tu regardes",
 "Savoir comment tu **VAS** mourir",
-"Embrasser Marin Le Pen"
+"Embrasser Marin Le Pen",
+"Utiliser Internet Explorer tout le temps"
 
 ]
 
@@ -1277,7 +1278,8 @@ var RB = [
 "Savoir quand tu vas mourir",
 "Roter *burp* entre *burp* chaque *burp* mot",
 "Sniffer du tabasco tout les jours",
-"Te fair caresser la cuisse (*touss* voir plus *touss*) par Hitler"
+"Te fair caresser la cuisse (*touss* voir plus *touss*) par Hitler",
+"Regarder Bocu No Pico en famille"
 
 ]
 var RAR = RA[Math.floor(Math.random() * RA.length)] ;
