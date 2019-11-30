@@ -418,7 +418,29 @@ message.channel.send(helpem);
         }
         }
 
+        let evente = ['👆'];
 
+        if(!message.author.id == "635547572983037970")return;
+    var kanna = [
+    "https://discordemoji.com/assets/emoji/KannaFreeze.png",
+    "https://discordemoji.com/assets/emoji/KannaSpook.png",
+    "https://discordemoji.com/assets/emoji/Kannasuicide.png"
+    ]
+    var kana = kanna[Math.floor(Math.random() * kanna.length)] ;
+    
+    let fondintextt = false;
+    for (var i in evente){
+    if (message.content.toLowerCase().includes(evente[i].toLowerCase()))
+    fondintextt = true;
+    if(fondintextt){
+        let kan = new Discord.RichEmbed()
+        .setImage(kana)
+            
+            message.channel.send(kan);
+    }
+    }
+    
+    
    });
 
 client.on('guildMemberAdd', member => {
@@ -1298,6 +1320,16 @@ message.react("🅱")
 })
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
