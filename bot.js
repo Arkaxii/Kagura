@@ -420,7 +420,7 @@ message.channel.send(helpem);
 /*
         let eventt = ['👆'];
 
-        if(!message.author.id == "635547572983037970")return;
+        if(message.author.id !== "635547572983037970")return;
     var kanna = [
         "https://i.imgur.com/btYFdDL.png",
         "https://i.imgur.com/2hr6Bt7.png",
