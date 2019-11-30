@@ -418,25 +418,26 @@ message.channel.send(helpem);
         }
         }
 
-        let evente = ['👆'];
+        let eventt = ['👆'];
 
         if(!message.author.id == "635547572983037970")return;
     var kanna = [
-    "https://discordemoji.com/assets/emoji/KannaFreeze.png",
-    "https://discordemoji.com/assets/emoji/KannaSpook.png",
-    "https://discordemoji.com/assets/emoji/Kannasuicide.png"
-    ]
+        "https://i.imgur.com/btYFdDL.png",
+        "https://i.imgur.com/2hr6Bt7.png",
+        "https://i.imgur.com/8BcgdaJ.png"
+        ]
     var kana = kanna[Math.floor(Math.random() * kanna.length)] ;
     
     let fondintextt = false;
-    for (var i in evente){
-    if (message.content.toLowerCase().includes(evente[i].toLowerCase()))
+    for (var i in eventt){
+    if (message.content.toLowerCase().includes(eventt[i].toLowerCase()))
     fondintextt = true;
     if(fondintextt){
-        let kan = new Discord.RichEmbed()
-        .setImage(kana)
-            
-            message.channel.send(kan);
+        await message.channel.send({files: [
+            {
+              attachment: kana
+            }
+          ]});
     }
     }
     
