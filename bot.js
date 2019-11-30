@@ -441,7 +441,7 @@ message.channel.send(helpem);
     }
     }
     
-    
+
    });
 
 client.on('guildMemberAdd', member => {
