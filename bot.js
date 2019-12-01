@@ -71,6 +71,8 @@ Autre:
 **<<monstre: **Dévoile le monstre en toi
 **<<del: **Delet this (meme)
 **<<hack **Pour hacké une personne choisit
+**<<love **Pour connaitre ton "âme soeur"
+**<<fusion **FUUUUUUUUSION !!(fusionne des pseudos)
 
 Utilitaire:
 
@@ -179,6 +181,10 @@ message.channel.send(helpem);
 **<<del: **Delet this meme
 
 **<<hack **Pour hacké une personne choisit
+
+**<<love **Pour connaitre ton "âme soeur"
+
+**<<fusion **FUUUUUUUUSION !!(fusionne des pseudos)
 
 ==========🤖**Autre**🤖==========
 **`)
@@ -417,7 +423,7 @@ message.channel.send(helpem);
                           message.channel.send(respect);
         }
         }
-/*
+
         let eventt = ['👆'];
 
         if(message.author.id !== "635547572983037970")return;
@@ -439,7 +445,7 @@ message.channel.send(helpem);
             }
           ]});
     }
-    } */
+    } 
     
 
    });
@@ -546,6 +552,37 @@ const config = require("./config.json");
   const command = args.shift().toLowerCase();
     
   
+
+
+
+
+
+
+
+
+
+  if(command === "love"){
+    var l = await message.channel.send(message.author.username)
+    l.edit(message.author.username+" 25% "+message.guild.members.random().displayName)
+    l.edit(message.author.username+" 50% "+message.guild.members.random().displayName)
+    l.edit(message.author.username+" 75% "+message.guild.members.random().displayName)
+    l.edit(message.author.username+" 100% ton âme soeur est "+message.guild.members.random().displayName+". Oula j'aimerai pas étre toi...")
+
+}
+
+
+if(command === "fusion"){
+
+                mom = message.guild.members.random().displayName
+                dad = message.guild.members.random().displayName;
+                            
+                baby = dad.substring(0, 4);
+                newBaby = baby + (mom.substring(4, 10))
+                message.channel.send(newBaby)
+
+                };
+
+
   if(command ==="syntaxe-b"){
     let syntb = new Discord.RichEmbed()
     .setTitle(`Requested By | ${message.author.username}`)
