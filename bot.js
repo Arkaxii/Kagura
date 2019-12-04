@@ -1477,34 +1477,37 @@ message.react("🅱")
             };
 
             if(command === "slap") {
-
-                let member = message.mentions.members.first();
-            if(!member)
-              return message.reply("Veuiller mentionner une victi... un utilisateur valide");
-
-                var slaap = [
-                    "https://imgur.com/ihi7y0U.gif",
-                    "https://imgur.com/juJH8mr.gif",
-                    "https://imgur.com/JUVQqKk.gif",
-                    "https://imgur.com/zAgmwZg.gif",
-                    "https://imgur.com/kbroB2h.gif",
-                    "https://imgur.com/tMeekWB.gif",
-                    "https://imgur.com/sQsdSEF.gif",
-                    "https://imgur.com/xsl1mfm.gif"
-      
-                            ];
-             
-                var gif = slaap[Math.floor(Math.random() * slaap.length)] ;
-                var slap_embed = new Discord.RichEmbed()
-                .setColor('RANDOM')
-	         	.setTitle('Roleplay')
-                .setImage(gif)
-                .setDescription(`_**${message.author.username}** fout des claques à **${member.displayName}**._`)
-                message.channel.send(slap_embed);
-            };
+                if(message.author.id == config.ownerID)     
+                return message.reply("🖕");
+                   let member = message.mentions.members.first();
+               if(!member)
+                 return message.reply("Veuiller mentionner une victi... un utilisateur valide");
+   
+                   var slaap = [
+                       "https://imgur.com/ihi7y0U.gif",
+                       "https://imgur.com/juJH8mr.gif",
+                       "https://imgur.com/JUVQqKk.gif",
+                       "https://imgur.com/zAgmwZg.gif",
+                       "https://imgur.com/kbroB2h.gif",
+                       "https://imgur.com/tMeekWB.gif",
+                       "https://imgur.com/sQsdSEF.gif",
+                       "https://imgur.com/xsl1mfm.gif"
+   
+                               ];
+   
+                   var gif = slaap[Math.floor(Math.random() * slaap.length)] ;
+                   var slap_embed = new Discord.RichEmbed()
+                   .setColor('RANDOM')
+                    .setTitle('Roleplay')
+                   .setImage(gif)
+                   .setDescription(`_**${message.author.username}** écrase les moustiques qui sont sur **${member.displayName}**._`)
+                   .setFooter("**Slapping the 🅱ass**")
+                   message.channel.send(slap_embed);
+               };
 
             if(command === "punch") {
-
+                if(message.author.id == config.ownerID)     
+                return message.reply("🖕");
                 let member = message.mentions.members.first();
             if(!member)
               return message.reply("Veuiller mentionner un punching... un utilisateur valide");
