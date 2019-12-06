@@ -1480,7 +1480,7 @@ message.react("🅱")
                 let member = message.mentions.members.first();
 
                 if(member.id == config.ownerID)     
-                return message.reply("🖕");
+                return message.reply("Il n'y a que moi qui est le droit de slaper la gueule de mon créateur 🖕");
                if(!member)
                  return message.reply("Veuiller mentionner une victi... un utilisateur valide");
    
@@ -1510,7 +1510,7 @@ message.react("🅱")
                 let member = message.mentions.members.first();
 
                 if(member.id == config.ownerID)     
-                return message.reply("🖕");
+                return message.reply("Il n'y a que moi qui est le droit d'en metre une à mon créateur 🖕");
             if(!member)
               return message.reply("Veuiller mentionner un punching... un utilisateur valide");
 
@@ -1615,7 +1615,7 @@ message.react("🅱")
                 let member = message.mentions.members.first();
 
                 if(member.id == config.ownerID)     
-                return message.reply("🖕");
+                return message.reply("Il n'y a que moi qui est le droit de /kill mon créateur 🖕... Ah oups on est pas sur minecraft ");
 
             if(!member)
               return message.reply("Veuiller mentionner une victi... un utilisateur valide");
