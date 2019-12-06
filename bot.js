@@ -50,7 +50,7 @@ console.log('Done The Watching Setup Completed')
 ==========🤖KaguraHelp+🤖==========
 
 
-Rolplay:
+▻ Rolplay:
 **
 <<wink
 <<wave  
@@ -64,8 +64,9 @@ Rolplay:
 <<kill
 <<hug
 **
-
-Autre:
+`)
+.setDescription(`**
+▻Autre:
 
 **<<waifu: **Montre ta nouvelle waifu
 **<<monstre: **Dévoile le monstre en toi
@@ -73,8 +74,9 @@ Autre:
 **<<hack **Pour hacké une personne choisit
 **<<love **Pour connaitre ton "âme soeur"
 **<<fusion **FUUUUUUUUSION !!(fusionne des pseudos)
-
-Utilitaire:
+`)
+.setDescription(`**
+▻Utilitaire:
 
 **<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
 **<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
@@ -92,8 +94,9 @@ Utilitaire:
 **<<dico:** Cherche le mot dans le dictionnaire 
 **<<syntaxe-b:** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
 **<<syntaxe-c:** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
-
-Argent:
+`)
+.setDescription(`**
+▻Argent:
 
 **<<inventaire: **Pour voir son inventaire
 **<<shop: **Pour fair des achat avec la THUNE que tu as acquis
@@ -102,23 +105,29 @@ Argent:
 **<<daily: **pour recevoir 250$ par jour
 **<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
 **<<roulette[montant de $]:**Test ta chance pour gagnier des $!
+`)
+.setDescription(`**
 
-Jeux:
+▻Jeux:
 
 **<<8ball: **Pose n'importe quelle question
 **<<refjeux: **trouve à quelle jeux appartien la référence 
 **<<refanime: **trouve à quelle anime appartien la référence 
 **<<quiz: **Test ton intelligence
+`)
+.setDescription(`**
 
-Random:
+▻Random:
 
 **<<pile: **1 chance sur 2
 **<<face: **1 chance sur 2
 **<<lancer6: **imite un lancer de dé à 6 face 
 **<<lancer12: **imite un lancer de dé à 12 face 
 **<<lancer20:** imite un lancer de dé à 20 face
+`)
+.setDescription(`**
 
-Admin:
+▻Admin:**
 
 <<help admin
 
