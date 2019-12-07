@@ -268,8 +268,11 @@ console.log('Done The Watching Setup Completed')
 		   .setFooter(`Requested By | ${message.author.username}`)
 		   .setColor("RANDOM")
 		   message.author.send({embed})
-	}
+    }
+    
     if(message.content.startsWith(prefix + `mp`)) {
+        const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+
         let sayMessage = args.join(" ");
          if(!message.channel.guild) return;
        
