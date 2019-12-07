@@ -110,6 +110,7 @@ console.log('Done The Watching Setup Completed')
                     .setAuthor("─▻ 2 Utilitaire")
                     .setDescription(`
 
+                    **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
                     **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                     **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                     **<<info kagura : **Toute les infos a propo de Kagura
@@ -268,7 +269,22 @@ console.log('Done The Watching Setup Completed')
 		   .setColor("RANDOM")
 		   message.author.send({embed})
 	}
+    if(message.content.startsWith(prefix + `mp`)) {
+        let sayMessage = args.join(" ");
+         if(!message.channel.guild) return;
+       
+         message.react('📥')
    
+         var embed = new Discord.RichEmbed()
+         .setAuthor(message.author.username , message.author.avatarURL )
+         .setTitle("Suggestion")
+         .setDescription(sayMessage)
+         .setFooter(`Requested By | ${message.author.username}`)
+         .setColor("RANDOM")
+         client.fetchUser("246395977450258432",false).then(user => {
+           user.send(embed) 
+   });
+     }
     let event = ['kagura'];
     let fondintext = false;
     for (var i in event){
