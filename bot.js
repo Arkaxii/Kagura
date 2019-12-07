@@ -262,7 +262,7 @@ console.log('Done The Watching Setup Completed')
 		   if(!message.channel.guild) return;
                  message.react('🌈')
 		   var embed = new Discord.RichEmbed()
-		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
+		   .setTitle(">> Click ici pour que je puisse ~~squatter~~ rejoindre ton serveur <<")
 		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")
 		   .setTimestamp()
 		   .setFooter(`Requested By | ${message.author.username}`)
