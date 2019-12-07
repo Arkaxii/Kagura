@@ -81,7 +81,7 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hrp = new Discord.RichEmbed()
-                    .setAuthor("─▻ __**1 Rolpay**__")
+                    .setAuthor("─▻ 1 Rolpay")
                     .setDescription(`
 
                     <<wink
@@ -107,7 +107,7 @@ console.log('Done The Watching Setup Completed')
  
                     await message.delete(helpet)
                     var hut = new Discord.RichEmbed()
-                    .setAuthor("─▻ __**2 Utilitaire**__")
+                    .setAuthor("─▻ 2 Utilitaire")
                     .setDescription(`
 
                     **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
@@ -135,7 +135,7 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var har = new Discord.RichEmbed()
-                    .setAuthor("─▻ __**3 Argent**__ [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")
+                    .setAuthor("─▻ 3 Argent [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")
                     .setDescription(`
 
                     **<<inventaire : **Pour voir son inventaire
@@ -154,7 +154,7 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hje = new Discord.RichEmbed()
-                    .setAuthor("─▻ __**4 Jeux**__")
+                    .setAuthor("─▻ 4 Jeux")
                     .setDescription(`
 
                     **<<8ball : **Pose n'importe quelle question
@@ -171,7 +171,7 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hran = new Discord.RichEmbed()
-                    .setAuthor(" ─▻ __**5 Random**__")
+                    .setAuthor(" ─▻ 5 Random")
                     .setDescription(`
 
                     **<<pile : **1 chance sur 2
@@ -189,7 +189,7 @@ console.log('Done The Watching Setup Completed')
   
                     await message.delete(helpet)
                     var hau = new Discord.RichEmbed()
-                    .setAuthor("─▻ __**6 Autre**__")
+                    .setAuthor("─▻ 6 Autre")
                     .setDescription(`
 
                     **<<waifu : **Montre ta nouvelle waifu
@@ -208,7 +208,7 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hadm = new Discord.RichEmbed()
-                    .setAuthor("─▻ __**7 Admin**__")
+                    .setAuthor("─▻ 7 Admin")
                     .setDescription(`
 
                     **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
