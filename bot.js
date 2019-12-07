@@ -265,9 +265,9 @@ console.log('Done The Watching Setup Completed')
 		   .setTitle(">> Click ici pour que je puisse ~~squatter~~ rejoindre ton serveur <<")
 		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")
 		   .setTimestamp()
-		   .setFooter(`Requested By | ${message.author.username}`)
+		   .setFooter(`Requête de | ${message.author.username}`)
 		   .setColor("RANDOM")
-		   message.author.send({embed})
+		   message.channel.send({embed})
     }
     
     if(message.content.startsWith(prefix + `mp`)) {
