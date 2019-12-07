@@ -81,9 +81,8 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hrp = new Discord.RichEmbed()
-                    .setAuthor("Rolplay")
+                    .setAuthor("─▻__**1 Rolpay**__")
                     .setDescription(`
-                    ─▻__**1 Rolpay**__
 
                     <<wink
                     <<wave  
@@ -108,26 +107,25 @@ console.log('Done The Watching Setup Completed')
  
                     await message.delete(helpet)
                     var hut = new Discord.RichEmbed()
-                    .setAuthor("Utile")
+                    .setAuthor("─▻__**2 Utilitaire**__")
                     .setDescription(`
-                    ─▻__**2 Utilitaire**__
 
-                    **<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
-                    **<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
-                    **<<info kagura: **Toute les infos a propo de Kagura
-                    **<<info discord: **Les info du serveur
-                    **<<infos: **Donne les infos d'un utilisateur ou de toi meme
-                    **<<secret: **Les prochain ajout sur le bot
-                    **<<avatar: **Recupere l'avatar pour l'afficher plus grand 
-                    **<<ping: **Pour connaitre son ping
-                    **<<say: **Fait dir ce que tu veut au bot 
-                    **<<invite: **Envoie un mp pour inviter le bot dans d'autre serveur
-                    **<<message:** Donne le nombre de message envoyer 
-                    **<<a-f:**traduit d'Anglais à Français
-                    **<<f-a:**Traduit du Français à l'Anglais
-                    **<<dico:** Cherche le mot dans le dictionnaire 
-                    **<<syntaxe-b:** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-                    **<<syntaxe-c:** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
+                    **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
+                    **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
+                    **<<info kagura : **Toute les infos a propo de Kagura
+                    **<<info discord : **Les info du serveur
+                    **<<infos : **Donne les infos d'un utilisateur ou de toi meme
+                    **<<secret : **Les prochain ajout sur le bot
+                    **<<avatar : **Recupere l'avatar pour l'afficher plus grand 
+                    **<<ping : **Pour connaitre son ping
+                    **<<say : **Fait dir ce que tu veut au bot 
+                    **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
+                    **<<message :** Donne le nombre de message envoyer 
+                    **<<a-f :**traduit d'Anglais à Français
+                    **<<f-a :**Traduit du Français à l'Anglais
+                    **<<dico :** Cherche le mot dans le dictionnaire 
+                    **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+                    **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
                     `)
                     message.channel.send(hut)
                 }
@@ -137,17 +135,16 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var har = new Discord.RichEmbed()
-                    .setAuthor("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")
+                    .setAuthor("─▻__**3 Argent**__ [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")
                     .setDescription(`
-                    ─▻__**3 Argent**__
 
-                    **<<inventaire: **Pour voir son inventaire
-                    **<<shop: **Pour fair des achat avec la THUNE que tu as acquis
-                    **<<pay: **pour donner de l'argent à d'autre utilisateur
-                    **<<compt: **pour voir à combien s'élève ton compt
-                    **<<daily: **pour recevoir 250$ par jour
+                    **<<inventaire : **Pour voir son inventaire
+                    **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
+                    **<<pay : **pour donner de l'argent à d'autre utilisateur
+                    **<<compt : **pour voir à combien s'élève ton compt
+                    **<<daily : **pour recevoir 250$ par jour
                     **<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
-                    **<<roulette[montant de $]:**Test ta chance pour gagnier des $!
+                    **<<roulette[montant de $] :**Test ta chance pour gagnier des $!
                     `)
                     message.channel.send(har)
                 }
@@ -157,14 +154,13 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hje = new Discord.RichEmbed()
-                    .setAuthor("Jeux")
+                    .setAuthor("─▻__**4 Jeux**__")
                     .setDescription(`
-                    ─▻__**4 Jeux**__
 
-                    **<<8ball: **Pose n'importe quelle question
-                    **<<refjeux: **trouve à quelle jeux appartien la référence 
-                    **<<refanime: **trouve à quelle anime appartien la référence 
-                    **<<quiz: **Test ton intelligence
+                    **<<8ball : **Pose n'importe quelle question
+                    **<<refjeux : **trouve à quelle jeux appartien la référence 
+                    **<<refanime : **trouve à quelle anime appartien la référence 
+                    **<<quiz : **Test ton intelligence
 
                     `)
                     message.channel.send(hje)
@@ -175,15 +171,14 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hran = new Discord.RichEmbed()
-                    .setAuthor("Random")
+                    .setAuthor(" ─▻__**5 Random**__")
                     .setDescription(`
-                    ─▻__**5 Random**__
 
-                    **<<pile: **1 chance sur 2
-                    **<<face: **1 chance sur 2
-                    **<<lancer6: **imite un lancer de dé à 6 face 
-                    **<<lancer12: **imite un lancer de dé à 12 face 
-                    **<<lancer20:** imite un lancer de dé à 20 face
+                    **<<pile : **1 chance sur 2
+                    **<<face : **1 chance sur 2
+                    **<<lancer6 : **imite un lancer de dé à 6 face 
+                    **<<lancer12 : **imite un lancer de dé à 12 face 
+                    **<<lancer20 :** imite un lancer de dé à 20 face
                     
                     `)
                     message.channel.send(hran)
@@ -194,16 +189,15 @@ console.log('Done The Watching Setup Completed')
   
                     await message.delete(helpet)
                     var hau = new Discord.RichEmbed()
-                    .setAuthor("Autre")
+                    .setAuthor("─▻__**6 Autre**__")
                     .setDescription(`
-                    ─▻__**6 Autre**__
 
-                    **<<waifu: **Montre ta nouvelle waifu
-                    **<<monstre: **Dévoile le monstre en toi
-                    **<<del: **Delet this (meme)
-                    **<<hack **Pour hacké une personne choisit
-                    **<<love **Pour connaitre ton "âme soeur"
-                    **<<fusion **FUUUUUUUUSION !!(fusionne des pseudos)
+                    **<<waifu : **Montre ta nouvelle waifu
+                    **<<monstre : **Dévoile le monstre en toi
+                    **<<del : **Delet this (meme)
+                    **<<hack : **Pour hacké une personne choisit
+                    **<<love : **Pour connaitre ton "âme soeur"
+                    **<<fusion : **FUUUUUUUUSION !!(fusionne des pseudos)
                     
                     `)
                     message.channel.send(hau)
@@ -214,9 +208,8 @@ console.log('Done The Watching Setup Completed')
 
                     await message.delete(helpet)
                     var hadm = new Discord.RichEmbed()
-                    .setAuthor("Admin")
+                    .setAuthor("─▻__**7 Admin**__")
                     .setDescription(`
-                    ─▻__**7 Admin**__
 
                     **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
                     
