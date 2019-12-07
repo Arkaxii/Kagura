@@ -42,7 +42,7 @@ console.log('Done The Watching Setup Completed')
 
 
  client.on("message", async message => {
-    if (message.content === "?helpt") {
+    if (message.content === "<<help") {
 
         let helpet = new Discord.RichEmbed()
         .setTitle(`Choisi une parti`)
@@ -67,24 +67,23 @@ console.log('Done The Watching Setup Completed')
         message.channel.send(helpet)
         .then(async function(message){
 
-            message.react("1⃣")
-             message.react("2⃣")
-            message.react("3⃣")
-            message.react("4⃣")
-             message.react("5⃣")
-             message.react("6⃣")
-             message.react("7⃣")
+          await  message.react("1⃣")
+          await   message.react("2⃣")
+          await  message.react("3⃣")
+          await  message.react("4⃣")
+          await   message.react("5⃣")
+          await   message.react("6⃣")
+          await   message.react("7⃣")
 
 
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "1⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+
                     await message.delete(helpet)
                     var hrp = new Discord.RichEmbed()
                     .setAuthor("Rolplay")
                     .setDescription(`
-                    ─▻__**Rolpay**__
+                    ─▻__**1 Rolpay**__
 
                     <<wink
                     <<wave  
@@ -106,13 +105,12 @@ console.log('Done The Watching Setup Completed')
              })
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "2⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+ 
                     await message.delete(helpet)
                     var hut = new Discord.RichEmbed()
                     .setAuthor("Utile")
                     .setDescription(`
-                    ─▻__**Utilitaire**__
+                    ─▻__**2 Utilitaire**__
 
                     **<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
                     **<<timer: **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
@@ -136,13 +134,12 @@ console.log('Done The Watching Setup Completed')
              })
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "3⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+
                     await message.delete(helpet)
                     var har = new Discord.RichEmbed()
                     .setAuthor("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")
                     .setDescription(`
-                    ─▻__**Argent**__
+                    ─▻__**3 Argent**__
 
                     **<<inventaire: **Pour voir son inventaire
                     **<<shop: **Pour fair des achat avec la THUNE que tu as acquis
@@ -157,13 +154,12 @@ console.log('Done The Watching Setup Completed')
              })
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "4⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+
                     await message.delete(helpet)
                     var hje = new Discord.RichEmbed()
                     .setAuthor("Jeux")
                     .setDescription(`
-                    ─▻__**Jeux**__
+                    ─▻__**4 Jeux**__
 
                     **<<8ball: **Pose n'importe quelle question
                     **<<refjeux: **trouve à quelle jeux appartien la référence 
@@ -176,13 +172,12 @@ console.log('Done The Watching Setup Completed')
              })
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "5⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+
                     await message.delete(helpet)
                     var hran = new Discord.RichEmbed()
                     .setAuthor("Random")
                     .setDescription(`
-                    ─▻__**Random**__
+                    ─▻__**5 Random**__
 
                     **<<pile: **1 chance sur 2
                     **<<face: **1 chance sur 2
@@ -196,13 +191,12 @@ console.log('Done The Watching Setup Completed')
              })
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "6⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+  
                     await message.delete(helpet)
                     var hau = new Discord.RichEmbed()
                     .setAuthor("Autre")
                     .setDescription(`
-                    ─▻__**Autre**__
+                    ─▻__**6 Autre**__
 
                     **<<waifu: **Montre ta nouvelle waifu
                     **<<monstre: **Dévoile le monstre en toi
@@ -217,13 +211,12 @@ console.log('Done The Watching Setup Completed')
              })
              client.on('messageReactionAdd',async (reaction, user) =>{
                 if (reaction.emoji.name === "7⃣" && user.id !== client.user.id) {
-                    reaction.remove(user)
-                    reaction.remove()
+
                     await message.delete(helpet)
                     var hadm = new Discord.RichEmbed()
                     .setAuthor("Admin")
                     .setDescription(`
-                    ─▻__**Admin**__
+                    ─▻__**7 Admin**__
 
                     **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
                     
