@@ -50,7 +50,7 @@ console.log('Done The Watching Setup Completed')
 ==========🤖KaguraHelp+🤖==========
 
 
-▻ Rolplay:
+▻Rolplay:
 **
 <<wink
 <<wave  
@@ -64,8 +64,6 @@ console.log('Done The Watching Setup Completed')
 <<kill
 <<hug
 **
-`)
-.setDescription(`**
 ▻Autre:
 
 **<<waifu: **Montre ta nouvelle waifu
@@ -74,8 +72,7 @@ console.log('Done The Watching Setup Completed')
 **<<hack **Pour hacké une personne choisit
 **<<love **Pour connaitre ton "âme soeur"
 **<<fusion **FUUUUUUUUSION !!(fusionne des pseudos)
-`)
-.setDescription(`**
+
 ▻Utilitaire:
 
 **<<sondage: **Fait un sondage pour avoir l'avie d'autre personne
@@ -94,8 +91,7 @@ console.log('Done The Watching Setup Completed')
 **<<dico:** Cherche le mot dans le dictionnaire 
 **<<syntaxe-b:** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
 **<<syntaxe-c:** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
-`)
-.setDescription(`**
+
 ▻Argent:
 
 **<<inventaire: **Pour voir son inventaire
@@ -105,8 +101,6 @@ console.log('Done The Watching Setup Completed')
 **<<daily: **pour recevoir 250$ par jour
 **<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
 **<<roulette[montant de $]:**Test ta chance pour gagnier des $!
-`)
-.setDescription(`**
 
 ▻Jeux:
 
@@ -114,8 +108,6 @@ console.log('Done The Watching Setup Completed')
 **<<refjeux: **trouve à quelle jeux appartien la référence 
 **<<refanime: **trouve à quelle anime appartien la référence 
 **<<quiz: **Test ton intelligence
-`)
-.setDescription(`**
 
 ▻Random:
 
@@ -124,13 +116,10 @@ console.log('Done The Watching Setup Completed')
 **<<lancer6: **imite un lancer de dé à 6 face 
 **<<lancer12: **imite un lancer de dé à 12 face 
 **<<lancer20:** imite un lancer de dé à 20 face
-`)
-.setDescription(`**
 
 ▻Admin:**
 
 <<help admin
-
 
 ==========🤖KaguraHelp+🤖==========
 `)
