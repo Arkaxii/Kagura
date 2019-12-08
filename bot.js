@@ -334,7 +334,7 @@ console.log('Done The Watching Setup Completed')
           ]});
     }
     }
-    let eventtt = ['https://cdn.discordapp.com/emojis/540223339411537932.png'];
+    /*let eventtt = ['https://cdn.discordapp.com/emojis/540223339411537932.png'];
 
     if(message.author.id !== "635547572983037970")return;
 
@@ -346,7 +346,7 @@ fondintexttt = true;
 if(fondintexttt){
     await message.channel.send("🖕");
 }
-}
+} */
 
 
 
