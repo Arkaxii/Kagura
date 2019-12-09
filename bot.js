@@ -54,19 +54,19 @@ console.log('Done The Watching Setup Completed')
     
     ─▻__**Catégorie**__
   
-    2 Rolplay 
+    - Rolplay 
 
-    3 Utilitaire
+    - Utilitaire
     
-    4 Argent
+    - Argent
     
-    5 Jeux
+    - Jeux
     
-    6 Random
+    - Random
     
-    7 Autre
+    - Autre
     
-    8 Admin
+    - Admin
     `)  
         message.channel.send(embetest).then(message =>{
             message.react("⏪").then( r =>{
@@ -86,19 +86,19 @@ console.log('Done The Watching Setup Completed')
                         embetest.setDescription(`
                         ─▻__**Catégorie**__
   
-                        2 Rolplay 
+                        - Rolplay 
                     
-                        3 Utilitaire
+                        - Utilitaire
                         
-                        4 Argent
+                        - Argent
                         
-                        5 Jeux
+                        - Jeux
                         
-                        6 Random
+                        - Random
                         
-                        7 Autre
+                        - Autre
                         
-                        8 Admin`)  
+                        - Admin`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                     };
@@ -122,6 +122,7 @@ console.log('Done The Watching Setup Completed')
                      if(page ===3){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
+                **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
                 **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                 **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                 **<<info kagura : **Toute les infos a propo de Kagura
@@ -149,7 +150,7 @@ console.log('Done The Watching Setup Completed')
                         **<<pay : **pour donner de l'argent à d'autre utilisateur
                         **<<compt : **pour voir à combien s'élève ton compt
                         **<<daily : **pour recevoir 250$ par jour
-                        **<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
+                        **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
                         **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
@@ -210,19 +211,19 @@ console.log('Done The Watching Setup Completed')
                 embetest.setDescription(`     
                 ─▻__**Catégorie**__
   
-                2 Rolplay 
+                - Rolplay 
             
-                3 Utilitaire
+                - Utilitaire
                 
-                4 Argent
+                - Argent
                 
-                5 Jeux
+                - Jeux
                 
-                6 Random
+                - Random
                 
-                7 Autre
+                - Autre
                 
-                8 Admin`)  
+                - Admin`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
             };
@@ -246,6 +247,7 @@ console.log('Done The Watching Setup Completed')
              if(page ===3){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
+                **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
                 **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                 **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                 **<<info kagura : **Toute les infos a propo de Kagura
