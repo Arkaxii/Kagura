@@ -457,7 +457,7 @@ if(fondintexttt){
     
 
    });
-
+/*
 client.on('guildMemberAdd', member => {
 
     let serverTag = member.guild.name
@@ -478,7 +478,7 @@ client.on('guildMemberRemove', member => {
     .setDescription(`<@${member.user.id}> à quitter **${serverTag}**.Tu nous manquera... ou pas ! `)
     return leavechannel.send({embed})
 }); 
-
+*/
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   client.user.setActivity(`squatter ${client.guilds.size} servers`);
