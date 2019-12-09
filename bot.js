@@ -53,6 +53,7 @@ console.log('Done The Watching Setup Completed')
         .setDescription(`
     
     ─▻__**Catégorie**__
+  
     2 Rolplay 
 
     3 Utilitaire
@@ -83,20 +84,21 @@ console.log('Done The Watching Setup Completed')
                     if(page ===1){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
-                        ─▻__**Séléction de la partie**__
-                        1 Rolplay 
-                     
-                        2 Utilitaire
+                        ─▻__**Catégorie**__
+  
+                        2 Rolplay 
+                    
+                        3 Utilitaire
                         
-                        3 Argent
+                        4 Argent
                         
-                        4 Jeux
+                        5 Jeux
                         
-                        5 Random
+                        6 Random
                         
-                        6 Autre
+                        7 Autre
                         
-                        7 Admin`)  
+                        8 Admin`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                     };
@@ -206,20 +208,21 @@ console.log('Done The Watching Setup Completed')
             if(page ===1){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`     
-               ─▻__**Séléction de la partie**__
-                1 Rolplay 
+                ─▻__**Catégorie**__
+  
+                2 Rolplay 
             
-                2 Utilitaire
+                3 Utilitaire
                 
-                3 Argent
+                4 Argent
                 
-                4 Jeux
+                5 Jeux
                 
-                5 Random
+                6 Random
                 
-                6 Autre
+                7 Autre
                 
-                7 Admin`)  
+                8 Admin`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
             };
@@ -270,7 +273,7 @@ console.log('Done The Watching Setup Completed')
                 **<<pay : **pour donner de l'argent à d'autre utilisateur
                 **<<compt : **pour voir à combien s'élève ton compt
                 **<<daily : **pour recevoir 250$ par jour
-                **<<pierre / ?papier / ?ciseaux : **pour gagnier 50 $ ou perdre 25$
+                **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
                 **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
