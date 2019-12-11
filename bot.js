@@ -122,23 +122,22 @@ console.log('Done The Watching Setup Completed')
                      if(page ===3){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
-                **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
-                **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
-                **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
-                **<<info kagura : **Toute les infos a propo de Kagura
-                **<<info discord : **Les info du serveur
-                **<<infos : **Donne les infos d'un utilisateur ou de toi meme
-                **<<secret : **Les prochain ajout sur le bot
-                **<<avatar : **Recupere l'avatar pour l'afficher plus grand 
-                **<<ping : **Pour connaitre son ping
-                **<<say : **Fait dir ce que tu veut au bot 
-                **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
-                **<<message :** Donne le nombre de message envoyer 
-                **<<a-f :**traduit d'Anglais à Français
-                **<<f-a :**Traduit du Français à l'Anglais
-                **<<dico :** Cherche le mot dans le dictionnaire 
-                **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-                **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**`)  
+                        **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+                        **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
+                        **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
+                        **<<info kagura : **Toute les infos a propo de Kagura
+                        **<<info discord : **Les info du serveur
+                        **<<secret : **Les prochain ajout sur le bot
+                        **<<avatar : **Recupere l'avatar pour l'afficher plus grand 
+                        **<<ping : **Pour connaitre son ping
+                        **<<say : **Fait dir ce que tu veut au bot 
+                        **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
+                        **<<message :** Donne le nombre de message envoyer 
+                        **<<a-f :**traduit d'Anglais à Français
+                        **<<f-a :**Traduit du Français à l'Anglais
+                        **<<dico :** Cherche le mot dans le dictionnaire 
+                        **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+                        **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
