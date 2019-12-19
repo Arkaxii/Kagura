@@ -1212,7 +1212,7 @@ if (command === "f-a"){
   }
   
   if(command === "purge") {
-    if(!message.member.permissions.has('ADMINISTRATOR') )
+    if(!message.member.permissions.has('MANAGE_MESSAGES') )
     return message.reply("Désoler, tu n'as pas la permission d'utiliser cette commande!");
     const deleteCount = parseInt(args[0], 10);
     
