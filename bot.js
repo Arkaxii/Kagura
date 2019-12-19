@@ -123,6 +123,7 @@ console.log('Done The Watching Setup Completed')
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+                        **<<paradoxe :**Pour voir divers paradoxe 
                         **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                         **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                         **<<info kagura : **Toute les infos a propo de Kagura
@@ -160,7 +161,9 @@ console.log('Done The Watching Setup Completed')
                         **<<8ball : **Pose n'importe quelle question
                         **<<refjeux : **trouve à quelle jeux appartien la référence 
                         **<<refanime : **trouve à quelle anime appartien la référence 
-                        **<<quiz : **Test ton intelligence`)  
+                        **<<quiz : **Test ton intelligence
+                        **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur`)  
+                        
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
@@ -247,6 +250,7 @@ console.log('Done The Watching Setup Completed')
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
                 **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+                **<<paradoxe :**Pour voir divers paradoxe 
                 **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                 **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                 **<<info kagura : **Toute les infos a propo de Kagura
@@ -285,7 +289,8 @@ console.log('Done The Watching Setup Completed')
                 **<<8ball : **Pose n'importe quelle question
                 **<<refjeux : **trouve à quelle jeux appartien la référence 
                 **<<refanime : **trouve à quelle anime appartien la référence 
-                **<<quiz : **Test ton intelligence`)  
+                **<<quiz : **Test ton intelligence
+                **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
@@ -346,6 +351,7 @@ console.log('Done The Watching Setup Completed')
 
 **<<ban:** Peut etre accompagner d'une raison
 
+**<<set-psd:** Pour changer le pseudo des membre
 
 ==========🤖**Admin**🤖==========
 `)
@@ -561,6 +567,227 @@ const config = require("./config.json");
   
 
 
+
+  if(command === "paradoxe"){
+    const para1 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe du frommage à trous || paradoxe du gruyère')
+    .setFooter("Paradoxe: Logique")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Plus il y a de fromage, plus il y a de trous; or plus il y a de trous, moins il y a de fromage; donc plus il y a de fromage, moins il y a de fromage`)
+    
+    const para2 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe socratique')
+    .setFooter("Paradoxe: Auto référence")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`« je sais que je ne sais rien »`)
+    
+    const para3 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe sorite || paradoxe du tas')
+    .setFooter("Paradoxe: Imprécision")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Si vous enlevez un seul grain de sable à un tas, vous avez toujours un tas. En continuant d'enlever des grains, le tas disparaît. Un seul grain fait-il disparaître un tas ?`)
+    
+    const para4 = new Discord.RichEmbed() 
+    .setTitle('Hôtel de Hilbert')
+    .setFooter("Paradoxe: Infini et infinitésimaux")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Un hôtel complet comportant une infinité de chambre peut encore accepter une infinité de nouveaux clients`)
+    
+    const para5 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe de Banach-Tarski')
+    .setFooter("Paradoxe: Géométrie et topologie")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Il est possible de couper une boule en un nombre fini de morceaux et de réassembler ces morceaux pour former deux boules identiques à la première`)
+    
+    const para6 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe de la tolérance')
+    .setFooter("Paradoxe: Théorie de la décision || Philosophie")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Nous devrions revendiquer, au nom de la tolérance, le droit de ne pas tolérer l'intolérant`)
+    
+    const para7 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe des feuilles de thé')
+    .setFooter("Paradoxe: Mécanique classique")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`En remuant un thé, les feuilles au fond de la tasse se rassemblent au centre, alors que la force centrifuge les pousse au bord`)
+    
+    const para8 = new Discord.RichEmbed() 
+    .setTitle('Chat de Schrödinger ')
+    .setFooter("Paradoxe: Mécanique quantique")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Selon l'interprétation de Copenhague de la physique quantique, un chat pourrait être à la fois vivant et mort tant qu'il reste non observé`)
+    
+    const para9 = new Discord.RichEmbed() 
+    .setTitle('Effet Mpemba')
+    .setFooter("Paradoxe: Thermodynamique")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Dans certaines conditions l’eau chaude gèle plus vite que de l’eau froide`)
+
+    const para10 = new Discord.RichEmbed() 
+    .setTitle('Bateau de Thésée')
+    .setFooter("Paradoxe: Imprécision ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Si on avait gardé les planches du bateau et qu'avec, on en avait reconstruit un autre, lequel serait le vrai bateau ?`)
+
+    const para11 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe de la flèche')
+    .setFooter("Paradoxe: Infini et infinitésimaux ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Paradoxe de Zénon qui affirme qu'une flèche lancée est toujours immobile`)
+
+    const para12 = new Discord.RichEmbed() 
+    .setTitle('Trompette de Gabriel || solide hyperbolique aigu')
+    .setFooter("Paradoxe: Géométrie et topologie ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Simple figure possédant une aire infinie mais un volume fini`)
+
+    const para13 = new Discord.RichEmbed() 
+    .setTitle("Paradoxe d'Abilène")
+    .setFooter("Paradoxe: Théorie de la décision || Psycologie ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Aucun des quatre membres d'un groupe ne souhaitait se rendre à Abilene mais, par crainte de s’offenser et de se contredire mutuellement, ils y finissent tous !`)
+
+    const para14 = new Discord.RichEmbed() 
+    .setTitle(`Théorème d'impossibilité d'Arrow`)
+    .setFooter("Paradoxe: Science politique")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Si l'on a plus que deux choix, il n'existe pas de système de vote idéal pour effectuer ce choix`)
+
+    const para15 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe du jeune Soleil faible')
+    .setFooter("Paradoxe: Astrophysique ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Contradiction entre l'observation d'eau liquide tôt dans l'histoire de la Terre et les estimations suggérant que le Soleil ne brillait pas assez pour fondre la glace, au début de la création du Système solaire`)
+
+    const para16 = new Discord.RichEmbed() 
+    .setTitle("Paradoxe de l'acher")
+    .setFooter("Paradoxe: Mécanique classique ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Un archer doit viser avec un décalage pour atteindre sa cible`)
+
+    const para17 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe des pesticides')
+    .setFooter("Paradoxe: Biologie ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`L'application d'un pesticide pour combattre un ravageur peut, en réalité, augmenter son abondance`)
+
+    const para18 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe de Liem')
+    .setFooter("Paradoxe: Biologie ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`La denture de certains animaux ne semblent pas être adaptée à leur régime alimentaire réel`)
+
+    const para19 = new Discord.RichEmbed() 
+    .setTitle('Paradoxe temporel')
+    .setFooter("Paradoxe: Temps ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Que se passe-t-il si un voyageur du temps effectue des actions dans le passé qui altère ce qu'il vient de faire ?`)
+
+    const para20 = new Discord.RichEmbed() 
+    .setTitle('Couteau de Lichtenberg')
+    .setFooter("Paradoxe: Divers ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`Un couteau sans lame auquel ne manque que le manche`)
+
+    const para21 = new Discord.RichEmbed() 
+    .setTitle("Paradoxe de l'omnipotence || paradoxe de la toute-puissance")
+    .setFooter("Paradoxe: Mysticisme ")
+    .setThumbnail('https://i.imgur.com/91NE3ht.jpg')
+    .setDescription(`
+    **Je précise que c'est un PARADOXE sa ne vien pas de moi ** 
+    
+    Un être tout-puissant pourrait-il créer une pierre **si lourde qu'il ne puisse pas lui-même la porter** ? S'il le peut, il cesserait d'être tout-puissant ; s'il ne le peut pas, c'est qu'il n'est pas tout-puissant.`)
+    
+    var randparad = [
+        para1,
+        para2,
+        para3,
+        para4,
+        para5,
+        para6,
+        para7,
+        para8,
+        para9,
+        para10,
+        para11,
+        para12,
+        para13,
+        para14,
+        para15,
+        para16,
+        para17,
+        para18,
+        para19,
+        para20,
+        para21
+    ]
+    var randpara = randparad[Math.floor(Math.random() * randparad.length)] 
+    message.channel.send(randpara)
+}
+
+            if(command === "set"){
+                const acti = args.join(" ");
+                if(message.author.id !== ownerID) return;
+                 message.channel.send("la phrase est maintenant: ``"+acti+"``");
+                client.user.setActivity(acti);
+            };
+
+if(command ==="set-psd"){
+
+    let member = message.mentions.members.first() || message.guild.members.get(args[0]);
+    const pse = args.slice(1).join(' ');
+
+    if(!message.member.permissions.has('ADMINISTRATOR') )return;
+    member.setNickname(pse);
+}
+
+{
+    function random(min, max){
+       min = Math.ceil(1);
+       max = Math.floor(4);
+       randnum = Math.floor(Math.random() * (max - min +1) +min);
+   }
+    if(command ==="kick_roulette"){
+        const reson = "A perdu à la roulette"
+        const user = message.author;
+        const member = message.guild.member(user);
+
+       random()
+       if (randnum == 1){
+        const loose = await message.channel.send("Charge le pistolet et");
+        loose.edit("Charge le pistolet et.");
+        loose.edit("Charge le pistolet et..");
+        loose.edit("Charge le pistolet et...");
+        loose.edit("Charge le pistolet et...PAN! Désolé mais j'ai pas visée le genou ");
+        if(member){
+        await member.kick(reson)
+        .catch(error => message.reply(`Désoler ${message.author} le jeux est cassé à cause de l'erreur suivant: ${error}`));
+        }
+       }
+
+       if (randnum == 2){
+          const win = await message.channel.send("Charge le pistolet et");
+          win.edit("Charge le pistolet et.");
+          win.edit("Charge le pistolet et..");
+          win.edit("Charge le pistolet et...");
+          win.edit("Charge le pistolet et...Clik! GG Tu gagne le droit de refaire une roulette jusqua que tu perde!  ");
+       }
+       if (randnum == 3){
+        const win = await message.channel.send("Charge le pistolet et");
+        win.edit("Charge le pistolet et.");
+        win.edit("Charge le pistolet et..");
+        win.edit("Charge le pistolet et...");
+        win.edit("Charge le pistolet et...Clik! GG Tu gagne le droit de refaire une roulette jusqua que tu perde!  ");
+     }
+     if (randnum == 4){
+        const win = await message.channel.send("Charge le pistolet et");
+        win.edit("Charge le pistolet et.");
+        win.edit("Charge le pistolet et..");
+        win.edit("Charge le pistolet et...");
+        win.edit("Charge le pistolet et...Clik! GG Tu gagne le droit de refaire une roulette jusqua que tu perde!  ");
+     }
+
+    }}
 
 
 
@@ -1146,7 +1373,12 @@ if(!rolegive)
             "https://i.imgur.com/LAZgBCw.jpg",
             "https://i.imgur.com/ydZbrqF.jpg",
             "https://i.imgur.com/tymTI95.jpg",
-            "https://i.imgur.com/nCoZH8x.jpg"
+            "https://i.imgur.com/nCoZH8x.jpg",
+            "https://i.imgur.com/oVPl8ex.jpg",
+            "https://i.imgur.com/rmXcUWb.jpg",
+            "https://i.imgur.com/qjQ9sJk.png",
+            "https://i.imgur.com/ZxfUHdk.jpg",
+            "https://i.imgur.com/PhNsGnH.png"
 
         ];
 
