@@ -727,7 +727,7 @@ const config = require("./config.json");
 
             if(command === "set"){
                 const acti = args.join(" ");
-                if(message.author.id !== ownerID) return;
+                if(message.author.id !== congig.ownerID) return;
                  message.channel.send("la phrase est maintenant: ``"+acti+"``");
                 client.user.setActivity(acti);
             };
