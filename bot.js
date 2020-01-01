@@ -400,7 +400,7 @@ console.log('Done The Watching Setup Completed')
          client.fetchUser("246395977450258432",false).then(user => {
            user.send(embed) 
    });
-     }
+     }/*
     let event = ['kagura'];
     let fondintext = false;
     for (var i in event){
@@ -409,7 +409,7 @@ console.log('Done The Watching Setup Completed')
         if(fondintext){
             message.react(`👀`);
         }
-    }
+    }  */
 
     let eventr = ['respect ?'];
     let fondintextr = false;
