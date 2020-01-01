@@ -448,7 +448,7 @@ console.log('Done The Watching Setup Completed')
     }
     }
 
-    if(message.isMentioned(client.users.get('511235137791459332'))){
+    if(message.isMentioned(client.users.get('513336473609830400'))){
         await db.add(`ping_${message.author.id}`,1)
         setTimeout((db.subtract(`ping_${message.author.id}`,14)),60*60000)
         let pg = await db.fetch(`ping_${message.author.id}`);
