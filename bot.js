@@ -123,6 +123,7 @@ console.log('Done The Watching Setup Completed')
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+                        **<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
                         **<<paradoxe :**Pour voir divers paradoxe 
                         **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                         **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
@@ -182,6 +183,9 @@ console.log('Done The Watching Setup Completed')
                      if(page ===7){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
+                        **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
+                        **<<chargement :** Barre de chargement (inutile donc indispensable) 
+                        **<<useless :**Montre un site totalement inutile
                         **<<waifu : **Montre ta nouvelle waifu
                         **<<monstre : **Dévoile le monstre en toi
                         **<<del : **Delet this (meme)
@@ -251,6 +255,7 @@ console.log('Done The Watching Setup Completed')
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
                 **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+                **<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
                 **<<paradoxe :**Pour voir divers paradoxe 
                 **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                 **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
@@ -310,6 +315,9 @@ console.log('Done The Watching Setup Completed')
              if(page ===7){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
+                **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
+                **<<chargement :** Barre de chargement (inutile donc indispensable) 
+                **<<useless :**Montre un site totalement inutile
                 **<<waifu : **Montre ta nouvelle waifu
                 **<<monstre : **Dévoile le monstre en toi
                 **<<del : **Delet this (meme)
@@ -400,7 +408,7 @@ console.log('Done The Watching Setup Completed')
          client.fetchUser("246395977450258432",false).then(user => {
            user.send(embed) 
    });
-     }/*
+     }
     let event = ['kagura'];
     let fondintext = false;
     for (var i in event){
@@ -409,7 +417,7 @@ console.log('Done The Watching Setup Completed')
         if(fondintext){
             message.react(`👀`);
         }
-    }  */
+    }  
 
     let eventr = ['respect ?'];
     let fondintextr = false;
@@ -447,7 +455,7 @@ console.log('Done The Watching Setup Completed')
           ]});
     }
     }
-
+/*
     if(message.isMentioned(client.users.get('513336473609830400'))){
         await db.add(`ping_${message.author.id}`,1)
         setTimeout((db.subtract(`ping_${message.author.id}`,14)),60*60000)
@@ -500,7 +508,7 @@ console.log('Done The Watching Setup Completed')
              
                                                         
                                                         }
-    /*let eventtt = ['https://cdn.discordapp.com/emojis/540223339411537932.png'];
+    let eventtt = ['https://cdn.discordapp.com/emojis/540223339411537932.png'];
 
     if(message.author.id !== "635547572983037970")return;
 
@@ -850,7 +858,156 @@ const config = require("./config.json");
     
   
 
+  {
 
+    function random0(min, max){
+        min = Math.ceil(1);
+        max = Math.floor(3);
+        race = Math.floor(Math.random() * (max - min +1) +min);
+    }
+    function random1(min, max){
+       min = Math.ceil(1);
+       max = Math.floor(3);
+       genr = Math.floor(Math.random() * (max - min +1) +min);
+   }
+   function random2(min, max){
+    min = Math.ceil(2);
+    max = Math.floor(100);
+    agee = Math.floor(Math.random() * (max - min +1) +min);
+}
+function random3(min, max){
+    min = Math.ceil(1);
+    max = Math.floor(100);
+    pourcent = Math.floor(Math.random() * (max - min +1) +min);
+}
+function random4(min, max){
+    min = Math.ceil(1);
+    max = Math.floor(100);
+    complement = Math.floor(Math.random() * (max - min +1) +min);
+}
+function random5(min, max){
+    min = Math.ceil(1);
+    max = Math.floor(100);
+    pourcent2 = Math.floor(Math.random() * (max - min +1) +min);
+}
+function random6(min, max){
+    min = Math.ceil(1);
+    max = Math.floor(100);
+    complement2 = Math.floor(Math.random() * (max - min +1) +min);
+}
+if(command ==="estimation"){
+
+let target = message.mentions.users.first() || message.author;
+random0()
+random1()
+random2()
+random3()
+random4()
+random5()
+random6()
+
+if(genr === 1 ){genr = "Homme"}
+if(genr === 2 ){genr = "Femme"}
+if(genr === 3 ){genr = "????"}
+if(race === 1 ){race = "Humaine"}
+if(race === 2 ){race = "Robotique"}
+if(race === 3 ){race = "Réptilien"}
+
+
+var estimation = new Discord.RichEmbed()
+.setColor('RANDOM')
+.setThumbnail(target.displayAvatarURL)
+.setTitle(`Scanne fini`)
+.setDescription("**Genre:** "+genr+" à "+ pourcent+","+ complement +"% \n**Age: **"+agee+" ans à "+ pourcent2+","+ complement2+"% \n**Race: **"+race+" à 100% " )
+message.channel.send(estimation);
+
+
+}
+}
+
+  if(command==="chargement"){
+    let m = await message.channel.send("{}═══════════════════════")
+    m.edit("{═}══════════════════════")
+    m.edit("{══}═════════════════════")
+    m.edit("{═══}════════════════════")
+    m.edit("{════}═══════════════════")
+    m.edit("{═════}══════════════════")
+    m.edit("{══════}═════════════════")
+    m.edit("{═══════}════════════════")
+    m.edit("{════════}═══════════════")
+    m.edit("{═════════}══════════════")
+    m.edit("{══════════}═════════════")
+    m.edit("{═══════════}════════════")
+    m.edit("{════════════}═══════════")
+    m.edit("{═════════════}══════════")
+    m.edit("{══════════════}═════════")
+    m.edit("{═══════════════}════════")
+    m.edit("{════════════════}═══════")
+    m.edit("{═════════════════}══════")
+    m.edit("{══════════════════}═════")
+    m.edit("{═══════════════════}════")
+    m.edit("{════════════════════}═══")
+    m.edit("{═════════════════════}══")
+    m.edit("{══════════════════════}═")
+    m.edit("{═══════════════════════}")
+    m.edit("https://i.imgur.com/RKMuXbh.jpg")
+            }
+
+  if(command === "useless") {
+   
+    var situ = [
+        "http://www.leduchamp.com/",
+        "http://r33b.net/",
+        "http://adultcatfinder.com/",
+        "http://catcordion.sergethew.com/",
+        "http://www.papertoilet.com/",
+        "http://www.ouaismaisbon.ch/",
+        "http://eelslap.com/",
+        "http://www.koalastothemax.com/",
+        "https://www.pointerpointer.com/",
+        "http://seoi.net/penint/",
+        "http://www.patience-is-a-virtue.org/",
+        "https://cant-not-tweet-this.com/",
+        "https://trypap.com/",
+        "http://www.trashloop.com/",
+        "http://dogs.are.the.most.moe/",
+        "http://endless.horse/",
+        "http://make-everything-ok.com/",
+        "https://findtheinvisiblecow.com/",
+        "http://hackertyper.com/",
+        "https://thisissand.com/",
+        "http://www.clicktoremove.com/",
+        "http://fallingguy.com/",
+        "https://www.randomthingstodo.com/",
+        "http://www.whatsmystarbucksname.com/",
+        "http://www.fallingfalling.com/",
+        "http://pixelsfighting.com/",
+        "http://whereisthesloth.com/",
+        "http://hmpg.net/"
+
+
+    ];
+
+    var sit = situ[Math.floor(Math.random() * situ.length)] ;
+    var sit_embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setTitle('>> _Inutile donc indispensable!_ <<')
+    .setURL(sit)
+    .setDescription("Ce qui est inutile est utile car c'est inutile! N'oublie jamais sa!")
+    message.channel.send(sit_embed);
+};
+
+  if(command ==="psd"){
+        
+    m = message.guild.members.random().displayName
+    d = message.guild.members.random().displayName;
+                
+    b = d.substring(0, 4);
+    nB = b + (m.substring(4, 10))
+
+    message.member.setNickname(nB);
+    message.channel.send("Ton nouveaux pseudo sera: "+nB)
+} 
 
   if(command === "paradoxe"){
     const para1 = new Discord.RichEmbed() 
