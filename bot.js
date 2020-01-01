@@ -561,6 +561,24 @@ cAnswer = "";
 userAnswer = "";
 });
 
+client.on ("ready", () => {
+    answered = true;
+    cAnswer = "";
+    userAnswer = "";
+    });
+    
+    client.on ("ready", () => {
+      answeredJ = true;
+      cAnswerJ = "";
+      userAnswerJ = "";
+      });
+  
+      client.on ("ready", () => {
+          answeredA = true;
+          cAnswerA = "";
+          userAnswerA = "";
+          });
+  
 client.on("message", async message => {
 
     let user = message.author;
