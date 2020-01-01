@@ -1169,7 +1169,7 @@ message.channel.send(estimation);
             if(command === "set"){
                 const acti = args.join(" ");
                 if(message.author.id !== config.ownerID) return;
-                 message.channel.send("la phrase est maintenant: ``"+acti+"``");
+                 message.channel.send(`la phrase est maintenant: **${acti}**`);
                 client.user.setActivity(acti);
             };
 
