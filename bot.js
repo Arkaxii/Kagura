@@ -408,7 +408,7 @@ console.log('Done The Watching Setup Completed')
          client.fetchUser("246395977450258432",false).then(user => {
            user.send(embed) 
    });
-     }
+     }/*
     let event = ['kagura'];
     let fondintext = false;
     for (var i in event){
@@ -417,7 +417,7 @@ console.log('Done The Watching Setup Completed')
         if(fondintext){
             message.react(`👀`);
         }
-    }  
+    }  */
 
     let eventr = ['respect ?'];
     let fondintextr = false;
@@ -455,10 +455,14 @@ console.log('Done The Watching Setup Completed')
           ]});
     }
     }
-/*
-    if(message.isMentioned(client.users.get('513336473609830400'))){
-        await db.add(`ping_${message.author.id}`,1)
-        setTimeout((db.subtract(`ping_${message.author.id}`,14)),60*60000)
+
+    let event = ['@kagura'];
+    let fondintext = false;
+    for (var i in event){
+        if (message.content.toLocaleLowerCase().includes(event[i].toLocaleLowerCase()))
+        fondintext = true;
+        if(fondintext){
+                    await db.add(`ping_${message.author.id}`,1)
         let pg = await db.fetch(`ping_${message.author.id}`);
         
         if(pg === 1){
@@ -507,7 +511,7 @@ console.log('Done The Watching Setup Completed')
                                                             };
              
                                                         
-                                                        }
+                                                        } }/*
     let eventtt = ['https://cdn.discordapp.com/emojis/540223339411537932.png'];
 
     if(message.author.id !== "635547572983037970")return;
