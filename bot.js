@@ -124,7 +124,6 @@ console.log('Done The Watching Setup Completed')
                         embetest.setDescription(`
                         **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
                         **<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
-                        **<<paradoxe :**Pour voir divers paradoxe 
                         **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                         **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                         **<<info kagura : **Toute les infos a propo de Kagura
@@ -183,6 +182,10 @@ console.log('Done The Watching Setup Completed')
                      if(page ===7){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
+                        **<<paradoxe :** Pour voir divers paradoxe 
+                        **<<café :** Pour avoir ou donné un café
+                        **<<cookies :** Pour avoir ou donné des cookies
+                        **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
                         **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
                         **<<chargement :** Barre de chargement (inutile donc indispensable) 
                         **<<useless :**Montre un site totalement inutile
@@ -256,7 +259,6 @@ console.log('Done The Watching Setup Completed')
                 embetest.setDescription(`
                 **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
                 **<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
-                **<<paradoxe :**Pour voir divers paradoxe 
                 **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
                 **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                 **<<info kagura : **Toute les infos a propo de Kagura
@@ -268,8 +270,8 @@ console.log('Done The Watching Setup Completed')
                 **<<say : **Fait dir ce que tu veut au bot 
                 **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
                 **<<message :** Donne le nombre de message envoyer 
-                **<<a-f :**traduit d'Anglais à Français
-                **<<f-a :**Traduit du Français à l'Anglais
+                **<<a-f :** Traduit d'Anglais à Français
+                **<<f-a :** Traduit du Français à l'Anglais
                 **<<dico :** Cherche le mot dans le dictionnaire 
                 **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
                 **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**`)  
@@ -282,10 +284,10 @@ console.log('Done The Watching Setup Completed')
                 **<<inventaire : **Pour voir son inventaire
                 **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
                 **<<pay : **pour donner de l'argent à d'autre utilisateur
-                **<<compt : **pour voir à combien s'élève ton compt
-                **<<daily : **pour recevoir 250$ par jour
-                **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
-                **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
+                **<<compt : **Pour voir à combien s'élève ton compt
+                **<<daily : **Pour recevoir 250$ par jour
+                **<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$
+                **<<roulette[montant de $] :** Test ta chance pour gagnier des $!`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
@@ -293,8 +295,8 @@ console.log('Done The Watching Setup Completed')
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
                 **<<8ball : **Pose n'importe quelle question
-                **<<refjeux : **trouve à quelle jeux appartien la référence 
-                **<<refanime : **trouve à quelle anime appartien la référence 
+                **<<refjeux : **Trouve à quelle jeux appartien la référence 
+                **<<refanime : **Trouve à quelle anime appartien la référence 
                 **<<quiz : **Test ton intelligence
                 **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
                 **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`) 
@@ -306,18 +308,22 @@ console.log('Done The Watching Setup Completed')
                 embetest.setDescription(`
                 **<<pile : **1 chance sur 2
                 **<<face : **1 chance sur 2
-                **<<lancer6 : **imite un lancer de dé à 6 face 
-                **<<lancer12 : **imite un lancer de dé à 12 face 
-                **<<lancer20 :** imite un lancer de dé à 20 face`)  
+                **<<lancer6 : **Imite un lancer de dé à 6 face 
+                **<<lancer12 : **Imite un lancer de dé à 12 face 
+                **<<lancer20 :** Imite un lancer de dé à 20 face`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===7){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
+                **<<paradoxe :** Pour voir divers paradoxe 
+                **<<café :** Pour avoir ou donné un café
+                **<<cookies :** Pour avoir ou donné des cookies
+                **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*)
                 **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
                 **<<chargement :** Barre de chargement (inutile donc indispensable) 
-                **<<useless :**Montre un site totalement inutile
+                **<<useless :** Montre un site totalement inutile
                 **<<waifu : **Montre ta nouvelle waifu
                 **<<monstre : **Dévoile le monstre en toi
                 **<<del : **Delet this (meme)
@@ -857,6 +863,61 @@ const config = require("./config.json");
   const command = args.shift().toLowerCase();
     
   
+
+
+
+
+
+  if(command === "café"){
+    let member = message.mentions.members.first();
+    if(!member){
+    var café_embedOW = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setTitle(`Et 1 café pour ${message.author.username} `)
+    .setThumbnail("https://i.imgur.com/FKc9QuV.png")
+    .setFooter("Sa sent bon le café numérique")
+message.channel.send(café_embedOW);
+    }else{
+var café_embed = new Discord.RichEmbed()
+.setColor('RANDOM')
+.setTitle(`Et 1 café de la part de ${message.author.username} pour ${member.displayName} `)
+.setThumbnail("https://i.imgur.com/FKc9QuV.png")
+.setFooter("Sa sent bon le café numérique")
+message.channel.send(café_embed);
+    }
+}
+
+        if(command === "cookies"){
+            let member = message.mentions.members.first();
+            if(!member){
+            var cookies_embedOW = new Discord.RichEmbed()
+            .setColor('RANDOM')
+            .setTitle(`Et voila des cookies pour ${message.author.username} `)
+            .setThumbnail("https://i.imgur.com/aKrTN5q.jpg")
+            .setFooter("Sa sent bon les cookies numérique")
+        message.channel.send(cookies_embedOW);
+            }else{
+        var cookies_embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle(`Et voila des cookies de la part de ${message.author.username} pour ${member.displayName} `)
+        .setThumbnail("https://i.imgur.com/aKrTN5q.jpg")
+        .setFooter("Sa sent bon les cookies numérique")
+        message.channel.send(cookies_embed);
+            }
+        }
+
+
+        var flip = require('flip-text')
+
+if(command === "flip"){
+    var flipmessage = args.join(" ")
+if(!flipmessage){
+    message.channel.send("si tu ne met rien je ne peut rien fair");
+}
+        message.channel.send(flip(flipmessage))
+    
+}
+
 
   {
 
