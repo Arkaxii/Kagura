@@ -906,7 +906,6 @@ message.channel.send(café_embed);
             }
         }
 
-
         var flip = require('flip-text')
 
 if(command === "flip"){
@@ -914,10 +913,12 @@ if(command === "flip"){
 if(!flipmessage){
     message.channel.send("si tu ne met rien je ne peut rien fair");
 }
+if(flipmessage === "the table"){
+  return message.channel.send("(╯°□°）╯︵ ┻━┻")
+} else {
         message.channel.send(flip(flipmessage))
-    
 }
-
+}
 
   {
 
