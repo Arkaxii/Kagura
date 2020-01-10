@@ -139,8 +139,8 @@ console.log('Done The Watching Setup Completed')
                         **<<say : **Fait dir ce que tu veut au bot 
                         **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
                         **<<message :** Donne le nombre de message envoyer 
-                        **<<a-f :**traduit d'Anglais à Français
-                        **<<f-a :**Traduit du Français à l'Anglais
+                        **<<a-f :** Traduit d'Anglais à Français
+                        **<<f-a :** Traduit du Français à l'Anglais
                         **<<dico :** Cherche le mot dans le dictionnaire `)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
@@ -163,8 +163,8 @@ console.log('Done The Watching Setup Completed')
                         **<<inventaire : **Pour voir son inventaire
                         **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
                         **<<pay : **pour donner de l'argent à d'autre utilisateur
-                        **<<compt : **pour voir à combien s'élève ton compt
-                        **<<daily : **pour recevoir 250$ par jour
+                        **<<compt : **Pour voir à combien s'élève ton compt
+                        **<<daily : **Pour recevoir 250$ par jour
                         **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
                         **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
@@ -174,8 +174,8 @@ console.log('Done The Watching Setup Completed')
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<8ball : **Pose n'importe quelle question
-                        **<<refjeux : **trouve à quelle jeux appartien la référence 
-                        **<<refanime : **trouve à quelle anime appartien la référence 
+                        **<<refjeux : **Trouve à quelle jeux appartien la référence 
+                        **<<refanime : **Trouve à quelle anime appartien la référence 
                         **<<quiz : **Test ton intelligence
                         **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
                         **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
@@ -188,9 +188,9 @@ console.log('Done The Watching Setup Completed')
                         embetest.setDescription(`
                         **<<pile : **1 chance sur 2
                         **<<face : **1 chance sur 2
-                        **<<lancer6 : **imite un lancer de dé à 6 face 
-                        **<<lancer12 : **imite un lancer de dé à 12 face 
-                        **<<lancer20 :** imite un lancer de dé à 20 face`)  
+                        **<<lancer6 : **Imite un lancer de dé à 6 face 
+                        **<<lancer12 : **Imite un lancer de dé à 12 face 
+                        **<<lancer20 :** Imite un lancer de dé à 20 face`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
@@ -202,12 +202,12 @@ console.log('Done The Watching Setup Completed')
                         **<<cookies :** Pour avoir ou donné des cookies
                         **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
                         **<<chargement :** Barre de chargement (inutile donc indispensable) 
-                        **<<useless :**Montre un site totalement inutile
-                        **<<waifu : **Montre ta nouvelle waifu
+                        **<<useless :** Montre un site totalement inutile
+                        **<<waifu : ** Montre ta nouvelle waifu
                         **<<monstre : **Dévoile le monstre en toi
-                        **<<del : **Delet this (meme)
-                        **<<hack : **Pour hacké une personne choisit
-                        **<<love : **Pour connaitre ton "âme soeur"
+                        **<<del : ** Delet this (meme)
+                        **<<hack : ** Pour hacké une personne choisit
+                        **<<love : ** Pour connaitre ton "âme soeur"
                         **<<fusion : **FUUUUUUUUSION !!(fusionne des pseudos)`)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
@@ -285,8 +285,8 @@ console.log('Done The Watching Setup Completed')
                 **<<say : **Fait dir ce que tu veut au bot 
                 **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
                 **<<message :** Donne le nombre de message envoyer 
-                **<<a-f :**traduit d'Anglais à Français
-                **<<f-a :**Traduit du Français à l'Anglais
+                **<<a-f :** Traduit d'Anglais à Français
+                **<<f-a :** Traduit du Français à l'Anglais
                 **<<dico :** Cherche le mot dans le dictionnaire `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
@@ -308,11 +308,11 @@ console.log('Done The Watching Setup Completed')
                 embetest.setDescription(`
                 **<<inventaire : **Pour voir son inventaire
                 **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
-                **<<pay : **pour donner de l'argent à d'autre utilisateur
-                **<<compt : **pour voir à combien s'élève ton compt
-                **<<daily : **pour recevoir 250$ par jour
-                **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
-                **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
+                **<<pay : **Pour donner de l'argent à d'autre utilisateur
+                **<<compt : **Pour voir à combien s'élève ton compt
+                **<<daily : **Pour recevoir 250$ par jour
+                **<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$
+                **<<roulette[montant de $] :** Test ta chance pour gagnier des $!`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
@@ -320,8 +320,8 @@ console.log('Done The Watching Setup Completed')
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
                 **<<8ball : **Pose n'importe quelle question
-                **<<refjeux : **trouve à quelle jeux appartien la référence 
-                **<<refanime : **trouve à quelle anime appartien la référence 
+                **<<refjeux : **Trouve à quelle jeux appartien la référence 
+                **<<refanime : **Trouve à quelle anime appartien la référence 
                 **<<quiz : **Test ton intelligence
                 **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
                 **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
@@ -334,9 +334,9 @@ console.log('Done The Watching Setup Completed')
                 embetest.setDescription(`
                 **<<pile : **1 chance sur 2
                 **<<face : **1 chance sur 2
-                **<<lancer6 : **imite un lancer de dé à 6 face 
-                **<<lancer12 : **imite un lancer de dé à 12 face 
-                **<<lancer20 :** imite un lancer de dé à 20 face`)  
+                **<<lancer6 : **Imite un lancer de dé à 6 face 
+                **<<lancer12 : **Imite un lancer de dé à 12 face 
+                **<<lancer20 :** Imite un lancer de dé à 20 face`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
@@ -348,8 +348,8 @@ console.log('Done The Watching Setup Completed')
                 **<<cookies :** Pour avoir ou donné des cookies
                 **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
                 **<<chargement :** Barre de chargement (inutile donc indispensable) 
-                **<<useless :**Montre un site totalement inutile
-                **<<waifu : **Montre ta nouvelle waifu
+                **<<useless :** Montre un site totalement inutile
+                **<<waifu : ** Montre ta nouvelle waifu
                 **<<monstre : **Dévoile le monstre en toi
                 **<<del : **Delet this (meme)
                 **<<hack : **Pour hacké une personne choisit
