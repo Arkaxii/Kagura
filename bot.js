@@ -53,23 +53,23 @@ console.log('Done The Watching Setup Completed')
         .setFooter(`Page ${page} sur ${pages.length}`)
         .setDescription(`
     
-    ─▻__**Catégorie**__
+─▻__**Catégorie**__
   
-    - Rolplay 
+- Rolplay 
 
-    - Utilitaire
+- Utilitaire
 
-    - Texte
+- Texte
     
-    - Argent
+- Argent
     
-    - Jeux
+- Jeux
     
-    - Random
+- Random
     
-    - Autre
+- Autre
     
-    - Admin
+- Admin
     `)  
         message.channel.send(embetest).then(message =>{
             message.react("⏪").then( r =>{
@@ -87,140 +87,140 @@ console.log('Done The Watching Setup Completed')
                     if(page ===1){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
-                        ─▻__**Catégorie**__
+─▻__**Catégorie**__
   
-                        - Rolplay 
-                    
-                        - Utilitaire
+- Rolplay 
+            
+- Utilitaire
 
-                        - Texte
-                        
-                        - Argent
-                        
-                        - Jeux
-                        
-                        - Random
-                        
-                        - Autre
-                        
-                        - Admin`)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                    };
-                    if(page ===2){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        <<wink
-                        <<wave  
-                        <<sleep
-                        <<wake-up 
-                        <<slap 
-                        <<punch
-                        <<poke
-                        <<pat
-                        <<kiss
-                        <<kill
-                        <<hug`)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===3){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
-                        **<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
-                        **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
-                        **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
-                        **<<info kagura : **Toute les infos a propo de Kagura
-                        **<<info discord : **Les info du serveur
-                        **<<secret : **Les prochain ajout sur le bot
-                        **<<avatar : **Recupere l'avatar pour l'afficher plus grand 
-                        **<<ping : **Pour connaitre son ping
-                        **<<say : **Fait dir ce que tu veut au bot 
-                        **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
-                        **<<message :** Donne le nombre de message envoyer 
-                        **<<a-f :** Traduit d'Anglais à Français
-                        **<<f-a :** Traduit du Français à l'Anglais
-                        **<<dico :** Cherche le mot dans le dictionnaire `)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===4){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-                        **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
-                        **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
-                        **<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
-        
-                        `)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===5){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<inventaire : **Pour voir son inventaire
-                        **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
-                        **<<pay : **pour donner de l'argent à d'autre utilisateur
-                        **<<compt : **Pour voir à combien s'élève ton compt
-                        **<<daily : **Pour recevoir 250$ par jour
-                        **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
-                        **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===6){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<8ball : **Pose n'importe quelle question
-                        **<<refjeux : **Trouve à quelle jeux appartien la référence 
-                        **<<refanime : **Trouve à quelle anime appartien la référence 
-                        **<<quiz : **Test ton intelligence
-                        **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
-                        **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
-                        
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===7){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<pile : **1 chance sur 2
-                        **<<face : **1 chance sur 2
-                        **<<lancer6 : **Imite un lancer de dé à 6 face 
-                        **<<lancer12 : **Imite un lancer de dé à 12 face 
-                        **<<lancer20 :** Imite un lancer de dé à 20 face`)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===8){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<paradoxe :** Pour voir divers paradoxe 
-                        **<<café :** Pour avoir ou donné un café
-                        **<<cookies :** Pour avoir ou donné des cookies
-                        **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
-                        **<<chargement :** Barre de chargement (inutile donc indispensable) 
-                        **<<useless :** Montre un site totalement inutile
-                        **<<waifu : ** Montre ta nouvelle waifu
-                        **<<monstre : **Dévoile le monstre en toi
-                        **<<del : ** Delet this (meme)
-                        **<<hack : ** Pour hacké une personne choisit
-                        **<<love : ** Pour connaitre ton "âme soeur"
-                        **<<fusion : **FUUUUUUUUSION !!(fusionne des pseudos)`)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-                     if(page ===9){ 
-                        embetest.setTitle(pages[page-1])
-                        embetest.setDescription(`
-                        **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
-                        `)  
-                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
-                        message.edit(embetest) 
-                     };
-        }
+- Texte
+                
+- Argent
+                
+- Jeux
+                
+- Random
+                
+- Autre
+                
+- Admin`)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+            };
+            if(page ===2){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+<<wink
+<<wave  
+<<sleep
+<<wake-up 
+<<slap 
+<<punch
+<<poke
+<<pat
+<<kiss
+<<kill
+<<hug`)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===3){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+**<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
+**<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
+**<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
+**<<info kagura : **Toute les infos a propo de Kagura
+**<<info discord : **Les info du serveur
+**<<secret : **Les prochain ajout sur le bot
+**<<avatar : **Recupere l'avatar pour l'afficher plus grand 
+**<<ping : **Pour connaitre son ping
+**<<say : **Fait dir ce que tu veut au bot 
+**<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
+**<<message :** Donne le nombre de message envoyer 
+**<<a-f :** Traduit d'Anglais à Français
+**<<f-a :** Traduit du Français à l'Anglais
+**<<dico :** Cherche le mot dans le dictionnaire `)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===4){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+**<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
+**<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
+**<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
+
+                `)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===5){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<inventaire : **Pour voir son inventaire
+**<<shop : **Pour fair des achat avec la THUNE que tu as acquis
+**<<pay : **Pour donner de l'argent à d'autre utilisateur
+**<<compt : **Pour voir à combien s'élève ton compt
+**<<daily : **Pour recevoir 250$ par jour
+**<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$
+**<<roulette[montant de $] :** Test ta chance pour gagnier des $!`)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===6){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<8ball : **Pose n'importe quelle question
+**<<refjeux : **Trouve à quelle jeux appartien la référence 
+**<<refanime : **Trouve à quelle anime appartien la référence 
+**<<quiz : **Test ton intelligence
+**<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
+**<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
+                
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===7){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<pile : **1 chance sur 2
+**<<face : **1 chance sur 2
+**<<lancer6 : **Imite un lancer de dé à 6 face 
+**<<lancer12 : **Imite un lancer de dé à 12 face 
+**<<lancer20 :** Imite un lancer de dé à 20 face`)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===8){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<paradoxe :** Pour voir divers paradoxe 
+**<<café :** Pour avoir ou donné un café
+**<<cookies :** Pour avoir ou donné des cookies
+**<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
+**<<chargement :** Barre de chargement (inutile donc indispensable) 
+**<<useless :** Montre un site totalement inutile
+**<<waifu : ** Montre ta nouvelle waifu
+**<<monstre : **Dévoile le monstre en toi
+**<<del : **Delet this (meme)
+**<<hack : **Pour hacké une personne choisit
+**<<love : **Pour connaitre ton "âme soeur"
+**<<fusion : **FUUUUUUUUSION !!(fusionne des pseudos)`)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===9){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
+**<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
+                `)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+}
         
          
         
@@ -233,71 +233,71 @@ console.log('Done The Watching Setup Completed')
             if(page ===1){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`     
-                ─▻__**Catégorie**__
+─▻__**Catégorie**__
   
-                - Rolplay 
+- Rolplay 
             
-                - Utilitaire
+- Utilitaire
 
-                - Texte
+- Texte
                 
-                - Argent
+- Argent
                 
-                - Jeux
+- Jeux
                 
-                - Random
+- Random
                 
-                - Autre
+- Autre
                 
-                - Admin`)  
+- Admin`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
             };
             if(page ===2){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                <<wink
-                <<wave  
-                <<sleep
-                <<wake-up 
-                <<slap 
-                <<punch
-                <<poke
-                <<pat
-                <<kiss
-                <<kill
-                <<hug`)  
+<<wink
+<<wave  
+<<sleep
+<<wake-up 
+<<slap 
+<<punch
+<<poke
+<<pat
+<<kiss
+<<kill
+<<hug`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===3){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
-                **<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
-                **<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
-                **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
-                **<<info kagura : **Toute les infos a propo de Kagura
-                **<<info discord : **Les info du serveur
-                **<<secret : **Les prochain ajout sur le bot
-                **<<avatar : **Recupere l'avatar pour l'afficher plus grand 
-                **<<ping : **Pour connaitre son ping
-                **<<say : **Fait dir ce que tu veut au bot 
-                **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
-                **<<message :** Donne le nombre de message envoyer 
-                **<<a-f :** Traduit d'Anglais à Français
-                **<<f-a :** Traduit du Français à l'Anglais
-                **<<dico :** Cherche le mot dans le dictionnaire `)  
+**<<mp :** Pour fair une suggestion ou rapporté ce qui ne va pas directement au créateur
+**<<psd :** Pour avoir un pseudo random en fusionnant 2 pseudos random du serveur
+**<<sondage : **Fait un sondage pour avoir l'avie d'autre personne
+**<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
+**<<info kagura : **Toute les infos a propo de Kagura
+**<<info discord : **Les info du serveur
+**<<secret : **Les prochain ajout sur le bot
+**<<avatar : **Recupere l'avatar pour l'afficher plus grand 
+**<<ping : **Pour connaitre son ping
+**<<say : **Fait dir ce que tu veut au bot 
+**<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
+**<<message :** Donne le nombre de message envoyer 
+**<<a-f :** Traduit d'Anglais à Français
+**<<f-a :** Traduit du Français à l'Anglais
+**<<dico :** Cherche le mot dans le dictionnaire `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===4){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-                **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
-                **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
-                **<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
+**<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+**<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
+**<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
+**<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
 
                 `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
@@ -306,25 +306,25 @@ console.log('Done The Watching Setup Completed')
              if(page ===5){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<inventaire : **Pour voir son inventaire
-                **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
-                **<<pay : **Pour donner de l'argent à d'autre utilisateur
-                **<<compt : **Pour voir à combien s'élève ton compt
-                **<<daily : **Pour recevoir 250$ par jour
-                **<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$
-                **<<roulette[montant de $] :** Test ta chance pour gagnier des $!`)  
+**<<inventaire : **Pour voir son inventaire
+**<<shop : **Pour fair des achat avec la THUNE que tu as acquis
+**<<pay : **Pour donner de l'argent à d'autre utilisateur
+**<<compt : **Pour voir à combien s'élève ton compt
+**<<daily : **Pour recevoir 250$ par jour
+**<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$
+**<<roulette[montant de $] :** Test ta chance pour gagnier des $!`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===6){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<8ball : **Pose n'importe quelle question
-                **<<refjeux : **Trouve à quelle jeux appartien la référence 
-                **<<refanime : **Trouve à quelle anime appartien la référence 
-                **<<quiz : **Test ton intelligence
-                **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
-                **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
+**<<8ball : **Pose n'importe quelle question
+**<<refjeux : **Trouve à quelle jeux appartien la référence 
+**<<refanime : **Trouve à quelle anime appartien la référence 
+**<<quiz : **Test ton intelligence
+**<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
+**<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
                 
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
@@ -332,36 +332,36 @@ console.log('Done The Watching Setup Completed')
              if(page ===7){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<pile : **1 chance sur 2
-                **<<face : **1 chance sur 2
-                **<<lancer6 : **Imite un lancer de dé à 6 face 
-                **<<lancer12 : **Imite un lancer de dé à 12 face 
-                **<<lancer20 :** Imite un lancer de dé à 20 face`)  
+**<<pile : **1 chance sur 2
+**<<face : **1 chance sur 2
+**<<lancer6 : **Imite un lancer de dé à 6 face 
+**<<lancer12 : **Imite un lancer de dé à 12 face 
+**<<lancer20 :** Imite un lancer de dé à 20 face`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===8){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<paradoxe :** Pour voir divers paradoxe 
-                **<<café :** Pour avoir ou donné un café
-                **<<cookies :** Pour avoir ou donné des cookies
-                **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
-                **<<chargement :** Barre de chargement (inutile donc indispensable) 
-                **<<useless :** Montre un site totalement inutile
-                **<<waifu : ** Montre ta nouvelle waifu
-                **<<monstre : **Dévoile le monstre en toi
-                **<<del : **Delet this (meme)
-                **<<hack : **Pour hacké une personne choisit
-                **<<love : **Pour connaitre ton "âme soeur"
-                **<<fusion : **FUUUUUUUUSION !!(fusionne des pseudos)`)  
+**<<paradoxe :** Pour voir divers paradoxe 
+**<<café :** Pour avoir ou donné un café
+**<<cookies :** Pour avoir ou donné des cookies
+**<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
+**<<chargement :** Barre de chargement (inutile donc indispensable) 
+**<<useless :** Montre un site totalement inutile
+**<<waifu : ** Montre ta nouvelle waifu
+**<<monstre : **Dévoile le monstre en toi
+**<<del : **Delet this (meme)
+**<<hack : **Pour hacké une personne choisit
+**<<love : **Pour connaitre ton "âme soeur"
+**<<fusion : **FUUUUUUUUSION !!(fusionne des pseudos)`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===9){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
+**<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
                 `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
