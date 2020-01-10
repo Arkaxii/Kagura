@@ -6,7 +6,8 @@ const db = require('quick.db');
 const ms = require('parse-ms');
 const config = require("./config.json");
 const ms2 = require('ms');
-
+const zalgo = require('to-zalgo')
+const banish = require('to-zalgo/banish')
 
 const prefix = '<<'
 client.on('ready', () => {
@@ -865,7 +866,16 @@ const config = require("./config.json");
   
 
 
+  if(command === "zalgo"){ 
 
+    var zal = args.join(" ")
+    if(!zal){
+        message.channel.send("si tu ne met rien je ne peut rien fair");
+    }
+            message.channel.send(zalgo(zal))
+    
+
+}
 
 
   if(command === "café"){
