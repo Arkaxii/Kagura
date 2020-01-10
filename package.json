@@ -40,6 +40,7 @@
     "sqlite3": "^4.0.8",
     "string-similarity": "^3.0.0",
     "tar": "^4.4.8",
+    "to-zalgo": "^1.0.1",
     "uws": "^100.0.1",
     "ytdl-core": "^0.29.7"
   },
