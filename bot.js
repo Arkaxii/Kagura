@@ -58,6 +58,8 @@ console.log('Done The Watching Setup Completed')
     - Rolplay 
 
     - Utilitaire
+
+    - Texte
     
     - Argent
     
@@ -90,6 +92,8 @@ console.log('Done The Watching Setup Completed')
                         - Rolplay 
                     
                         - Utilitaire
+
+                        - Texte
                         
                         - Argent
                         
@@ -137,13 +141,23 @@ console.log('Done The Watching Setup Completed')
                         **<<message :** Donne le nombre de message envoyer 
                         **<<a-f :**traduit d'Anglais à Français
                         **<<f-a :**Traduit du Français à l'Anglais
-                        **<<dico :** Cherche le mot dans le dictionnaire 
-                        **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-                        **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**`)  
+                        **<<dico :** Cherche le mot dans le dictionnaire `)  
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
                      if(page ===4){ 
+                        embetest.setTitle(pages[page-1])
+                        embetest.setDescription(`
+                        **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+                        **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
+                        **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
+                        **<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
+        
+                        `)  
+                        embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                        message.edit(embetest) 
+                     };
+                     if(page ===5){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<inventaire : **Pour voir son inventaire
@@ -156,7 +170,7 @@ console.log('Done The Watching Setup Completed')
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
-                     if(page ===5){ 
+                     if(page ===6){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<8ball : **Pose n'importe quelle question
@@ -169,7 +183,7 @@ console.log('Done The Watching Setup Completed')
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
-                     if(page ===6){ 
+                     if(page ===7){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<pile : **1 chance sur 2
@@ -180,13 +194,12 @@ console.log('Done The Watching Setup Completed')
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
-                     if(page ===7){ 
+                     if(page ===8){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<paradoxe :** Pour voir divers paradoxe 
                         **<<café :** Pour avoir ou donné un café
                         **<<cookies :** Pour avoir ou donné des cookies
-                        **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
                         **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
                         **<<chargement :** Barre de chargement (inutile donc indispensable) 
                         **<<useless :**Montre un site totalement inutile
@@ -199,7 +212,7 @@ console.log('Done The Watching Setup Completed')
                         embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                         message.edit(embetest) 
                      };
-                     if(page ===8){ 
+                     if(page ===9){ 
                         embetest.setTitle(pages[page-1])
                         embetest.setDescription(`
                         **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
@@ -225,6 +238,8 @@ console.log('Done The Watching Setup Completed')
                 - Rolplay 
             
                 - Utilitaire
+
+                - Texte
                 
                 - Argent
                 
@@ -264,67 +279,76 @@ console.log('Done The Watching Setup Completed')
                 **<<timer : **Pour avoir un timer qui peut durer quelque seconde comme plusieur jour
                 **<<info kagura : **Toute les infos a propo de Kagura
                 **<<info discord : **Les info du serveur
-                **<<infos : **Donne les infos d'un utilisateur ou de toi meme
                 **<<secret : **Les prochain ajout sur le bot
                 **<<avatar : **Recupere l'avatar pour l'afficher plus grand 
                 **<<ping : **Pour connaitre son ping
                 **<<say : **Fait dir ce que tu veut au bot 
                 **<<invite : **Envoie un mp pour inviter le bot dans d'autre serveur
                 **<<message :** Donne le nombre de message envoyer 
-                **<<a-f :** Traduit d'Anglais à Français
-                **<<f-a :** Traduit du Français à l'Anglais
-                **<<dico :** Cherche le mot dans le dictionnaire 
-                **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
-                **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**`)  
+                **<<a-f :**traduit d'Anglais à Français
+                **<<f-a :**Traduit du Français à l'Anglais
+                **<<dico :** Cherche le mot dans le dictionnaire `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===4){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<inventaire : **Pour voir son inventaire
-                **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
-                **<<pay : **pour donner de l'argent à d'autre utilisateur
-                **<<compt : **Pour voir à combien s'élève ton compt
-                **<<daily : **Pour recevoir 250$ par jour
-                **<<pierre / <<papier / <<ciseaux : **Pour gagnier 50 $ ou perdre 25$
-                **<<roulette[montant de $] :** Test ta chance pour gagnier des $!`)  
+                **<<syntaxe-b :** Pour savoir **comment** ~~ne pas~~ *fair* __ça__ ||et d'autre chose||
+                **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
+                **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
+                **<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
+
+                `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===5){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<8ball : **Pose n'importe quelle question
-                **<<refjeux : **Trouve à quelle jeux appartien la référence 
-                **<<refanime : **Trouve à quelle anime appartien la référence 
-                **<<quiz : **Test ton intelligence
-                **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
-                **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`) 
+                **<<inventaire : **Pour voir son inventaire
+                **<<shop : **Pour fair des achat avec la THUNE que tu as acquis
+                **<<pay : **pour donner de l'argent à d'autre utilisateur
+                **<<compt : **pour voir à combien s'élève ton compt
+                **<<daily : **pour recevoir 250$ par jour
+                **<<pierre / <<papier / <<ciseaux : **pour gagnier 50 $ ou perdre 25$
+                **<<roulette[montant de $] :**Test ta chance pour gagnier des $!`)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===6){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
-                **<<pile : **1 chance sur 2
-                **<<face : **1 chance sur 2
-                **<<lancer6 : **Imite un lancer de dé à 6 face 
-                **<<lancer12 : **Imite un lancer de dé à 12 face 
-                **<<lancer20 :** Imite un lancer de dé à 20 face`)  
+                **<<8ball : **Pose n'importe quelle question
+                **<<refjeux : **trouve à quelle jeux appartien la référence 
+                **<<refanime : **trouve à quelle anime appartien la référence 
+                **<<quiz : **Test ton intelligence
+                **<<kick_roulette:** Soit tu gagne et tu reste soit tu perds et tu vire du serveur
+                **<<mute_roulette:** Soit tu gagne et tu peut parler soit tu perds et tu te tais`)  
+                
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
              if(page ===7){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
+                **<<pile : **1 chance sur 2
+                **<<face : **1 chance sur 2
+                **<<lancer6 : **imite un lancer de dé à 6 face 
+                **<<lancer12 : **imite un lancer de dé à 12 face 
+                **<<lancer20 :** imite un lancer de dé à 20 face`)  
+                embetest.setFooter(`Page ${page} sur ${pages.length}`)  
+                message.edit(embetest) 
+             };
+             if(page ===8){ 
+                embetest.setTitle(pages[page-1])
+                embetest.setDescription(`
                 **<<paradoxe :** Pour voir divers paradoxe 
                 **<<café :** Pour avoir ou donné un café
                 **<<cookies :** Pour avoir ou donné des cookies
-                **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*)
                 **<<estimation :** Pour fair une estimation de ton (ou de la personne tag) genre ,Age et si tu es humain ou non
                 **<<chargement :** Barre de chargement (inutile donc indispensable) 
-                **<<useless :** Montre un site totalement inutile
+                **<<useless :**Montre un site totalement inutile
                 **<<waifu : **Montre ta nouvelle waifu
                 **<<monstre : **Dévoile le monstre en toi
                 **<<del : **Delet this (meme)
@@ -334,7 +358,7 @@ console.log('Done The Watching Setup Completed')
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
-             if(page ===8){ 
+             if(page ===9){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
                 **<<help admin** Si BIEN EVIDEMENT tu possèdes les droit Administrateur
@@ -342,7 +366,7 @@ console.log('Done The Watching Setup Completed')
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
                 message.edit(embetest) 
              };
-        }
+}
                 })
         })
                             })
