@@ -46,7 +46,7 @@ console.log('Done The Watching Setup Completed')
     if (message.content === "<<help") {
 
 
-        let pages = ['Menu','─▻Rolplay','─▻Utilitaire','─▻Argent','─▻Jeux','─▻Random','─▻Autre','─▻Admin'];
+        let pages = ['Menu','─▻Rolplay','─▻Utilitaire','─▻Texte','─▻Argent','─▻Jeux','─▻Random','─▻Autre','─▻Admin'];
         let page = 1;
         const embetest = new Discord.RichEmbed()
         .setTitle(pages[page-1])
