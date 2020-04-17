@@ -8,6 +8,8 @@ const config = require("./config.json");
 const ms2 = require('ms');
 const zalgo = require('to-zalgo')
 const banish = require('to-zalgo/banish')
+const { encode, decode } = require('morsee');
+
 
 const prefix = '<<'
 client.on('ready', () => {
@@ -152,6 +154,8 @@ console.log('Done The Watching Setup Completed')
 **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
 **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
 **<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
+**<<morse_decode :** Pour décoder des message en morse
+**<<morse_encode :** Pour encoder des message en morse
 
                 `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
@@ -197,6 +201,8 @@ console.log('Done The Watching Setup Completed')
              if(page ===8){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
+
+**<<loli :** Je juge pas hein promis 👀
 **<<paradoxe :** Pour voir divers paradoxe 
 **<<café :** Pour avoir ou donné un café
 **<<cookies :** Pour avoir ou donné des cookies
@@ -298,6 +304,8 @@ console.log('Done The Watching Setup Completed')
 **<<syntaxe-c :** Pour savoir comment écrire en couleur **__NE FONCTIONNE PAS SUR PORTABLE__**
 **<<flip :** Pour inverser ɐs ǝɯɯoɔ (comme sa*) 
 **<<zalgo :** Pour écrire cͩ͗ͩoͯͮ̈́m̍̆͗m̨̃͑e͊̓ͦ ͗͒͢s̊̉͑aͦ̌̈́
+**<<morse_decode :** Pour décoder des message en morse
+**<<morse_encode :** Pour encoder des message en morse
 
                 `)  
                 embetest.setFooter(`Page ${page} sur ${pages.length}`)  
@@ -343,6 +351,7 @@ console.log('Done The Watching Setup Completed')
              if(page ===8){ 
                 embetest.setTitle(pages[page-1])
                 embetest.setDescription(`
+**<<loli :** Je juge pas hein promis 👀
 **<<paradoxe :** Pour voir divers paradoxe 
 **<<café :** Pour avoir ou donné un café
 **<<cookies :** Pour avoir ou donné des cookies
@@ -888,6 +897,60 @@ const config = require("./config.json");
   const command = args.shift().toLowerCase();
     
   
+
+
+
+
+  if(command ==="loli"){
+    var loll = [
+    "https://i.imgur.com/VNTKHyU.jpg",
+    "https://i.imgur.com/xcOc9NQ.jpg",
+    "https://i.imgur.com/fqVZR4v.jpg",
+    "https://i.imgur.com/axJ8QKp.jpg",
+    "https://i.imgur.com/TdPGoVA.jpg",
+    ]
+        var lolipopp = loll[Math.floor(Math.random() * loll.length)] ;
+        var lol = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle(`lollipop`)
+        .setImage(lolipopp)
+        .setFooter("Comme j'ai dit je juge pas hein. Vraiment 👀")
+    message.channel.send(lol);
+    }
+    
+    
+     if(command ==="morse_decode"){
+        let sayMessage = args.join(" ");
+    if(!sayMessage)
+     message.channel.send("Je n'est rien à décoder!")
+        const decoded = decode(sayMessage);
+        var modec = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle(`Traduction morse => alphabet`)
+        .setThumbnail("https://i.imgur.com/HbjfvoB.jpg")
+        .setDescription(decoded)
+        .setFooter(" /!\\ ö, é, ü et ñ ==> g, l, w et y")
+    message.channel.send(modec);
+    }
+    
+    if(command ==="morse_encode"){
+        let sayMessage = args.join(" ");
+    if(!sayMessage)
+     message.channel.send("Je n'est rien à encoder!")
+        const encoded = encode(sayMessage);
+    
+        var moenc = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle(`Traduction alphabet => morse`)
+        .setThumbnail("https://i.imgur.com/HbjfvoB.jpg")
+        .setDescription(encoded)
+    message.channel.send(moenc);
+    }
+
+
+
+
+
 
 
   if(command === "zalgo"){ 
