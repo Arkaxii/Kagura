@@ -29,6 +29,7 @@
     "lodash.unset": "^4.5.2",
     "moment": "^2.22.2",
     "moment-duration-format": "^2.2.2",
+    "morsee": "^1.0.6",
     "ms": "^2.1.1",
     "node-opus": "^0.2.9",
     "opusscript": "0.0.6",
