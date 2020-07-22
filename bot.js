@@ -475,7 +475,7 @@ console.log('Done The Watching Setup Completed')
 
         let eventt = ['👆'];
 
-        if(message.author.id !== "635547572983037970")return;
+        if(message.author.id !== "706503584141017089"||"706502320317399143")return;
     var kanna = [
         "https://i.imgur.com/btYFdDL.png",
         "https://i.imgur.com/2hr6Bt7.png",
